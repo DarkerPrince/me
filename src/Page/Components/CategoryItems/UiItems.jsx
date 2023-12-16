@@ -36,7 +36,7 @@ function UiItems() {
           </div>
         </div>
       </div>
-      <div className="h-48 w-full bg-Primary  overflow-hidden group-hover:overflow-visible rounded-xl flex items-end  ">
+      <div className="h-48 w-full bg-Primary  overflow-hidden rounded-xl flex items-end  ">
         <div className="flex w-full items-end justify-center align-middle ">
           <img src={dash} alt="" className="w-3/4 translate-y-8 group-hover:-translate-y-0 duration-300 ease-in-out" />
           <img
