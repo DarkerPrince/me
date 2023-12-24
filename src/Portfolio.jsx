@@ -9,23 +9,56 @@ import Experience from './Page/experience'
 import Footer from './Page/footer'
 import Navigator from './Page/Navigator'
 import background from './assets/background.png'
+import { useEffect ,useState } from 'react';
+import { MdDarkMode } from "react-icons/md";
 
 
 function Portfolio() {
+
+
+  const [theme ,setTheme] = useState(null);
+
+  useEffect(()=>{
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setTheme('dark');
+    }else{
+      setTheme('light');
+    }
+  },[])
+
+  useEffect(()=>{
+    if(theme === "dark"){
+      document.documentElement.classList.add("dark");
+    }else{
+      document.documentElement.classList.remove("dark");
+    }
+  },[theme])
+
+  const handleThemeSwitch = () =>{
+    setTheme(theme === "dark"?"light":"dark");
+    console.log(`The THeme mode is => ${theme}`);
+  }
+  
   return (
-    <div className='relative flex flex-col mx-4 md:mx-12 items-center font-leuleAfa'>
-      <img src={background} alt="back" className='absolute top-0 -z-10' />
+    <div className={`${theme}`}>
+
+    <div className='w-full bg-[#fdfbf6] dark:bg-[#121212]'>
+    <div className='relative flex flex-col items-center justify-center  font-leuleAfa self-center mx-auto px-4 md:w-1/2'>
+      <img src={background} alt="back" className='absolute top-0 z-' />
+      
       <Navigator/>
       <HeroSection/>
+      
       <Skills/>
-
       <Categories/>
       <Showcase/>
       <Experience/>
       <Certification/>
       <Testimonial/>
       <Footer/>
-      <img src={background} alt="back" className='absolute rotate-180 w-2/3 mx-auto bottom-0 -z-10' />
+      <img src={background} alt="back" className='absolute rotate-180 opacity-50 mx-auto bottom-0 -z-' />
+    </div>
+    </div>
     </div>
   )
 }

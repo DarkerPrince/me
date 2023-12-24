@@ -7,21 +7,21 @@ import { FaGithub } from "react-icons/fa";
 
 function HeroSection() {
   return (
-    <div className=' flex flex-col-reverse items-center justify-center '>
-    <div className='flex flex-col gap-2 items-center justify-center md:w-1/2'>
-        <h1 className='text-4xl  lg:text-6xl font-extrabold  md:text-center'>Mr. Dominos Pizza</h1>
-        <p className='text-center'>UI/UX and Visual Designer | Front end & Mobile App Developer</p>
-        <p className='text-center '>I'm a Habesha who's absolutely crazy about coding and design. My graphics and UI designs are like love notes from my heart. I create awesome web pages and mobile apps that feel like pure magic, all thanks to my talent for UI design. And guess what? I'm also building my very own event platform. Get ready for the wild ride of a lifetime!</p>
+    <div className=' flex flex-col-reverse items-center justify-center  '>
+    <div className='flex flex-col gap-2 items-center justify-center'>
+        <h1 className='text-4xl  lg:text-6xl font-extrabold  md:text-center dark:text-slate-200'>Luel Sisay G.</h1>
+        <p className='text-center text-slate-400'>UI/UX and Visual Designer | Front end & Mobile App Developer</p>
+        <p className='text-center xl:w-11/12 dark:text-slate-200'>A Habesha who's absolutely crazy about coding and design. My graphics and UI designs are like love notes from my heart. I create awesome web pages and mobile apps that feel like pure magic, all thanks to my talent for UI design.</p>
         <div className='flex gap-4'>
-          <AiFillBehanceCircle className='text-3xl'/>
-          <TbBrandDribbbleFilled className='text-3xl' />
-          <RiInstagramFill className='text-3xl'/>
+          <AiFillBehanceCircle className='text-gray-300 text-3xl hover:text-Primary transition duration-300 ease-in-out'/>
+          <TbBrandDribbbleFilled className='text-gray-300 text-3xl hover:text-Primary transition duration-300 ease-in-out' />
+          <RiInstagramFill className='text-gray-300 text-3xl hover:text-Primary transition duration-300 ease-in-out'/>
           <div className='border-l border-gray-300 pl-4'>
-          <FaGithub className='text-3xl'/>
+          <FaGithub className='text-gray-300 text-3xl hover:text-black dark:hover:text-white transition duration-300 ease-in-out'/>
           </div>
         </div>
     </div>
-    <img src={heroImg} alt="hero" className='lg:w-1/2 xl:w-1/4'/>
+    <img src={heroImg} alt="hero" className=' xl:w-1/2'/>
     </div>
   );
 }

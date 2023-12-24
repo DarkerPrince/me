@@ -8,7 +8,7 @@ import GraphixItems from "../Components/GraphicItems";
 function GraphicList() {
   return (
     <div className="relative">
-      <div className="relative -z-10  h-96 flex  bg-gradient-to-r from-Primary to-Secondary rounded-2xl md:mx-12 md:mt-12 p-12">
+      <div className="relative -z-10  h-96 flex  backback rounded-2xl md:mx-12 md:mt-12 p-12">
         <p className="text-6xl md:text-5xl lg:text-9xl font-bold text-slate-100">
           Visual Designs
         </p>

@@ -10,11 +10,7 @@ import { Link } from "react-router-dom";
 function UiItems() {
   return (
     <Link to={'UIUX'}>
- <div className="h-[400px] relative bg-white p-4 hover:shadow-xl rounded-2xl flex flex-col justify-between group">
- <div className=' absolute p-4 -top-2 -right-2 bg-slate-200 flex items-center justify-center rounded-md '>
-          
-          <MdOutlineArrowOutward className='transition text-lg ease-in-out group-hover:-translate-y-2 group-hover:translate-x-2 '/>
-          </div>
+ <div className="h-[400px] relative bg-white  dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:dark:bg-white/20 p-4 hover:shadow-xl rounded-2xl flex flex-col justify-between group">
       <div>
         <p className="text-lg font-semibold">UI Designs Projects</p>
         <div className="flex flex-col items-start gap-2 mt-4">
@@ -36,7 +32,7 @@ function UiItems() {
           </div>
         </div>
       </div>
-      <div className="h-48 w-full bg-Primary  overflow-hidden rounded-xl flex items-end  ">
+      <div className="h-48 w-full backback  overflow-hidden rounded-xl flex items-end  ">
         <div className="flex w-full items-end justify-center align-middle ">
           <img src={dash} alt="" className="w-3/4 translate-y-8 group-hover:-translate-y-0 duration-300 ease-in-out" />
           <img

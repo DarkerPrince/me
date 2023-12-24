@@ -3,13 +3,13 @@ import mob from "../assets/mob.jpeg";
 
 function Testimonial() {
   return (
-    <div className="lg:w-1/2 my-12 lg:mx-auto p-4 md:p-12 flex flex-col items-center justify-center">
+    <div className="my-12 px-4 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center">
       <p className="font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Testimonial</p>
        
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 mt-4">
-        <section class="bg-white shadow-2xl shadow-Secondary/20 rounded-lg">
+        <section class="bg-white shadow-2xl shadow-Secondary/20 rounded-lg dark:bg-white/5 dark:shadow-none">
           <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure class="max-w-screen-md mx-auto">
               <svg
@@ -24,7 +24,7 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900 text-sm">
+                <p class=" text-gray-900 text-sm dark:text-slate-200">
                   "Landwind is just awesome. It contains tons of predesigned
                   components and pages starting from login screen to complex
                   dashboard. Perfect choice for your next SaaS application."
@@ -32,15 +32,15 @@ function Testimonial() {
               </blockquote>
               <figcaption class="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-6 h-6 rounded-full"
+                  class="w-8 h-8 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                   alt="profile picture"
                 />
                 <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 ">
+                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
                     Micheal Gough
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 ">
+                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
                     CEO at Google
                   </div>
                 </div>
@@ -48,7 +48,7 @@ function Testimonial() {
             </figure>
           </div>
         </section>
-        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg">
+        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
           <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure class="max-w-screen-md mx-auto">
               <svg
@@ -63,7 +63,7 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900 text-sm">
+                <p class=" text-gray-900 text-sm dark:text-slate-200">
                   "Landwind is just awesome. It contains tons of predesigned
                   components and pages starting from login screen to complex
                   dashboard. Perfect choice for your next SaaS application."
@@ -71,15 +71,15 @@ function Testimonial() {
               </blockquote>
               <figcaption class="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-6 h-6 rounded-full"
+                  class="w-8 h-8 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                   alt="profile picture"
                 />
                 <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 ">
+                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
                     Micheal Gough
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 ">
+                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
                     CEO at Google
                   </div>
                 </div>
@@ -87,7 +87,7 @@ function Testimonial() {
             </figure>
           </div>
         </section>
-        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg">
+        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
           <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure class="max-w-screen-md mx-auto">
               <svg
@@ -102,7 +102,7 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900 text-sm">
+                <p class=" text-gray-900 text-sm dark:text-slate-200">
                   "Landwind is just awesome. It contains tons of predesigned
                   components and pages starting from login screen to complex
                   dashboard. Perfect choice for your next SaaS application."
@@ -110,15 +110,15 @@ function Testimonial() {
               </blockquote>
               <figcaption class="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-6 h-6 rounded-full"
+                  class="w-8 h-8 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                   alt="profile picture"
                 />
                 <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 ">
+                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
                     Micheal Gough
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 ">
+                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
                     CEO at Google
                   </div>
                 </div>
@@ -126,7 +126,7 @@ function Testimonial() {
             </figure>
           </div>
         </section>
-        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg">
+        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
           <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure class="max-w-screen-md mx-auto">
               <svg
@@ -141,7 +141,7 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900 text-sm">
+                <p class=" text-gray-900 text-sm dark:text-slate-200">
                   "Landwind is just awesome. It contains tons of predesigned
                   components and pages starting from login screen to complex
                   dashboard. Perfect choice for your next SaaS application."
@@ -149,15 +149,15 @@ function Testimonial() {
               </blockquote>
               <figcaption class="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-6 h-6 rounded-full"
+                  class="w-8 h-8 rounded-full"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
                   alt="profile picture"
                 />
                 <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 ">
+                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
                     Micheal Gough
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 ">
+                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
                     CEO at Google
                   </div>
                 </div>

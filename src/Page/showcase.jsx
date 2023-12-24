@@ -36,7 +36,7 @@ var sampleimages = [
 
 function Showcase() {
   return (
-    <div className="flex flex-col items-center lg:w-1/2">
+    <div className="flex flex-col items-center">
      
       <div className=" px-12 lg:w-1/2 flex flex-col items-center justify-center">
         <p className="font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Sample Showcase</p>

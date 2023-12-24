@@ -3,22 +3,14 @@ import mobile from "../../assets/mob.jpeg";
 
 function GraphixItems({graphix}) {
   return (
-    <div className="relative">
-    <div class="absolute rotate-3 top-0 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+    <div class="relative max-w-sm rounded-lg shadow h-64 bg-red-400">
       <img
-        class="rounded-lg h-full w-full object-cover"
-        src={graphix.imageID[0]}
-        alt=""
-      />
-    </div>
-    <div class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-      <img
-        class="rounded-lg w-full"
+        class="rounded-lg w-full h-64 object-cover"
         src={graphix.imageID[1]}
         alt=""
       />
-      <div class="p-4 absolute bottom-0 rounded-b-lg bg-gradient-to-t from-slate-300 to-transparent w-full">
-        <h5 class="font-bold tracking-tight text-gray-900">
+      <div class="p-4 absolute bottom-0 rounded-b-lg bg-gradient-to-t from-black to-transparent w-full">
+        <h5 class="font-semibold tracking-tight text-white">
           {graphix.title}
         </h5>
         
@@ -34,7 +26,6 @@ function GraphixItems({graphix}) {
         </div>
       </div>
     </div>
-  </div>
   )
 }
 

@@ -17,7 +17,7 @@ function Experience() {
 
 
   return (
-    <div className="mt-12 lg:w-1/2 py-3 flex flex-col  justify-center rounded-3xl mx-auto p-4 lg:p-12 bg-gradient-to-br from-Primary to-Secondary items-center sm:py-12">
+    <div className="backback mt-12 py-3 flex flex-col  justify-center rounded-3xl mx-auto p-4 lg:p-12  items-center sm:py-12">
      <p className='text-2xl font-bold text-white mb-12'>My Work Experience</p>
     <div className=" md:w-full  sm:mx-2 sm:px-0">
 
