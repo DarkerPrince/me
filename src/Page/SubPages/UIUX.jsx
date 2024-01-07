@@ -2,7 +2,7 @@ import React from "react";
 import WorkItems from "../Components/WorkItems";
 import { PiPencilCircleDuotone } from "react-icons/pi";
 import { PiPenNibDuotone } from "react-icons/pi";
-import blogFiles from "../../assets/Files/files";
+import {uiFiles} from "../../assets/Files/UI";
 
 function UIUX() {
   return (
@@ -22,8 +22,10 @@ function UIUX() {
 
         <div className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 px-4 lg:w-2/3 gap-6 mb-12 items-center justify-center">
           {
-            blogFiles.map((item)=>{
-             return <WorkItems blogItem={item}/>
+            uiFiles.map((item,index)=>{
+             return <div key={index}>
+               <WorkItems blogItem={item}/>
+             </div> 
             })
           }
         </div>

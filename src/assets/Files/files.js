@@ -1,6 +1,6 @@
 
 
-var blogFiles = [
+export const blogFiles = [
   {
     id: 1,
     casestudylink: "https://www.behance.net/gallery/166689671/Telebirr-Sample-Design/modules/940073915",
@@ -1015,7 +1015,7 @@ var blogFiles = [
     ],
   },
 ];
-export default blogFiles;
+// export default blogFiles;
 
 export const socialMediaPost = [
   {

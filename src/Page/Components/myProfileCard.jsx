@@ -1,5 +1,5 @@
 import React from 'react'
-import mobile from '../../assets/mob.jpeg'
+import profileImg from '../../assets/profile.png'
 import { AiFillBehanceCircle } from "react-icons/ai";
 import { RiInstagramFill } from "react-icons/ri";
 import { TbBrandDribbbleFilled } from "react-icons/tb";
@@ -9,13 +9,12 @@ function MyProfileCard() {
   return (
    
 
-<div class="w-full bg-white max-w-sm bg-  rounded-lg md:shadow">
-    <div class="flex flex-col items-center pb-10 pt-4">
-        <img class=" w-16 md:w-24 h-16 md:h-24 mb-3 rounded-full shadow-lg" src={mobile} alt="Bonnie image"/>
-        <h5 class="mb-1 text-lg lg:text-xl font-medium text-gray-900 ">Domino Pizza</h5>
-        <span class="text-sm text-gray-500 ">UI/UX Designer</span>
-        <div class="flex mt-4 md:mt-6">
-        <div className='flex gap-4'>
+<div class="text-slate-800 dark:text-slate-200  rounded-lg">
+    <div class="flex flex-col items-center ">
+        <img class=" w-16 md:w-24 h-16 object-contain bg-Primary md:h-24 mb-3 rounded-full shadow-lg" src={profileImg} alt="profile image"/>
+        <h5 class="mb-1 text-lg lg:text-xl font-medium  ">Luel Sisay</h5>
+        <span class="text-sm text-gray-500 text-center">UI/UX Designer & Web Developer</span>
+        <div className='flex gap-4 mt-4 md:mt-6'>
               <AiFillBehanceCircle className='text-3xl'/>
               <TbBrandDribbbleFilled className='text-3xl' />
               <RiInstagramFill className='text-3xl'/>
@@ -23,7 +22,7 @@ function MyProfileCard() {
               <FaGithub className='text-3xl'/>
               </div>
             </div>
-        </div>
+        
     </div>
 </div>
 

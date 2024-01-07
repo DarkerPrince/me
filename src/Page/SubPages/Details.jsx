@@ -2,43 +2,57 @@ import React from "react";
 import getin2 from "../../assets/workImg/getin2.png";
 import MyProfileCard from "../Components/myProfileCard";
 import ShowcaseItem from "../Components/showcaseItem";
-import DesignProcess from "./Details Component/DesignProcess";
+
 import StyleGuide from "./Details Component/styleguide";
 import Define from "./Details Component/Define";
+import Mockup from "./Details Component/mockup";
+import { useLocation } from "react-router-dom";
+
+
+const imageURL = "https://drive.google.com/uc?export=view&id=";
 
 function DetailsPage() {
+
+  const location = useLocation();
+  console.log(location.state, "🏀");
+
+  function hexToRgb(hex) {
+    // Remove the # symbol if present
+    hex = hex.replace('#', '');
+  
+    // Convert hex to decimal
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+  
+    // Return the RGB color format
+    return `rgb(${r}, ${g}, ${b} ,0.2)`;
+  }
+
+
   return (
-    <div className="flex flex-col items-center dark:text-slate-200">
-      <img src={getin2} className=" p-2 lg:w-3/4 rounded-2xl mx-auto mt-4" alt="" />
-      <div className="flex flex-col-reverse lg:flex-row items-center md:items-start gap-4 justify-center mt-12">
-        <div className="flex flex-col items-start  justify-center px-4 md:justify-start lg:w-1/2 gap-6">
+    <div className="flex flex-col items-center bg-white dark:bg-black gap-8">
+      <img src={`${location.state.headerimg}`} className=" lg:w-3/4 rounded-3xl overflow-hidden mx-auto mt-4 " style={{ boxShadow: `1px 1px 32px ${hexToRgb(location.state.primarycolor)}` }} alt="" />
+      <div className="flex flex-col items-start  justify-center p-2 lg:w-3/4 md:justify-start gap-8 ">
           {/* problem and solution of template */}
-         <Define/>
-          {/* Design process */}
-          <DesignProcess/>
-          {/* style guide */}
-          <StyleGuide/>
+          <div className="flex md:items-start md:flex-row flex-col items-center ">
+          <Define problem={location.state.problem} solution={location.state.solution}/>
+          <MyProfileCard />
+          </div>
+          <StyleGuide state={location.state}/>
         </div>
-        <MyProfileCard />
-      </div>
-      <div className="w-full mt-12">
+      
+      <Mockup mockup={location.state.mockup}/>
+
+      <div className="w-full">
       <div className="flex flex-col items-center">
       <p className="font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> Sample Showcase</p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4   w-3/4">
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
-       <ShowcaseItem showImg={"https://drive.google.com/uc?export=view&id=1bRa3feT4MImq97-EIrOKpqAH7Cj2tfss"}/>
+      <div className= "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 w-3/4">
+        {
+          location.state.sampleView.map((sampleUI)=>{
+           return <ShowcaseItem showImg={sampleUI}/>
+          })
+        }
        
  </div>
     </div>

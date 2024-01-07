@@ -11,6 +11,9 @@ import Navigator from './Page/Navigator'
 import background from './assets/background.png'
 import { useEffect ,useState } from 'react';
 import { MdDarkMode } from "react-icons/md";
+import { IoMdSunny } from "react-icons/io";
+
+
 
 
 function Portfolio() {
@@ -45,10 +48,11 @@ function Portfolio() {
     <div className='w-full bg-[#fdfbf6] dark:bg-[#121212]'>
     <div className='relative flex flex-col items-center justify-center  font-leuleAfa self-center mx-auto px-4 md:w-1/2'>
       <img src={background} alt="back" className='absolute top-0 z-' />
-      
+      <div className='text-white absolute top-0 right-0 w-full h-screen' >   
+        <button className=' p-4 text-lg shadow-md rounded-full backback fixed bottom-6 right-6' onClick={handleThemeSwitch}>{theme==='dark'?<IoMdSunny/>:<MdDarkMode/>}</button>
+      </div>
       <Navigator/>
       <HeroSection/>
-      
       <Skills/>
       <Categories/>
       <Showcase/>

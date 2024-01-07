@@ -39,7 +39,8 @@ function App() {
            {/* <Route path="/Visual-Design" element={<ResumeShowPage />} /> */}
             {/* <Route path="/Web" element={<BlogDetial/>} /> */}
           {/* <Route path="/Mobile" element={<BlogDetial/>} /> */}
-          <Route path="/UIUX/Detail" element={<DetailsPage/>} />
+          <Route path="/UIUX/:id" element={<DetailsPage/>} />
+          {/* <Route path="/UIUX/Detail/:id" element={<DetailsPage/>} /> */}
         </Routes>
         </AnimatePresence>
       </BrowserRouter>
