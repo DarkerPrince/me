@@ -12,9 +12,7 @@ function Typography() {
       <div className="flex gap-12 bg-slate-100 dark:bg-slate-100/10 rounded-lg items-center p-4 md:p-12">
         <div className="flex flex-col justify-center">
           <p className='text-sm md:text-base'>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-          <p className="lowercase text-sm md:text-base">
-            A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-          </p>
+          <p className="lowercase text-sm md:text-base"> A B C D E F G H I J K L M N O P Q R S T U V W X Y Z </p>
         </div>
         <div className="flex flex-col">
           <p className="font-bold">Bold</p>

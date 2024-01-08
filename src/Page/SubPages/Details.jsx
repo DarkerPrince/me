@@ -1,5 +1,5 @@
 import React from "react";
-import getin2 from "../../assets/workImg/getin2.png";
+
 import MyProfileCard from "../Components/myProfileCard";
 import ShowcaseItem from "../Components/showcaseItem";
 
@@ -32,7 +32,7 @@ function DetailsPage() {
 
   return (
     <div className="flex flex-col items-center bg-white dark:bg-black gap-8">
-      <img src={`${location.state.headerimg}`} className=" lg:w-3/4 rounded-3xl overflow-hidden mx-auto mt-4 " style={{ boxShadow: `1px 1px 32px ${hexToRgb(location.state.primarycolor)}` }} alt="" />
+      <img src={`${location.state.headerimg}`} className=" lg:w-3/4 rounded-3xl overflow-hidden mx-auto mt-4 " alt="" />
       <div className="flex flex-col items-start  justify-center p-2 lg:w-3/4 md:justify-start gap-8 ">
           {/* problem and solution of template */}
           <div className="flex md:items-start md:flex-row flex-col items-center ">

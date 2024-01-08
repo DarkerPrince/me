@@ -1,61 +1,19 @@
-// import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-// export default class ImagePreview extends Component () {
-//   state = {
-//     showModal: false,
-//     caption: '',
-//     modalSrc: '',
+const Modal = ({ imageUrl, closeModal }) => {
+  return (
+    <div className="fixed inset-0 z-30 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+      <div className="flex flex-col items-center relative">
+        <img src={imageUrl} alt="Modal Image" className="w-2/3" />
+        <button
+          onClick={closeModal}
+          className="mt-4 px-4 py-2 bg-Primary text-white rounded"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+};
 
-//     // ...rest of your state
-//   };
-  
-  
-  
-
-//   componentDidMount() {
-//     this.getAllProjectRequirementImageList();
-//   }
-
-//   render() {
-//     // const {src} =  this.props;
-//     return (
-//       <div>
-//         <div>
-//           {this.state.ioImageListing.map((io, key) => {
-//             io.visitRequirementList.map((skill, j) => {
-//               const {src} = this.props;
-//               const alt = 'Snow'; // or whatever
-//               return (
-//                 <img
-//                   id="myImg"
-//                   src={"https://drive.google.com/uc?export=view&id=128ukcZ0gkoPYtfds4TpG8IHpBf74GbVa"}
-//                   onClick={() => {
-//                     this.setState({ showModal: true, caption: alt, modalSrc: "src" });
-//                   }}
-//                   alt={alt}
-//                   style={{ width: '100%', maxWidth: '300px' }}
-//                 />
-//               );
-//             });
-//           })}
-//         </div>
-
-//         <div
-//           id="myModal"
-//           className="modal"
-//           style={{ display: this.state.showModal ? 'block' : 'none' }}
-//         >
-//           <div>
-//             <span className="close" onClick={() => this.setState({ showModal: false })}>
-//               &times;
-//             </span>
-//             <img className="modal-content" id="img01" src={"https://drive.google.com/uc?export=view&id=128ukcZ0gkoPYtfds4TpG8IHpBf74GbVa"} />
-//             <div id="caption">
-//               {this.state.caption}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   }
-// }
+export default Modal;

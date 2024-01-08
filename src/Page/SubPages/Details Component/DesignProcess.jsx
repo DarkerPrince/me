@@ -10,30 +10,30 @@ function DesignProcess() {
   return (
     <div className=' backback rounded-2xl px-8 py-4'>
     <div className="flex flex-col items-start gap-4 text-slate-800 dark:text-slate-200">
-      <div className='flex items-end'>
+      <div className='flex flex-col items-start'>
       <p className="text-2xl font-bold">Design Process</p>
-      
+      <div className="w-1/2 border-b-2 left-0 border-blue-500"></div>
       </div>
-      <div className="flex flex-wrap items-start justify-start gap-4">
-        <div className="h-40 w-40 rounded-md bg-white dark:bg-white/10 shadow-md flex flex-col items-center gap-6 p-2">
+      <div className="flex flex-wrap items-st justify-between gap-8 items-center">
+        <div className="rounded-md flex flex-col items-center gap-6 p-2">
+          <SiSlideshare className="text-6xl text-white/50" />
           <p>1. Empathize</p>
-          <SiSlideshare className="text-6xl text-slate-300" />
         </div>
-        <div className="h-40 w-40 rounded-md bg-white dark:bg-white/10 shadow-md flex flex-col items-center gap-6 p-2">
+        <div className="rounded-md   flex flex-col items-center gap-6 p-2">
+          <IoNewspaper className="text-6xl text-white/50" />
           <p>2. Define</p>
-          <IoNewspaper className="text-6xl text-slate-300" />
         </div>
-        <div className="h-40 w-40 rounded-md bg-white dark:bg-white/10 shadow-md flex flex-col items-center gap-6 p-2">
+        <div className="rounded-md flex flex-col items-center gap-6 p-2">
+          <FaLightbulb className="text-6xl text-white/50" />
           <p>3. Ideate</p>
-          <FaLightbulb className="text-6xl text-slate-300" />
         </div>
-        <div className="h-40 w-40 rounded-md bg-white dark:bg-white/10 shadow-md flex flex-col items-center gap-6 p-2">
+        <div className="rounded-md flex flex-col items-center gap-6 p-2">
+          <FaGears className="text-6xl text-white/50" />
           <p>4. Prototype</p>
-          <FaGears className="text-6xl text-slate-300" />
         </div>
-        <div className="h-40 w-40 rounded-md bg-white dark:bg-white/10 shadow-md flex flex-col items-center gap-6 p-2">
+        <div className="rounded-md flex flex-col items-center gap-6 p-2">
+          <BsShieldFillCheck className="text-6xl text-green-400/70" />
           <p>Final Test</p>
-          <BsShieldFillCheck className="text-6xl text-green-400" />
         </div>
       </div>
     </div>

@@ -26,13 +26,8 @@ function StyleGuide({state}) {
        </div>
       </div>
 
-      
-     
-      {/* <Personas/> */}
-    
       <Sketch image={state.sketch}/>
       <Wireframe image={state.wireframe} />
-
     </div>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { PiArrowBendRightDownBold } from "react-icons/pi";
 
 
+
 function Wireframe({image}) {
   return (
     (image.length !== 0)?
@@ -10,7 +11,6 @@ function Wireframe({image}) {
       <p className="text-2xl font-bold">Wireframes</p>
       <PiArrowBendRightDownBold/>
       </div>
-    
     <div className="flex relative">
     {
       image.map((wireframe,index)=>{
