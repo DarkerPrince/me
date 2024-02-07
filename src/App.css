@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tag2 {
+  @apply bg-slate-700 rounded-md inline py-1 px-4 text-xs bg-white/20 text-slate-50;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("./assets/font/Afacad.ttf") format("truetype");
+  /* Add more formats if necessary */
+}
+@font-face {
+  font-family: "Satisfy";
+  src: url("./assets/font/Satisfy.ttf") format("truetype");
+  /* Add more formats if necessary */
+}
+
+.backback {
+  background: hsla(313, 100%, 64%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(313, 100%, 64%, 1) 0%,
+    hsla(209, 100%, 64%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(313, 100%, 64%, 1) 0%,
+    hsla(209, 100%, 64%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(313, 100%, 64%, 1) 0%,
+    hsla(209, 100%, 64%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF45D6", endColorstr="#45A6FF", GradientType=1 );
+}
+
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('./assets/font/Afacad.ttf') format('truetype');
+    /* Add more formats if necessary */
+  }
+
+@font-face {
+    font-family: 'Satisfy';
+    src: url('./assets/font/Satisfy.ttf') format('truetype');
+    /* Add more formats if necessary */
+  }
+
+
+
