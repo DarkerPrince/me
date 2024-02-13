@@ -21,7 +21,7 @@ function PersonaItem({ persona, index }) {
     photo8,
   ];
   return (
-    <div className=" shadow-xl bg-white hover:z-10 hover:scale-125 duration-300 ease-in-out h-full transition-all hover:shadow-2xl  dark:bg-white/20 rounded-xl flex flex-col p-4 gap-2">
+    <div className=" shadow-xl bg-white hover:z-10 hover:scale-125 duration-300 ease-in-out h-full transition-all hover:shadow-2xl  dark:bg-slate-800 rounded-xl flex flex-col p-4 gap-2">
       <p className="text-xl font-bold">"Personal Quotes"</p>
       <div className="flex gap-2">
         <div className="flex flex-col gap-2 items-center">
@@ -77,11 +77,11 @@ function PersonaItem({ persona, index }) {
             <p className="text-sm">{persona.frustration}</p>
           </div>
           <div className="flex gap-4 h-full">
-            <div className="flex flex-col p-2 w-1/2 bg-slate-100 dark:bg-slate-100/20 rounded-lg">
+            <div className="flex flex-col p-2 w-1/2 items-center bg-slate-100 h-56 dark:bg-slate-100/20 rounded-lg">
               <p className="text-sm font-semibold text-slate-400 dark:text-slate-100">
                 Social Media
               </p>
-              <PieChart data={persona.tech} />
+              <PersonalPieChart statData={persona.socialMedia} />
               {/* {persona.socialMedia.map((item) => {
                 console.log(item);
                 return (
@@ -92,11 +92,11 @@ function PersonaItem({ persona, index }) {
                 );
               })} */}
             </div>
-            <div className="flex flex-col p-2 w-1/2 bg-slate-100 dark:bg-slate-100/20 rounded-lg">
+            <div className="flex flex-col items-center p-2 w-1/2 bg-slate-100 overflow-visible dark:bg-slate-100/20 rounded-lg">
               <p className="text-sm font-semibold text-slate-400 dark:text-slate-100">
                 Technologies
               </p>
-              <PersonalPieChart />
+              <PersonalPieChart statData={persona.tech} />
               {/* {persona.tech.map((item) => {
                 console.log(item);
                 return (
