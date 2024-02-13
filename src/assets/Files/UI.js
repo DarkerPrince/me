@@ -13,7 +13,7 @@ export const uiFiles = [
     solution:
       "Sukify is the ultimate solution for influencers looking to maximize their impact. With Sukify, you can connect with a targeted audience that aligns with your niche, opening doors to brand collaborations that share your values. Our platform provides resourceful tools for content creation, analytics, and audience management, empowering you to optimize your strategies.",
     font: "Encode sans font",
-    colors: ["#FC00FF", "#212121"],
+    colors: ["#7FA8DA","#FC00FF", "#212121"],
     userPersona: [
       {
         img: "image lists",
@@ -27,14 +27,14 @@ export const uiFiles = [
           "Sarah is a 27-year-old fashion and beauty influencer based in New York City. She has a degree in Fashion Design and has been working as a full-time influencer for the past four years. Sarah is known for her unique sense of style and makeup tutorials.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Facebook", value: 15 },
-          { platform: "Instagram", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#212121' , value: 50 },
+          { title: "Facebook", color: '#212121' , value: 15 },
+          { title: "Instagram", color: '#212121' , value: 10 },
+          { title: "Tiktok", color: '#212121' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 90 },
-          { device: "Laptop", usage: 10 },
+          { title: "Mobile", color: '#E38627' , value: 90 },
+          { title: "Laptop", color: '#E38627' , value: 10 },
         ],
         goal: [
           "Sarah wants to collaborate with established fashion brands and expand her audience beyond her current followers.",
@@ -57,21 +57,21 @@ export const uiFiles = [
           "Alex is a 40-year-old parenting and lifestyle influencer based in London. They are a stay-at-home parent with two young children. Alex holds a degree in Psychology and started sharing their parenting journey on social media three years ago.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Facebook", value: 50 },
-          { platform: "Instagram", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Facebook", color: '#E38627' , value: 50 },
+          { title: "Instagram", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 70 },
-          { device: "Laptop", usage: 10 },
-          { device: "Tablet", usage: 30 },
+          { title: "Mobile", color: '#E38627' , value: 70 },
+          { title: "Laptop", color: '#E38627' , value: 10 },
+          { title: "Tablet", color: '#E38627' , value: 30 },
         ],
         goal: [
           "Alex aims to connect with other parents, share their experiences, and provide helpful tips and advice on raising children. They want to collaborate with family-oriented brands and create content that resonates with their target audience.",
         ],
         frustration: [
-          "Alex finds it challenging to find brands that align with their parenting values and receive collaboration offers that are relevant to their audience. They also struggle with time management due to their responsibilities as a parent. Social Media Usage:Al spends around 50% of their time on social media",
+          "Alex finds it challenging to find brands that align with their parenting values and receive collaboration offers that are relevant to their audience. They also struggle with time management due to their responsibilities as a parent. Social Media color: '#E38627' , value:Al spends around 50% of their time on social media",
         ],
       },
       {
@@ -86,15 +86,15 @@ export const uiFiles = [
           "James is a 32-year-old fitness and wellness influencer based in Los Angeles. He holds a degree in Kinesiology and has been working as a fitness coach and influencer for the past six years. James specializes in creating workout routines and providing nutrition tips.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 10 },
-          { platform: "Facebook", value: 15 },
-          { platform: "Instagram", value: 10 },
-          { platform: "Tiktok", value: 80 },
+          { title: "Youtube", color: '#E38627' , value: 10 },
+          { title: "Facebook", color: '#E38627' , value: 15 },
+          { title: "Instagram", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 80 },
         ],
         tech: [
-          { device: "Mobile", usage: 90 },
-          { device: "Laptop", usage: 10 },
-          { device: "Tablet", usage: 10 },
+          { title: "Mobile", color: '#E38627' , value: 90 },
+          { title: "Laptop", color: '#E38627' , value: 10 },
+          { title: "Tablet", color: '#E38627' , value: 10 },
         ],
         goal: [
           "James aims to reach a wider audience and establish partnerships with fitness brands and health-related communities. ",
@@ -117,15 +117,15 @@ export const uiFiles = [
           "Emma is a 25-year-old travel and adventure influencer from Vancouver, Canada. She has a degree in Tourism Management and has been actively sharing her travel experiences on social media for the past three years. Emma is passionate about exploring new destinations and documenting her adventures.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Facebook", value: 15 },
-          { platform: "Instagram", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Facebook", color: '#E38627' , value: 15 },
+          { title: "Instagram", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 90 },
-          { device: "DSLR Camera", usage: 10 },
-          { device: "Laptop", usage: 10 },
+          { title: "Mobile", color: '#E38627' , value: 90 },
+          { title: "DSLR Camera", color: '#E38627' , value: 10 },
+          { title: "Laptop", color: '#E38627' , value: 10 },
         ],
         goal: [
           "Emma's goal is to collaborate with travel brands and tourism boards to showcase unique destinations and inspire her audience to embark on their own adventures. She wants to connect with fellow travel enthusiasts and grow her following.",
@@ -189,7 +189,7 @@ export const uiFiles = [
     solution:
       "The solution lies in the website platform I have designed, which addresses these challenges head-on. It provides entrepreneurs with a user-friendly interface to showcase their startup ideas in a clear and compelling manner, ensuring maximum exposure to potential investors. Through interactive features and comprehensive project profiles, entrepreneurs can effectively communicate their concepts, highlighting their unique value proposition and growth potential. By leveraging this platform, entrepreneurs can enhance their chances of attracting the right investors who share their vision and are willing to provide the necessary funding to bring their ideas to fruition.",
     font: "Poppins",
-    colors: ["#00B4DB", "#212121", "#FDD011"],
+    colors: ["#FC9F12","#00B4DB", "#212121"],
     userPersona: [
       {
         img: "image lists",
@@ -203,14 +203,14 @@ export const uiFiles = [
           "Michael is a 35-year-old serial entrepreneur based in Silicon Valley. He holds an MBA degree and has successfully launched multiple tech startups. Michael is known for his innovative ideas and strong business acumen.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 30 },
-          { device: "Laptop", usage: 70 },
+          { title: "Mobile", color: '#E38627' , value: 30 },
+          { title: "Laptop", color: '#E38627' , value: 70 },
         ],
         goal: [
           "Michael's goal is to connect with potential investors and secure funding for his latest startup venture. He aims to showcase his concept effectively, protect his intellectual property, and gain traction in the tech industry.",
@@ -231,14 +231,14 @@ export const uiFiles = [
           "Emily is a 28-year-old aspiring entrepreneur based in New York City. She has a degree in Business Administration and is passionate about social impact startups. Emily aims to create a business that combines sustainability and technology.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Instagram", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Instagram", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 70 },
-          { device: "Laptop", usage: 30 },
+          { title: "Mobile", color: '#E38627' , value: 70 },
+          { title: "Laptop", color: '#E38627' , value: 30 },
         ],
         goal: [
           "Emily's objective is to find a platform that helps her effectively communicate her startup idea, connect with like-minded individuals, and attract potential partners or co-founders who share her vision.",
@@ -259,14 +259,14 @@ export const uiFiles = [
           "David is a 42-year-old experienced entrepreneur based in London. He has founded and sold multiple businesses in the software development industry. David holds a degree in Computer Science and is known for his technical expertise.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Instagram", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Instagram", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 70 },
-          { device: "Laptop", usage: 30 },
+          { title: "Mobile", color: '#E38627' , value: 70 },
+          { title: "Laptop", color: '#E38627' , value: 30 },
         ],
         goal: [
           "David's goal is to find a platform that allows him to share his startup ideas with potential investors, collaborate with other entrepreneurs, and protect his intellectual property rights.",
@@ -338,14 +338,14 @@ export const uiFiles = [
           "Eyerus currently lives with her parents and works from home to support her family. She has some free time now and wants to work more freelance jobs to make more money than she does now. She also wants to work with countries outside of Ethiopia.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 30 },
-          { device: "Laptop", usage: 70 },
+          { title: "Mobile", color: '#E38627' , value: 30 },
+          { title: "Laptop", color: '#E38627' , value: 70 },
         ],
         goal: [
           "Find a short-term job internationally.",
@@ -368,14 +368,14 @@ export const uiFiles = [
           "Nardos loves to tour her country and share what she knows with other foreigners with anyone who wants to know her country’s history by traveling with her and experiencing what she is experiencing.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 30 },
-          { device: "Laptop", usage: 70 },
+          { title: "Mobile", color: '#E38627' , value: 30 },
+          { title: "Laptop", color: '#E38627' , value: 70 },
         ],
         goal: [
           " She also loves to help her country to be named and have her heritages registered on UNESCO. She wants a platform where she can post all of her job-related experience and invite people to come to this country and visit as a traveler, helping other people like her who want to have a job as a tour and travel guide.",
@@ -397,14 +397,14 @@ export const uiFiles = [
           "Amanuel is currently enrolled in Debremarkos University where he is studying mechanical engineering. His primary concerns are that after graduating from college, he would like to find employment in his field, and that he could gain and develop all those skills by taking additional courses online while still enrolled there.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 30 },
-          { device: "Laptop", usage: 70 },
+          { title: "Mobile", color: '#E38627' , value: 30 },
+          { title: "Laptop", color: '#E38627' , value: 70 },
         ],
         goal: [
           "Find a short-term job internationally.",
@@ -479,15 +479,15 @@ export const uiFiles = [
           "Sarah is a 28-year-old event enthusiast based in Chicago. She works as an event planner and loves exploring new events in her city. Sarah holds a degree in Hospitality Management and is always on the lookout for unique experiences.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Facebook", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
-          { platform: "Instagram", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Facebook", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
+          { title: "Instagram", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Sarah's goal is to find a platform that provides accurate and up-to-date event information in her area. She wants to discover a wide range of events, filter them based on her preferences, and receive timely notifications about any changes or cancellations.",
@@ -509,14 +509,14 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [
           { Reddit: "50" },
-          { platform: "Facebook", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
-          { platform: "Instagram", value: 35 },
+          { title: "Facebook", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
+          { title: "Instagram", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Mark's objective is to find a platform that provides accurate and reliable information about music events in his city. He wants to discover new artists, buy tickets, and receive real-time updates about lineup changes or concert rescheduling.",
@@ -537,14 +537,14 @@ export const uiFiles = [
           "Emily is a 42-year-old art enthusiast based in London. She works as an art curator and enjoys attending gallery openings and exhibitions. Emily holds a degree in Art History and is passionate about discovering new artists and art events.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Facebook", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Linkedin", value: 35 },
-          { platform: "Instagram", value: 35 },
+          { title: "Facebook", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Linkedin", color: '#E38627' , value: 35 },
+          { title: "Instagram", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Tablet", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Tablet", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Emily's goal is to find a platform that provides accurate and comprehensive information about art events in her city. She wants to explore various art forms, receive timely updates about exhibition openings, and filter events based on specific art genres or galleries",
@@ -565,13 +565,13 @@ export const uiFiles = [
           "Alex is a 30-year-old sports enthusiast based in Melbourne. He loves attending live sporting events and supporting his favorite teams. Alex has a degree in Sports Management and enjoys the excitement of being part of a live crowd.",
         favBrand: [""],
         socialMedia: [
-          { platform: "X", value: 10 },
-          { platform: "Linkedin", value: 35 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Linkedin", color: '#E38627' , value: 35 },
           { Telegram: "35" },
         ],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Tablet", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Tablet", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Alex's objective is to find a platform that provides accurate and real-time information about sports events in his city. He wants to discover upcoming matches, buy tickets, and receive notifications about any changes or cancellations.",
@@ -641,8 +641,8 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Amanuel's goal is to find a mobile payment app that is intuitive, easy to navigate, and provides a seamless user experience. He wants to send and receive money, pay utility bills, and perform other financial transactions efficiently without encountering any usability issues.",
@@ -664,8 +664,8 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Selamawit's objective is to find a mobile payment app that enables her to seamlessly manage her business transactions, track her finances, and easily access customer support. She wants an app that feels familiar and resonates with the Ethiopian culture.",
@@ -687,8 +687,8 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Habtamu's goal is to find a mobile payment app that is straightforward and easy to understand. He wants to be able to perform basic transactions such as sending money, paying bills, and checking his balance without encountering any complexities.",
@@ -710,8 +710,8 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Bethlehem's objective is to find a mobile payment app that provides a visually appealing interface, making her financial transactions enjoyable and engaging. She wants an app that reflects Ethiopian culture and creates a sense of familiarity.",
@@ -721,8 +721,8 @@ export const uiFiles = [
         ],
       },
     ],
-    sketch: ["imgs"],
-    wireframe: ["imgs"],
+    sketch: ["https://dl.dropboxusercontent.com/scl/fi/if7hzuiu3n858n1dzvlbz/sketch1.png?rlkey=33c6pvjp3y7drdwn8l2w8x3er&dl=0","https://dl.dropboxusercontent.com/scl/fi/9ufzy34j1f0q8qbrjlsdy/sketch2.png?rlkey=0inl4jlspnxtkdlqr9fu90yaj&dl=0"],
+    wireframe: ["https://dl.dropboxusercontent.com/scl/fi/fbcjr4skdeip9wqpoel4r/wireframe.png?rlkey=jysgcse4hum5qz22n30rx990f&dl=0"],
     mockup: [
       {
         img: "https://dl.dropboxusercontent.com/scl/fi/ufa8vq3elft17r96bu9mf/Mockup-1.png?rlkey=srs7g4qbk6dpwtztjf808ntly&dl=0",
@@ -760,7 +760,7 @@ export const uiFiles = [
     solution:
       "The Quiz Bet app is specifically designed to address the needs of people seeking an interactive and engaging platform to challenge their knowledge and have fun with friends. By allowing users to choose categories and bet on questions, Quiz Bet offers a unique and thrilling experience that combines both knowledge and excitement. With its competitive element and real-time interactions, the app provides a dynamic and entertaining way for users to test their skills, engage in friendly competition, and enjoy a lively and engaging quiz experience like never before.",
     font: "Poppins",
-    colors: ["#23395D", "#212121", "#F9f9f9"],
+    colors: ["#FFD351","#23395D", "#212121", "#F9f9f9"],
     userPersona: [
       {
         img: "image lists",
@@ -774,14 +774,14 @@ export const uiFiles = [
           "Kevin is a 29-year-old marketing professional from New York City. He is an avid trivia enthusiast and enjoys testing his knowledge in various subjects. Kevin is highly competitive and loves engaging in friendly competitions with his friends.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 80 },
-          { device: "Laptop", usage: 20 },
+          { title: "Mobile", color: '#E38627' , value: 80 },
+          { title: "Laptop", color: '#E38627' , value: 20 },
         ],
         goal: [
           "Kevin's goal is to find an interactive platform that offers challenging quizzes and trivia games to challenge his knowledge and have fun with friends. He wants a platform that not only tests his skills but also provides an exciting and competitive element to keep him engaged.",
@@ -802,14 +802,14 @@ export const uiFiles = [
           "Sarah is a 35-year-old teacher from San Francisco, California. She has a passion for learning and enjoys expanding her knowledge across various subjects. Sarah values interactive and engaging platforms that offer educational content in a fun and entertaining way.",
         favBrand: [""],
         socialMedia: [
-          { platform: "Youtube", value: 50 },
-          { platform: "Linkedin", value: 15 },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "Youtube", color: '#E38627' , value: 50 },
+          { title: "Linkedin", color: '#E38627' , value: 15 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 40 },
-          { device: "Laptop", usage: 60 },
+          { title: "Mobile", color: '#E38627' , value: 40 },
+          { title: "Laptop", color: '#E38627' , value: 60 },
         ],
         goal: [
           "Sarah's goal is to find a platform that combines learning and entertainment, providing her with challenging quizzes and trivia games. She wants an interactive experience that not only tests her knowledge but also offers insightful explanations and educational value.",
@@ -832,12 +832,12 @@ export const uiFiles = [
         socialMedia: [
           { Reddit: "50" },
           { Discord: "15" },
-          { platform: "X", value: 10 },
-          { platform: "Tiktok", value: 35 },
+          { title: "X", color: '#E38627' , value: 10 },
+          { title: "Tiktok", color: '#E38627' , value: 35 },
         ],
         tech: [
-          { device: "Mobile", usage: 40 },
-          { device: "Laptop", usage: 60 },
+          { title: "Mobile", color: '#E38627' , value: 40 },
+          { title: "Laptop", color: '#E38627' , value: 60 },
         ],
         goal: [
           "Alex's goal is to find a platform that provides a modern and technologically advanced trivia experience. He wants a platform that leverages features like augmented reality (AR), virtual reality (VR), or voice-activated quizzes to create an immersive and interactive environment.",
@@ -888,7 +888,7 @@ export const uiFiles = [
     solution:
       "This B2B and delivery app provides a comprehensive solution to businesses by streamlining logistics and delivery management. With real-time tracking, automated processes, and centralized control, the app empowers businesses to optimize their supply chain, minimize delays, and improve overall efficiency. By utilizing this app, businesses can enhance customer satisfaction, reduce costs, and achieve seamless end-to-end logistics operations for their B2B needs.",
     font: "Poppins",
-    colors: ["#212121", "#d4d4d4", "#F9f9f9"],
+    colors: ["#51DCFF","#F9f9f9","#212121"],
     userPersona: [
       {
         img: "image lists",
@@ -903,8 +903,8 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [],
         tech: [
-          { device: "Mobile", usage: 40 },
-          { device: "Laptop", usage: 60 },
+          { title: "Mobile", color: '#E38627' , value: 40 },
+          { title: "Laptop", color: '#E38627' , value: 60 },
         ],
         goal: [
           "Lisa's goal is to find a dedicated B2B and delivery app that allows her to streamline her operations and effectively manage her supply chain. She wants a solution that helps her track inventory, automate order processing, optimize delivery routes, and provide real-time updates to her customers.",
@@ -925,7 +925,7 @@ export const uiFiles = [
           "Mark is a 45-year-old operations manager at a medium-sized manufacturing company. He oversees the production and distribution of goods to various clients and faces challenges in optimizing the logistics and delivery processes.",
         favBrand: [""],
         socialMedia: [],
-        tech: [{ device: "Laptop", usage: 40 }, { Desktop: "60%" }],
+        tech: [{ title: "Laptop", color: '#E38627' , value: 40 }, { title:"Desktop", color: '#E38627' , value: 60 }],
         goal: [
           "Mark's goal is to find a dedicated B2B and delivery app that improves supply chain visibility and enables efficient coordination with suppliers, warehouses, and transportation providers. He wants a solution that streamlines order management, tracks shipments in real-time, and provides analytics for performance evaluation.",
         ],
@@ -946,8 +946,8 @@ export const uiFiles = [
         favBrand: [""],
         socialMedia: [],
         tech: [
-          { device: "Mobile", usage: 90 },
-          { device: "Tablet", usage: 10 },
+          { title: "Mobile", color: '#E38627' , value: 90 },
+          { title: "Tablet", color: '#E38627' , value: 10 },
         ],
         goal: [
           "Amanda's goal is to find a dedicated B2B and delivery app that improves her restaurant's delivery management. She wants a solution that optimizes delivery routes, enables real-time order tracking, and facilitates seamless communication between her staff and delivery drivers.",

@@ -10,7 +10,7 @@ function DesignProcess({primary,paletts}) {
     <div className="flex flex-col items-start gap-4 text-slate-800 dark:text-slate-200">
       <div className='flex flex-col items-start w-fit'>
       <p className="text-2xl font-bold">Design Process</p>
-      <div className="w-1/2 border-b-4 rounded-lg left-0"></div>
+      <div className="w-1/2 border-slate-800 border-b-4 rounded-lg left-0"></div>
       </div>
       <div className="">
       <DesignProcessItems Primary={primary}/>
