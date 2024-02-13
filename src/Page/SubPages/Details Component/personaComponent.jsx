@@ -7,6 +7,7 @@ import photo5 from "../../../assets/Persona/persona5.png";
 import photo6 from "../../../assets/Persona/persona6.png";
 import photo7 from "../../../assets/Persona/persona7.png";
 import photo8 from "../../../assets/Persona/persona8.png";
+import PersonalPieChart from "./Graphs/piechart";
 
 function PersonaItem({ persona, index }) {
   var imagesAvatar = [
@@ -92,7 +93,8 @@ function PersonaItem({ persona, index }) {
               <p className="text-sm font-semibold text-slate-400 dark:text-slate-100">
                 Technologies
               </p>
-              {persona.tech.map((item) => {
+              <PersonalPieChart />
+              {/* {persona.tech.map((item) => {
                 console.log(item);
                 return (
                   <div className="flex gap-2">
@@ -100,7 +102,7 @@ function PersonaItem({ persona, index }) {
                     <p className="text-sm">{item.usage}%</p>
                   </div>
                 );
-              })}
+              })} */}
             </div>
           </div>
         </div>
