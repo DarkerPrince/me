@@ -7,6 +7,7 @@ import photo5 from "../../../assets/Persona/persona5.png";
 import photo6 from "../../../assets/Persona/persona6.png";
 import photo7 from "../../../assets/Persona/persona7.png";
 import photo8 from "../../../assets/Persona/persona8.png";
+import { PieChart } from "react-minimal-pie-chart";
 
 function PersonaItem({ persona, index }) {
   var imagesAvatar = [
@@ -24,31 +25,33 @@ function PersonaItem({ persona, index }) {
       <p className="text-xl font-bold">"Personal Quotes"</p>
       <div className="flex gap-2">
         <div className="flex flex-col gap-2 items-center">
-          <p className=" underline">User Information</p>
-          <div className="flex flex-col gap-1 items-center">
+          <div className="flex flex-col gap-1 items-start">
             <img
               src={imagesAvatar[index]}
               alt=""
               srcset=""
-              className=" h-32 w-full object-cover object-top rounded-lg"
+              className=" h-32 w-48 object-cover object-top rounded-lg"
             />
             <p className="text-Primary font-semibold">{persona.name}</p>
-            <p>{persona.age} years old</p>
-            <div className="flex flex-col p-3 text-sm text-slate-600 dark:text-slate-200 gap-2">
-              <div className="flex gap-4 w-full justify-between">
-                <p>Education</p>
+            <div className="flex flex-col text-sm text-slate-600  items-start dark:text-slate-200 gap-4">
+              <div className="flex flex-col w-full justify-between">
+                <p className="text-slate-500">Education</p>
                 <p className="font-bold">Degree</p>
               </div>
-              <div className="flex gap-4 w-full justify-between">
-                <p>Location</p>
+              <div className="flex flex-col w-full justify-between">
+                <p className="text-slate-500">Age</p>
+                <p className="font-bold">{persona.age} years old</p>
+              </div>
+              <div className="flex flex-col w-full justify-between">
+                <p className="text-slate-500">Location</p>
                 <p className="font-bold">Addis A.</p>
               </div>
-              <div className="flex gap-4 w-full justify-between">
-                <p>Occupation</p>
+              <div className="flex flex-col w-full justify-between">
+                <p className="text-slate-500">Occupation</p>
                 <p className="font-bold">Employed</p>
               </div>
-              <div className="flex gap-4 w-full justify-between">
-                <p>Maritial Stat</p>
+              <div className="flex flex-col w-full justify-between">
+                <p className="text-slate-500">Maritial Stat</p>
                 <p className="font-bold">Engaged</p>
               </div>
             </div>
@@ -78,15 +81,16 @@ function PersonaItem({ persona, index }) {
               <p className="text-sm font-semibold text-slate-400 dark:text-slate-100">
                 Social Media
               </p>
-              {persona.socialMedia.map((item) => {
+              <PieChart data={persona.tech} />
+              {/* {persona.socialMedia.map((item) => {
                 console.log(item);
                 return (
                   <div className="flex gap-2">
-                    <p className="text-sm">{item.platform}</p>{" "}
+                    <p className="text-sm">{item.title}</p>{" "}
                     <p className="text-sm">{item.value}%</p>
                   </div>
                 );
-              })}
+              })} */}
             </div>
             <div className="flex flex-col p-2 w-1/2 bg-slate-100 dark:bg-slate-100/20 rounded-lg">
               <p className="text-sm font-semibold text-slate-400 dark:text-slate-100">
@@ -96,7 +100,7 @@ function PersonaItem({ persona, index }) {
                 console.log(item);
                 return (
                   <div className="flex gap-2">
-                    <p className="text-sm">{item.platform}</p>{" "}
+                    <p className="text-sm">{item.device}</p>
                     <p className="text-sm">{item.usage}%</p>
                   </div>
                 );
