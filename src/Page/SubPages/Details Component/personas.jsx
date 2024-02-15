@@ -40,7 +40,7 @@ function Personas({ primary, paletts, personaList }) {
   return (
     <div style={gradientStyle} className="col-span-2 rounded-2xl">
       <div className="flex flex-col items-start px-8 w-fit">
-        <p className="text-2xl font-bold pt-4">User Persona</p>
+        <p className="text-2xl font-bold pt-4 text-slate-800">User Persona</p>
         <div className="w-1/2 border-slate-800 border-b-4 rounded-lg left-0"></div>
       </div>
       <div

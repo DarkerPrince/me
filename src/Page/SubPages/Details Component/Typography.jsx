@@ -8,7 +8,7 @@ function Typography({ primary, paletts }) {
     <div style={gradientStyle} className=" col-span-2 rounded-2xl px-8 py-4 ">
       <div className="flex flex-col gap-4">
         <div className="flex flex-col items-start w-fit">
-          <p className="text-2xl font-bold dark:text-slate-800">Typography</p>
+          <p className="text-2xl font-bold text-slate-800">Typography</p>
           <div className="w-1/2 border-slate-800 border-b-4 rounded-lg left-0"></div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12 mb-6 bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">

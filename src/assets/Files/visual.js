@@ -1,5 +1,3 @@
-
-
 export const visualFiles =[
     {
         title:"Social Media Post",
@@ -16,7 +14,6 @@ export const visualFiles =[
             "https://dl.dropboxusercontent.com/scl/fi/4tou8eu17a19blglcbseh/Instagram-post-4.png?rlkey=vl5qhvvncsewgzgefwgy22b3o&dl=0",
             "https://dl.dropboxusercontent.com/scl/fi/mbw5jdg9xq5uy6i791ezl/Instagram-post-6.png?rlkey=t8cy9izfab3f35r869p6fqfnn&dl=0",
             "https://dl.dropboxusercontent.com/scl/fi/265gx4429nyw9oxcasnyk/Instagram-post-10.png?rlkey=33d0ql0ojlf6wd83vf5pvwkva&dl=0"
-
         ],
         tag:["Photoshop","Illustrator"]
     },

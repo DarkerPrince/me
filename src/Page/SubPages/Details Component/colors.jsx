@@ -9,7 +9,7 @@ function ColorPaletts({primary,paletts}) {
     <div style={gradientStyle}  className={`rounded-2xl px-8 py-4`}>
     <div className='flex flex-col gap-4'>
     <div className='flex flex-col items-start w-fit'>
-      <p className="text-2xl font-bold">Color Pallets</p>
+      <p className="text-2xl font-bold text-slate-800">Color Pallets</p>
       <div className="w-1/2 border-slate-800 border-b-4 rounded-lg left-0"></div>
       </div>
     <div className="flex flex-wrap gap-2">
