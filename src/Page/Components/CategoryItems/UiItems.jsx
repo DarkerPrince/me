@@ -3,8 +3,7 @@ import React from "react";
 import { BsCardHeading } from "react-icons/bs";
 
 import dash from "../../../assets/workImg/uidash.png";
-import mob from "../../../assets/workImg/uimob.png";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import mob from "../../../assets/workImg/Negat.png";
 import { Link } from "react-router-dom";
 
 function UiItems() {

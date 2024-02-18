@@ -1,32 +1,79 @@
-import React from 'react'
-import mobile from "../../assets/mob.jpeg";
+import React, { useState, useEffect } from "react";
+import { IoMdClose } from "react-icons/io";
 
-function GraphixItems({graphix}) {
+function GraphixItems({ graphix }) {
+  const [imgLoaded, setImageLoaded] = useState(false);
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+    img.src = graphix;
+  }, [graphix]);
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImageUrl, setSelectedImageUrl] = useState("");
+
+  const openModal = (imageUrl) => {
+    setSelectedImageUrl(imageUrl);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImageUrl("");
+    setModalOpen(false);
+  };
+
   return (
-    <div class="relative max-w-sm rounded-lg shadow h-64 w-full">
+    <div className="relative max-w-sm rounded-lg shadow h-64 w-full">
       <img
-        class="rounded-lg w-full h-64 object-cover"
+        className="rounded-lg w-full h-64 object-cover"
         src={graphix.otherImg[0]}
         alt=""
       />
-      <div class="p-4 absolute bottom-0 rounded-b-lg bg-gradient-to-t from-black to-transparent w-full">
-        <h5 class="font-semibold tracking-tight text-white">
-          {graphix.title}
-        </h5>
-        
-        <div className=" flex text-sm flex-wrap gap-3 mt-2">
-        {
-          graphix.tag.map((tag)=>{
-            return <div className="text-bg rounded-sm px-2 text-xs bg-slate-600 text-slate-50">
-            {tag}
-          </div>;
-          })
-        }
-        
+      <div className="felx flex-row bg-gradient-to-t from-black to-transparent p-4 absolute bottom-0 rounded-b-lg  w-full">
+        <div className="flex flex-col bg-black/30 backdrop-blur-lg p-2 rounded relative">
+          <h5 className="font-semibold text-lg tracking-tight text-white">
+            {graphix.title}
+          </h5>
+
+          <div className=" flex text-sm flex-wrap gap-3 mt-2">
+            {graphix.tag.map((tag) => {
+              return (
+                <div className="text-bg rounded-sm px-2 text-xs bg-slate-600 text-slate-50">
+                  {tag}
+                </div>
+              );
+            })}
+          </div>
         </div>
+        <button
+          className="border border-pink-500 hover:border-pink-700 bg-transparent hover:bg-pink-500 hover:text-white text-pink-50 font-medium py-1 px-4 mt-3 rounded"
+          type="button"
+          onClick={() => openModal(graphix.headImg)}
+        >
+          View Items
+        </button>
       </div>
+      {modalOpen && (
+        <div className="fixed inset-0 z-30 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="flex flex-col items-center relative h-full">
+            <img
+              src={graphix.headImg}
+              alt="Modal Image"
+              className="h-full object-contain"
+            />
+            <button
+              onClick={closeModal}
+              className="my-6 mx-3 px-2 py-2 bg-Primary text-white shadow-sm top-0 right-6 absolute z-20 rounded-full"
+            >
+              <IoMdClose />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default GraphixItems
+export default GraphixItems;

@@ -41,10 +41,13 @@ function Portfolio() {
     <div className={`${theme}`}>
       <div className="w-full bg-[#fdfbf6] dark:bg-[#121212] ">
         <div className="relative flex flex-col items-center lg:max-w-[900px] justify-center  font-leuleAfa self-center mx-auto px-4">
-          <img src={background} alt="back" className="absolute top-0 z-" />
-          <div className="text-white absolute top-0 right-0 w-full h-screen">
+          <img src={background} alt="back" className="absolute top-0 -z-2" />
+
+          <div className="text-white absolute top-0 right-0 w-full z-10">
             <button
-              className=" p-4 text-lg shadow-md rounded-full backback fixed bottom-6 right-6"
+              className={`p-4 text-lg shadow-md rounded-full ${
+                theme === "dark" ? "backback" : "bg-slate-800"
+              }  fixed bottom-6 right-6`}
               onClick={handleThemeSwitch}
             >
               {theme === "dark" ? <IoMdSunny /> : <MdDarkMode />}

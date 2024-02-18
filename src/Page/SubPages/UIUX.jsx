@@ -23,7 +23,7 @@ function UIUX() {
           {uiFiles.map((item, index) => {
             return (
               <div key={index}>
-                <WorkItems blogItem={item} />
+                <WorkItems blogItem={item} index={index} />
               </div>
             );
           })}

@@ -15,28 +15,12 @@ var sampleimages = [
   "https://dl.dropboxusercontent.com/scl/fi/o9p7jc267agq2vhzsyvpu/Campaign-Members.png?rlkey=yakffdxw5skmd3uu2lti786jy&dl=0",
   "https://dl.dropboxusercontent.com/scl/fi/vob0e0dk8uyiy2rrkzwuw/Frames.png?rlkey=sk7t07fi4p73wvvkkvd5j6q9b&dl=0",
 ];
-var socialMediaSample = [
-  "https://drive.google.com/uc?export=view&id=10N1OlB1vXMpNw5yrqdPU7tzx_2Yu6t_2",
-  "https://drive.google.com/uc?export=view&id=1FivsMV1xxyxAFg8TIVh9UgcIt36bAkxA",
-  "https://drive.google.com/uc?export=view&id=17FnK9CYDC8FaQcCZux7GWvMwDREy4u_u",
-  "https://drive.google.com/uc?export=view&id=1hc9qftcv8hbQOA67zuTOYkqAvu7vJJZa",
-  "https://drive.google.com/uc?export=view&id=1FivsMV1xxyxAFg8TIVh9UgcIt36bAkxA",
-  "https://drive.google.com/uc?export=view&id=17FnK9CYDC8FaQcCZux7GWvMwDREy4u_u",
-  "https://drive.google.com/uc?export=view&id=1hc9qftcv8hbQOA67zuTOYkqAvu7vJJZa",
-  "https://drive.google.com/uc?export=view&id=14yMegGOXNZ743tp0IOIpGThSRGIB695K",
-  "https://drive.google.com/uc?export=view&id=1JKhuecDuB2j2-3cJKF1bORKF_r0BoCTZ",
-  "https://drive.google.com/uc?export=view&id=1WdAsvHc-b4g1_NIKwa1gO8HxKWizFrOg",
-  "https://drive.google.com/uc?export=view&id=1Oik6iqGivMvQgfhmG0u2YNlXlSX6k1xd",
-  "https://drive.google.com/uc?export=view&id=1AnrqKndYkTQwFNt2k9a49YqXnyO3Kl-A",
-  "https://drive.google.com/uc?export=view&id=1lBI_qDi8k6qZo1c6a9Oc1AQ2lLAvn08X",
-];
 
 function Showcase() {
   return (
     <div className="flex flex-col items-center">
       <div className=" px-12 lg:w-1/2 flex flex-col items-center justify-center">
         <p className="font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
-          {" "}
           Sample Showcase
         </p>
         <p className="text-center text-sm text-slate-400">

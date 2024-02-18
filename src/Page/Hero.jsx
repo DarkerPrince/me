@@ -1,14 +1,15 @@
 import React from "react";
 import heroImg from "../assets/hero.png";
 import { AiFillBehanceCircle } from "react-icons/ai";
-import { RiInstagramFill } from "react-icons/ri";
 import { TbBrandDribbbleFilled } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTelegram } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import FunButton from "./Components/ContactmeButton";
 
 function HeroSection() {
   return (
     <div className=" flex flex-col-reverse items-center justify-center  ">
-      <div className="flex flex-col gap-2 items-center justify-center">
+      <div className="flex flex-col gap-2 items-center justify-center ">
         <h1 className="text-4xl  lg:text-6xl font-extrabold  md:text-center dark:text-slate-200">
           Leul Sisay G.
         </h1>
@@ -21,14 +22,20 @@ function HeroSection() {
           pages and mobile apps that feel like pure magic, all thanks to my
           talent for UI design.
         </p>
-        <div className="flex gap-4">
-          <AiFillBehanceCircle className="text-gray-300 text-3xl hover:text-Primary transition duration-300 ease-in-out" />
-          <TbBrandDribbbleFilled className="text-gray-300 text-3xl hover:text-Primary transition duration-300 ease-in-out" />
-          <RiInstagramFill className="text-gray-300 text-3xl hover:text-Primary transition duration-300 ease-in-out" />
-          <div className="border-l border-gray-300 pl-4">
-            <FaGithub className="text-gray-300 text-3xl hover:text-black dark:hover:text-white transition duration-300 ease-in-out" />
-          </div>
+        <div className="flex gap-4 mt-4 md:mt-6 z-10 mb-4">
+          <a href="https://www.behance.net/luel_sisay">
+            <AiFillBehanceCircle className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
+          </a>
+          <a href="https://dribbble.com/PrinceMag">
+            <TbBrandDribbbleFilled className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
+          </a>
+          <a href="https://github.com/DarkerPrince">
+            <div className="border-l border-gray-300 pl-4">
+              <FaGithub className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
+            </div>
+          </a>
         </div>
+        <FunButton />
       </div>
       <img src={heroImg} alt="hero" className=" xl:w-1/2" />
     </div>

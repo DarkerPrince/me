@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { uiFiles } from "../../assets/Files/UI";
 
-function WorkItems({ blogItem }) {
+function WorkItems({ blogItem, index }) {
   const navigate = useNavigate();
 
   function navigateMethod(idindex) {
@@ -13,9 +13,9 @@ function WorkItems({ blogItem }) {
   return (
     <div
       className=" relative max-w-sm p-4 h-full overflow-hidden group rounded-xl z-20"
-      onClick={() => navigateMethod(blogItem.id)}
+      onClick={() => navigateMethod(index)}
     >
-      <span className="absolute top-10 -z-10 h-10 w-10 rounded-full backbac bg-gradient-to-br from-purple-700 to-pink-900 dark:bg-gradient-to-br dark:from-purple-100 dark:to-pink-100 opacity-10 transition-all duration-500 ease-in-out group-hover:scale-[30]"></span>
+      <span className="absolute -z-10 h-4 w-4 top-1/3 left-1/2 flex items-center  rounded-full bg-gradient-to-br from-slate-300 to-slate-700 dark:bg-gradient-to-br dark:from-purple-100 dark:to-pink-100 opacity-10 transition-all duration-500 ease-in-out group-hover:scale-[50]"></span>
       <img
         className="h-56 w-full object-cover  transition-all duration-400 ease-in-out rounded-lg"
         src={blogItem.headerimg}
@@ -29,7 +29,7 @@ function WorkItems({ blogItem }) {
         </div>
 
         {/* <p className="mb-3 text-sm font-normal text-gray-700 ">{blogItem.content}</p> */}
-        <div className=" flex text-sm flex-wrap gap-2 mt-4">
+        <div className=" flex text-sm flex-wrap gap-2">
           {blogItem.tag.map((tagItem) => {
             return (
               <div className="text-bg rounded-sm px-2 text-xs bg-slate-100 text-slate-500 dark:bg-slate-50/20 dark:text-slate-400">
