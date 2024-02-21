@@ -30,7 +30,7 @@ function Skills() {
           <img src={Ai} alt="css" className="md:h-16 h-12" />
           <img src={Pr} alt="jsLogo" className="md:h-16 h-12" />
         </div>
-        <div className="absolute flex flex-col invisible group-hover:visible transition-all duration-100 ease-in-out items-center justify-center w-full h-full  backdrop-blur-sm bg-white/70 dark:bg-[#121212]/70">
+        <div className="absolute flex flex-col invisible group-hover:visible transition-all duration-100 ease-in-out items-center justify-center w-full h-full  backdrop-blur-sm bg-[#fdfbf6]/70 dark:bg-[#121212]/70">
           <p className=" text-2xl font-light font-leuleScri text-center dark:text-slate-200">
             "Everything should be made as simple as possible, but not simpler."
           </p>
@@ -53,7 +53,7 @@ function Skills() {
           <img src={cssLogo} alt="css" className="md:h-16 h-12" />
           <img src={jsLogo} alt="jsLogo" className="md:h-16 h-12" s />
         </div>
-        <div className="absolute flex invisible group-hover:visible transition-all duration-100 ease-in-out items-center justify-center w-full h-full  backdrop-blur-sm bg-white/70 dark:bg-[#121212]/70">
+        <div className="absolute flex invisible group-hover:visible transition-all duration-100 ease-in-out items-center justify-center w-full h-full  backdrop-blur-sm bg-[#fdfbf6]/70 dark:bg-[#121212]/70">
           <p className=" text-2xl font-semibold text-center dark:text-slate-200">
             Code that is Effective, Readable, and Maintainable
           </p>

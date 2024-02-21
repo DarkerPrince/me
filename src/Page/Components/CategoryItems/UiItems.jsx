@@ -31,7 +31,7 @@ function UiItems() {
             </div>
           </div>
         </div>
-        <div className="h-48 w-full backback  overflow-hidden rounded-xl flex items-end  ">
+        <div className="h-48 w-full backback overflow-hidden  group-hover:overflow-visible rounded-xl flex items-end  ">
           <div className="flex w-full items-end justify-center align-middle ">
             <img
               src={dash}
