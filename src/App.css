@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .tag2 {
   @apply bg-slate-700 rounded-md inline py-1 px-4 text-xs bg-white/20 text-slate-50;
 }
@@ -17,6 +19,8 @@
   src: url("./assets/font/Satisfy.ttf") format("truetype");
   /* Add more formats if necessary */
 }
+
+
 
 @keyframes shake {
   0% {

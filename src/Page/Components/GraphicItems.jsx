@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
+import ImageGallery from "react-image-gallery";
+import DesignImagesModal from "../SubPages/Details Component/Graphs/ModalGraphix";
 
-function GraphixItems({ graphix }) {
+function GraphixItems({ graphix, key }) {
   const [imgLoaded, setImageLoaded] = useState(false);
   useEffect(() => {
     const img = new Image();
@@ -23,13 +25,29 @@ function GraphixItems({ graphix }) {
     setSelectedImageUrl("");
     setModalOpen(false);
   };
+  var imagePreview = graphix.otherImg[0];
+
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
   return (
     <div className="relative max-w-sm rounded-lg shadow h-64 w-full">
       <img
         className="rounded-lg w-full h-64 object-cover"
-        src={graphix.otherImg[0]}
-        alt=""
+        src={graphix.headImg}
+        alt={graphix.title}
       />
       <div className="felx flex-row bg-gradient-to-t from-black to-transparent p-4 absolute bottom-0 rounded-b-lg  w-full">
         <div className="flex flex-col bg-black/30 backdrop-blur-lg p-2 rounded relative">
@@ -58,11 +76,15 @@ function GraphixItems({ graphix }) {
       {modalOpen && (
         <div className="fixed inset-0 z-30 flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="flex flex-col items-center relative h-full">
-            <img
+            {/* <img
               src={graphix.headImg}
               alt="Modal Image"
-              className="h-full object-contain"
-            />
+             
+            /> */}
+
+            <div>
+              <DesignImagesModal imagesList={graphix.otherImg} />
+            </div>
             <button
               onClick={closeModal}
               className="my-6 mx-3 px-2 py-2 bg-Primary text-white shadow-sm top-0 right-6 absolute z-20 rounded-full"
