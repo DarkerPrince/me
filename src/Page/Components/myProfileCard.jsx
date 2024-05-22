@@ -1,9 +1,8 @@
 import React from "react";
 import profileImg from "../../assets/profile.png";
 import { AiFillBehanceCircle } from "react-icons/ai";
-import { RiInstagramFill } from "react-icons/ri";
 import { TbBrandDribbbleFilled } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTelegram } from "react-icons/fa";
 
 function MyProfileCard() {
   return (
@@ -18,17 +17,17 @@ function MyProfileCard() {
         <span class="text-sm text-gray-500 text-center">
           UI/UX Designer & Web Developer
         </span>
-        <div className="flex gap-4 mt-4 md:mt-6">
+        <div className="flex gap-4 mt-4 md:mt-6 z-10">
           <a href="https://www.behance.net/luel_sisay">
             <AiFillBehanceCircle className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
           </a>
           <a href="https://dribbble.com/PrinceMag">
             <TbBrandDribbbleFilled className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
           </a>
-          <a href="">
-            <RiInstagramFill className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
+          <a href="https://t.me/PrinceMagIV">
+            <FaTelegram className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
           </a>
-          <a href="">
+          <a href="https://github.com/DarkerPrince">
             <div className="border-l border-gray-300 pl-4">
               <FaGithub className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
             </div>

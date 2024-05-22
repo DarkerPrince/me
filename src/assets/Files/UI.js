@@ -1,6 +1,441 @@
 export const uiFiles = [
   {
-    id: 0,
+    title: "Start-UP Website",
+    id: 1,
+    headerimg:
+      "https://dl.dropboxusercontent.com/scl/fi/jusshxs4fuwqqtp1ucpdf/startup-image.png?rlkey=g82tdn2goxq2b12ilxr78wqc5&dl=0",
+    hashimg: "-",
+    primarycolor: "#FDD011",
+    subtitle: "Build yourself a great story.",
+    problem:
+      "Entrepreneurs often face challenges when it comes to sharing their startup ideas, securing investment, and protecting their intellectual property. Without a dedicated website platform, it can be difficult for them to showcase their concepts effectively, attract funding, and navigate the patent process. This can hinder their ability to bring their ideas to life and make a significant impact in the business world.",
+    solution:
+      "The solution lies in the website platform I have designed, which addresses these challenges head-on. It provides entrepreneurs with a user-friendly interface to showcase their startup ideas in a clear and compelling manner, ensuring maximum exposure to potential investors. Through interactive features and comprehensive project profiles, entrepreneurs can effectively communicate their concepts, highlighting their unique value proposition and growth potential. By leveraging this platform, entrepreneurs can enhance their chances of attracting the right investors who share their vision and are willing to provide the necessary funding to bring their ideas to fruition.",
+    font: "Poppins",
+    colors: ["#FC9F12", "#00B4DB", "#212121"],
+    userPersona: [
+      {
+        img: "male4",
+        name: "Michael Anderson",
+        married: false,
+        age: 35,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Michael is a 35-year-old serial entrepreneur based in Silicon Valley. He holds an MBA degree and has successfully launched multiple tech startups. Michael is known for his innovative ideas and strong business acumen.",
+        favBrand: [""],
+        socialMedia: [
+          { name: "Youtube", color: "#E38627", value: 50 },
+          { name: "Linkedin", color: "#E38627", value: 15 },
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Tiktok", color: "#E38627", value: 35 },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 30 },
+          { name: "Laptop", color: "#E38627", value: 70 },
+        ],
+        goal: [
+          "Michael's goal is to connect with potential investors and secure funding for his latest startup venture. He aims to showcase his concept effectively, protect his intellectual property, and gain traction in the tech industry.",
+        ],
+        frustration: [
+          "Michael faces challenges in finding a platform that allows him to present his startup idea professionally and securely. He also struggles with navigating the patent process effectively and ensuring his intellectual property is adequately protected.",
+        ],
+      },
+      {
+        img: "female3",
+        name: "Emily Chen",
+        married: false,
+        age: 28,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Emily is a 28-year-old aspiring entrepreneur based in New York City. She has a degree in Business Administration and is passionate about social impact startups. Emily aims to create a business that combines sustainability and technology.",
+        favBrand: [""],
+        socialMedia: [
+          { name: "Youtube", color: "#E38627", value: 50 },
+          { name: "Linkedin", color: "#E38627", value: 15 },
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Instagram", color: "#E38627", value: 35 },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 70 },
+          { name: "Laptop", color: "#E38627", value: 30 },
+        ],
+        goal: [
+          "Emily's objective is to find a platform that helps her effectively communicate her startup idea, connect with like-minded individuals, and attract potential partners or co-founders who share her vision.",
+        ],
+        frustration: [
+          "Emily finds it challenging to find a platform that focuses on social impact startups and provides resources for securing investment. She also faces difficulties in navigating the legal aspects of starting a business, including protecting her intellectual property.",
+        ],
+      },
+      {
+        img: "male3",
+        name: "David Patel",
+        married: false,
+        age: 42,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "David is a 42-year-old experienced entrepreneur based in London. He has founded and sold multiple businesses in the software development industry. David holds a degree in Computer Science and is known for his technical expertise.",
+        favBrand: [""],
+        socialMedia: [
+          { name: "Youtube", color: "#E38627", value: 50 },
+          { name: "Linkedin", color: "#E38627", value: 15 },
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Instagram", color: "#E38627", value: 35 },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 70 },
+          { name: "Laptop", color: "#E38627", value: 30 },
+        ],
+        goal: [
+          "David's goal is to find a platform that allows him to share his startup ideas with potential investors, collaborate with other entrepreneurs, and protect his intellectual property rights.",
+        ],
+        frustration: [
+          "David faces challenges in finding a platform that caters specifically to tech startups and provides a secure environment for sharing proprietary information. He also struggles with keeping up with the latest patent laws and regulations.",
+        ],
+      },
+    ],
+    sketch: [],
+    wireframe: [],
+    mockup: [
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/itoc8pjdvgrmqym41gyaa/Start-up.png?rlkey=r22jx97dsaobecglhcskym4zp&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/0orqhzvyzf763qojneygc/tab3.png?rlkey=5mvnsvo9mmcubtsmwgyxrd5rb&dl=0",
+        title: "Follow up Page",
+        subtitle:
+          "Our startup's follow-up pages have a user-friendly design that allows investors to track their investments, receive updates, and communicate with the startup team. The layout presents key information, such as financial reports and milestones, in a visually appealing format. The goal is to provide an engaging and transparent interface for investors to actively participate in the startup's progress.",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/2fk5v471mzom6cxynlk35/tab2.png?rlkey=otc2kap335mwuzsxiok0nahjy&dl=0",
+        title: "Fund Raising Startups",
+        subtitle:
+          "Our website platform offers a user-friendly interface for entrepreneurs to showcase their startup ideas effectively. Through interactive features and comprehensive project profiles, they can communicate their unique value proposition and attract potential investors. With the ability for investors to express interest and like ideas, entrepreneurs have increased opportunities for funding and turning their ideas into reality.",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/kh2cruha2l1kthnc8a01q/tab.png?rlkey=gpbe3qw4bivffw23wg2d2f2hf&dl=0",
+        title: "",
+        subtitle: "",
+      },
+    ],
+    sampleView: [
+      "https://dl.dropboxusercontent.com/scl/fi/q6z28npxo170i4a6msg3k/categories-list.png?rlkey=psobsdavj7knhrk6fi4rvhx7k&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/m0lnpaqjg27cg1h09fjpf/Slide-16_9-1.png?rlkey=7rp8epsspvcryq0krdeiy0o6u&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/z4h4ibazykdhaig6m69dc/more-detials.png?rlkey=gmmjttz90jvmrxgjvrh4k5wlz&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/itoc8pjdvgrmqym41gyaa/Start-up.png?rlkey=r22jx97dsaobecglhcskym4zp&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/0u9vpoeprx3x15jfqfow2/home-page.png?rlkey=bqp9vyqb96em7v5obkhitcwhe&dl=0",
+    ],
+    tag: ["UI/UX", "Figma", "Photoshop", "Illustrator"],
+  },
+  {
+    title: "Negat Events",
+    id: 2,
+    headerimg:
+      "https://dl.dropboxusercontent.com/scl/fi/hcmzs6e4zr6k207cp58kh/Negat.png?rlkey=xkytz23ywogcdqzfh95y4ggiw&dl=0",
+    hashimg: "-",
+    primarycolor: "#F7BE2D",
+    subtitle: "Embrace the Randomness",
+    problem:
+      "One problem users may face with the Negat Events platform is the potential for inaccurate and outdated event information. Delayed updates, incomplete or incorrect data, canceled or postponed events without proper notification, limited filtering options, and a lack of user feedback loop can all contribute to this issue. To address it, the platform should focus on timely data updates, implementing data verification mechanisms, providing real-time notifications for changes, enhancing filtering options, and integrating a user feedback system for improved accuracy and user satisfaction.",
+    solution:
+      "To address the problem of inaccurate and outdated event information in the Negat application, solutions include direct communication with event organizers for timely updates, data verification mechanisms, real-time notifications, improved filtering options, and a user feedback system for continuous improvement.",
+    font: "Outfit / Worksand",
+    colors: ["#FC5801", "#212121"],
+    userPersona: [
+      {
+        img: "female1",
+        name: "Sarah Johnson",
+        married: false,
+        age: 28,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Sarah is a 28-year-old event enthusiast based in Chicago. She works as an event planner and loves exploring new events in her city. Sarah holds a degree in Hospitality Management and is always on the lookout for unique experiences.",
+        favBrand: [""],
+        socialMedia: [
+          { name: "Youtube", color: "#E38627", value: 50 },
+          { name: "Facebook", color: "#E38627", value: 15 },
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Tiktok", color: "#E38627", value: 35 },
+          { name: "Instagram", color: "#E38627", value: 35 },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Laptop", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Sarah's goal is to find a platform that provides accurate and up-to-date event information in her area. She wants to discover a wide range of events, filter them based on her preferences, and receive timely notifications about any changes or cancellations.",
+        ],
+        frustration: [
+          "Sarah often encounters outdated event details, which leads to wasted time and missed opportunities. She also finds it challenging to filter events based on specific criteria or receive prompt notifications when there are changes or cancellations.",
+        ],
+      },
+      {
+        img: "male1",
+        name: "Mark Temesgen",
+        married: false,
+        age: 35,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Mark is a 35-year-old music lover and concert-goer from Seattle. He works in the tech industry and enjoys attending live music events in his spare time. Mark has a degree in Computer Science and is always looking for upcoming shows.",
+        favBrand: [""],
+        socialMedia: [
+          { Reddit: "50" },
+          { name: "Facebook", color: "#E38627", value: 15 },
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Tiktok", color: "#E38627", value: 35 },
+          { name: "Instagram", color: "#E38627", value: 35 },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Laptop", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Mark's objective is to find a platform that provides accurate and reliable information about music events in his city. He wants to discover new artists, buy tickets, and receive real-time updates about lineup changes or concert rescheduling.",
+        ],
+        frustration: [
+          "Mark often encounters outdated or incomplete event listings, leading to missed concerts or incorrect ticket purchases. He also struggles to find a platform that offers comprehensive filtering options to discover events based on music genres or venues.",
+        ],
+      },
+      {
+        img: "female2",
+        name: "Emily Collins",
+        married: false,
+        age: 42,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Emily is a 42-year-old art enthusiast based in London. She works as an art curator and enjoys attending gallery openings and exhibitions. Emily holds a degree in Art History and is passionate about discovering new artists and art events.",
+        favBrand: [""],
+        socialMedia: [
+          { name: "Facebook", color: "#E38627", value: 15 },
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Linkedin", color: "#E38627", value: 35 },
+          { name: "Instagram", color: "#E38627", value: 35 },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Tablet", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Emily's goal is to find a platform that provides accurate and comprehensive information about art events in her city. She wants to explore various art forms, receive timely updates about exhibition openings, and filter events based on specific art genres or galleries",
+        ],
+        frustration: [
+          "Emily often encounters incomplete or outdated event details when it comes to art exhibitions and gallery openings. It is challenging for her to find a platform that offers a wide range of art events from diverse galleries and provides reliable updates.",
+        ],
+      },
+      {
+        img: "male4",
+        name: "Alex Nguyen",
+        married: false,
+        age: 30,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Alex is a 30-year-old sports enthusiast based in Melbourne. He loves attending live sporting events and supporting his favorite teams. Alex has a degree in Sports Management and enjoys the excitement of being part of a live crowd.",
+        favBrand: [""],
+        socialMedia: [
+          { name: "X", color: "#E38627", value: 10 },
+          { name: "Linkedin", color: "#E38627", value: 35 },
+          { Telegram: "35" },
+        ],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Tablet", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Alex's objective is to find a platform that provides accurate and real-time information about sports events in his city. He wants to discover upcoming matches, buy tickets, and receive notifications about any changes or cancellations.",
+        ],
+        frustration: [
+          "Alex often faces challenges with inaccurate or delayed event updates, resulting in missed opportunities to attend games or changes in match schedules. He also finds it difficult to filter events based on specific sports or teams of interest.",
+        ],
+      },
+    ],
+    sketch: [],
+    wireframe: [
+      "https://dl.dropboxusercontent.com/scl/fi/htennt8b3bzbyomyz9hdd/negatwireframe.png?rlkey=sscehnra0ly28smb7zrs77dxq&dl=0",
+    ],
+    mockup: [
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/rf6as8o37r741i4yxnzor/Mock-1.png?rlkey=68kuf85c4wgwxahw7rqwhzld2&dl=0",
+        title: "Upcoming Events Newsfeed",
+        subtitle:
+          "The upcoming events newsfeed on the Negat platform has a simple and intuitive UI design, displaying chronological event listings with concise details for easy browsing and engagement",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/zoaubm2s8eestx2xoqjws/Mock-3.png?rlkey=jtsrzrqhawlvygrbtmhgprva1&dl=0",
+        title: "Download Negat from Playstore",
+        subtitle: "💛💛💛",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/1tt60vnxqo10tqjbm21w8/Mock-2.png?rlkey=i9m0n8lm4c3s8j92effdmfpmn&dl=0",
+        title: "Visit the Website",
+        subtitle: "Join us on negatevents.com",
+      },
+    ],
+    sampleView: [
+      "https://dl.dropboxusercontent.com/scl/fi/zoaubm2s8eestx2xoqjws/Mock-3.png?rlkey=jtsrzrqhawlvygrbtmhgprva1&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/t3xncg8f1vn7b5306u8p5/Hero-page.png?rlkey=z2p49ran6c07nfpyklly5baef&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/ytdcaqa6vq6xs2hr8dwn8/Benefits-of-using-this-app.png?rlkey=qgfh7e10s4q7zqblaj6vl8j2t&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/xhso1zsdwmv2eke25zb43/Download-now-page.png?rlkey=j1pnj75aby2rx418aubcdwebx&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/cgknzt8yld8k6xmxztm97/Landing-page.png?rlkey=kpchf0j2ft8j7bb4a5ny9d68d&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/tfaf03m3nngp46uy5r355/Upcoming-events.png?rlkey=gf66z37939rwm1q71gzfglz92&dl=0",
+    ],
+    tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
+  },
+  {
+    title: "Telebirr Super app",
+    id: 3,
+    headerimg:
+      "https://dl.dropboxusercontent.com/scl/fi/3zyvez763sv97tqwf4c4s/mobtelebirrX.png?rlkey=s0m8ol0814057kk79jt6okuas&dl=0",
+    hashimg: "-",
+    primarycolor: "#008FD5",
+    subtitle: "Empowering Ethiopia's Digital Revolution",
+    problem:
+      "The current Tele Birr app lacks user-friendliness and fails to provide an appealing and engaging experience for Ethiopian users. Users face difficulties in completing tasks efficiently and quickly, resulting in frustration and a lack of engagement with the app. The existing design does not resonate with the Ethiopian audience, missing an opportunity to create a sense of familiarity and connection.",
+    solution:
+      "To address these issues, a conceptual redesign of the Tele Birr app is proposed. The new design aims to enhance user experience and engagement by incorporating elements that reflect Ethiopian culture and values. The app will be redesigned with a warm and friendly interface, featuring Ethiopian-inspired colors, patterns, and imagery. The user interface will be simplified, making it intuitive and easy to navigate, allowing users to complete tasks more quickly and directly. Additionally, personalized features and notifications will be integrated to create a more engaging and personalized experience. The overall goal is to make the Tele Birr app more appealing, user-friendly, and culturally relevant for Ethiopian users, fostering a stronger connection and encouraging increased usage and engagement.",
+    font: "Poppins",
+    colors: ["#3D8BFF", "#FFB90C", "#212121", "#04A94D", "#EA1F27", "#D6D6D6"],
+    userPersona: [
+      {
+        img: "male2",
+        name: "Amanuel Tadesse",
+        married: false,
+        age: 26,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Amanuel is a 26-year-old university student from Addis Ababa, Ethiopia. He is pursuing a degree in Computer Science and is passionate about technology and mobile apps. Amanuel is always on the lookout for user-friendly and engaging apps that simplify his daily tasks.",
+        favBrand: [""],
+        socialMedia: [],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Laptop", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Amanuel's goal is to find a mobile payment app that is intuitive, easy to navigate, and provides a seamless user experience. He wants to send and receive money, pay utility bills, and perform other financial transactions efficiently without encountering any usability issues.",
+        ],
+        frustration: [
+          "Amanuel faces difficulties with the current Tele Birr app, such as confusing navigation, slow transaction processing, and a lack of visual appeal. These issues hinder his ability to complete transactions quickly and efficiently, leading to frustration.",
+        ],
+      },
+      {
+        img: "female3",
+        name: "Selamawit Assefa",
+        married: false,
+        age: 32,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          " Selamawit is a 32-year-old working professional based in Dire Dawa, Ethiopia. She runs her own small business and relies on mobile payment apps for day-to-day transactions. Selamawit values user-friendly interfaces and engaging experiences that simplify financial management.",
+        favBrand: [""],
+        socialMedia: [],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Laptop", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Selamawit's objective is to find a mobile payment app that enables her to seamlessly manage her business transactions, track her finances, and easily access customer support. She wants an app that feels familiar and resonates with the Ethiopian culture.",
+        ],
+        frustration: [
+          "Selamawit finds it challenging to navigate the current Tele Birr app, resulting in time-consuming transactions and difficulty in accessing support when needed. The lack of visual appeal and cultural context in the app also makes it less engaging for her.",
+        ],
+      },
+      {
+        img: "male1",
+        name: "Habtamu Berhanu",
+        married: false,
+        age: 42,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Habtamu is a 42-year-old government employee in Addis Ababa, Ethiopia. He is not very tech-savvy but is open to using mobile apps for convenient financial transactions. Habtamu values simplicity and ease of use in apps to ensure a smooth user experience.",
+        favBrand: [""],
+        socialMedia: [],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Laptop", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Habtamu's goal is to find a mobile payment app that is straightforward and easy to understand. He wants to be able to perform basic transactions such as sending money, paying bills, and checking his balance without encountering any complexities.",
+        ],
+        frustration: [
+          "Habtamu struggles with the current Tele Birr app due to its complex user interface and lack of clear instructions. This leads to confusion and difficulties in completing transactions. He often feels overwhelmed and unsure about navigating the app effectively.",
+        ],
+      },
+      {
+        img: "female4",
+        name: "Bethlehem Mengistu",
+        married: false,
+        age: 38,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Bethlehem is a 38-year-old stay-at-home mother in Bahir Dar, Ethiopia. She manages the household finances and primarily uses mobile payment apps for bill payments and grocery shopping. Bethlehem values a visually pleasing and engaging user experience.",
+        favBrand: [""],
+        socialMedia: [],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 80 },
+          { name: "Laptop", color: "#E38627", value: 20 },
+        ],
+        goal: [
+          "Bethlehem's objective is to find a mobile payment app that provides a visually appealing interface, making her financial transactions enjoyable and engaging. She wants an app that reflects Ethiopian culture and creates a sense of familiarity.",
+        ],
+        frustration: [
+          "Bethlehem finds the current Tele Birr app dull and lacking in engaging design elements. She feels disconnected from the app due to the absence of Ethiopian cultural references. The app's lack of visual appeal makes her financial management tasks less enjoyable.",
+        ],
+      },
+    ],
+    sketch: [
+      "https://dl.dropboxusercontent.com/scl/fi/if7hzuiu3n858n1dzvlbz/sketch1.png?rlkey=33c6pvjp3y7drdwn8l2w8x3er&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/9ufzy34j1f0q8qbrjlsdy/sketch2.png?rlkey=0inl4jlspnxtkdlqr9fu90yaj&dl=0",
+    ],
+    wireframe: [
+      "https://dl.dropboxusercontent.com/scl/fi/fbcjr4skdeip9wqpoel4r/wireframe.png?rlkey=jysgcse4hum5qz22n30rx990f&dl=0",
+    ],
+    mockup: [
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/ufa8vq3elft17r96bu9mf/Mockup-1.png?rlkey=srs7g4qbk6dpwtztjf808ntly&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/gp133f1gjy1v2eqsu0uql/Mockup-2.png?rlkey=ovmjpx6ixag7utxs6ihdhe8n9&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/4xkdet88znrxyesv5aovk/Mockup-3.png?rlkey=54uje4wlllhpyicpsqc04fktp&dl=0",
+        title: "",
+        subtitle: "",
+      },
+    ],
+    sampleView: [
+      "https://dl.dropboxusercontent.com/scl/fi/9svzkbnpk2ptnnvzmoenz/Telebirr-Picture-2-2.png?rlkey=xwy1mc18331w7280ushcgsv0b&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/2bxbxpwnt3wi8wyiwowft/Telebirr-Picture-3.png?rlkey=9rdeqb9uetbzbwebxb1rx47j1&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/sb4le2ulngl310s5ew3zy/Telebirr-Picture-2.png?rlkey=br052htgz0xpujczxnoslj4fk&dl=0",
+    ],
+    tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
+  },
+  {
+    id: 4,
     title: "Sukify Influencer Platform",
     headerimg:
       "https://dl.dropboxusercontent.com/scl/fi/y38mkfnml2mu31aked96z/Suk-Header.png?rlkey=pay7n3zh65uucws5cgayt77hf&dl=0",
@@ -177,143 +612,149 @@ export const uiFiles = [
     tag: ["UI/UX", "Figma", "Photoshop", "Illustrator"],
   },
   {
-    title: "Start-UP Website",
-    id: 1,
+    title: "ACT B2B",
+    id: 5,
     headerimg:
-      "https://dl.dropboxusercontent.com/scl/fi/jusshxs4fuwqqtp1ucpdf/startup-image.png?rlkey=g82tdn2goxq2b12ilxr78wqc5&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/n03gihl9ti2srnuy8dpmw/ACT.png?rlkey=18xefj1k4ix2kzuasedpdifu1&dl=0",
     hashimg: "-",
-    primarycolor: "#FDD011",
-    subtitle: "Build yourself a great story.",
+    primarycolor: "#00B3DF",
+    subtitle: "Transforming Business Logistics with Speed.",
     problem:
-      "Entrepreneurs often face challenges when it comes to sharing their startup ideas, securing investment, and protecting their intellectual property. Without a dedicated website platform, it can be difficult for them to showcase their concepts effectively, attract funding, and navigate the patent process. This can hinder their ability to bring their ideas to life and make a significant impact in the business world.",
+      "Businesses struggle with inefficient logistics and delivery management, leading to delays, errors, and reduced customer satisfaction. A lack of a dedicated B2B and delivery app hinders streamlined operations and effective supply chain management.",
     solution:
-      "The solution lies in the website platform I have designed, which addresses these challenges head-on. It provides entrepreneurs with a user-friendly interface to showcase their startup ideas in a clear and compelling manner, ensuring maximum exposure to potential investors. Through interactive features and comprehensive project profiles, entrepreneurs can effectively communicate their concepts, highlighting their unique value proposition and growth potential. By leveraging this platform, entrepreneurs can enhance their chances of attracting the right investors who share their vision and are willing to provide the necessary funding to bring their ideas to fruition.",
+      "This B2B and delivery app provides a comprehensive solution to businesses by streamlining logistics and delivery management. With real-time tracking, automated processes, and centralized control, the app empowers businesses to optimize their supply chain, minimize delays, and improve overall efficiency. By utilizing this app, businesses can enhance customer satisfaction, reduce costs, and achieve seamless end-to-end logistics operations for their B2B needs.",
     font: "Poppins",
-    colors: ["#FC9F12", "#00B4DB", "#212121"],
+    colors: ["#51DCFF", "#F9f9f9", "#212121"],
     userPersona: [
       {
-        img: "male4",
-        name: "Michael Anderson",
+        img: "female1",
+        name: "Lisa Thompson",
+        married: false,
+        age: 40,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Lisa is a 40-year-old owner of a small e-commerce business specializing in handmade jewelry. Her business has been growing steadily, but she faces challenges in managing the logistics and delivery processes efficiently.",
+        favBrand: [""],
+        socialMedia: [],
+        tech: [
+          { name: "Mobile", color: "#E38627", value: 40 },
+          { name: "Laptop", color: "#E38627", value: 60 },
+        ],
+        goal: [
+          "Lisa's goal is to find a dedicated B2B and delivery app that allows her to streamline her operations and effectively manage her supply chain. She wants a solution that helps her track inventory, automate order processing, optimize delivery routes, and provide real-time updates to her customers.",
+        ],
+        frustration: [
+          "Lisa struggles with manual inventory management, time-consuming order processing, and coordinating deliveries with her shipping partners. These inefficiencies lead to delays, errors, and customer dissatisfaction. She needs a solution that centralizes all logistics and delivery management tasks in one platform.",
+        ],
+      },
+      {
+        img: "male3",
+        name: "Mark Rodriguez",
+        married: false,
+        age: 45,
+        location: "Addis Ababa",
+        position: "",
+        quote: "",
+        about:
+          "Mark is a 45-year-old operations manager at a medium-sized manufacturing company. He oversees the production and distribution of goods to various clients and faces challenges in optimizing the logistics and delivery processes.",
+        favBrand: [""],
+        socialMedia: [],
+        tech: [
+          { title: "Laptop", color: "#E38627", value: 40 },
+          { name: "Desktop", color: "#E38627", value: 60 },
+        ],
+        goal: [
+          "Mark's goal is to find a dedicated B2B and delivery app that improves supply chain visibility and enables efficient coordination with suppliers, warehouses, and transportation providers. He wants a solution that streamlines order management, tracks shipments in real-time, and provides analytics for performance evaluation.",
+        ],
+        frustration: [
+          "Mark struggles with manual order tracking, lack of visibility into inventory levels, and coordination issues with different stakeholders involved in the supply chain. These challenges result in delays, errors, and increased costs. He seeks a platform that offers end-to-end visibility and facilitates seamless collaboration.",
+        ],
+      },
+      {
+        img: "female2",
+        name: "Amanda Lee",
         married: false,
         age: 35,
         location: "Addis Ababa",
         position: "",
         quote: "",
         about:
-          "Michael is a 35-year-old serial entrepreneur based in Silicon Valley. He holds an MBA degree and has successfully launched multiple tech startups. Michael is known for his innovative ideas and strong business acumen.",
+          "Amanda is a 35-year-old owner of a local restaurant that offers online food delivery services. She faces difficulties in managing her restaurant's delivery operations efficiently and ensuring timely and accurate deliveries.",
         favBrand: [""],
-        socialMedia: [
-          { name: "Youtube", color: "#E38627", value: 50 },
-          { name: "Linkedin", color: "#E38627", value: 15 },
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Tiktok", color: "#E38627", value: 35 },
-        ],
+        socialMedia: [],
         tech: [
-          { name: "Mobile", color: "#E38627", value: 30 },
-          { name: "Laptop", color: "#E38627", value: 70 },
+          { name: "Mobile", color: "#E38627", value: 90 },
+          { name: "Tablet", color: "#E38627", value: 10 },
         ],
         goal: [
-          "Michael's goal is to connect with potential investors and secure funding for his latest startup venture. He aims to showcase his concept effectively, protect his intellectual property, and gain traction in the tech industry.",
+          "Amanda's goal is to find a dedicated B2B and delivery app that improves her restaurant's delivery management. She wants a solution that optimizes delivery routes, enables real-time order tracking, and facilitates seamless communication between her staff and delivery drivers.",
         ],
         frustration: [
-          "Michael faces challenges in finding a platform that allows him to present his startup idea professionally and securely. He also struggles with navigating the patent process effectively and ensuring his intellectual property is adequately protected.",
-        ],
-      },
-      {
-        img: "female3",
-        name: "Emily Chen",
-        married: false,
-        age: 28,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Emily is a 28-year-old aspiring entrepreneur based in New York City. She has a degree in Business Administration and is passionate about social impact startups. Emily aims to create a business that combines sustainability and technology.",
-        favBrand: [""],
-        socialMedia: [
-          { name: "Youtube", color: "#E38627", value: 50 },
-          { name: "Linkedin", color: "#E38627", value: 15 },
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Instagram", color: "#E38627", value: 35 },
-        ],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 70 },
-          { name: "Laptop", color: "#E38627", value: 30 },
-        ],
-        goal: [
-          "Emily's objective is to find a platform that helps her effectively communicate her startup idea, connect with like-minded individuals, and attract potential partners or co-founders who share her vision.",
-        ],
-        frustration: [
-          "Emily finds it challenging to find a platform that focuses on social impact startups and provides resources for securing investment. She also faces difficulties in navigating the legal aspects of starting a business, including protecting her intellectual property.",
-        ],
-      },
-      {
-        img: "male3",
-        name: "David Patel",
-        married: false,
-        age: 42,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "David is a 42-year-old experienced entrepreneur based in London. He has founded and sold multiple businesses in the software development industry. David holds a degree in Computer Science and is known for his technical expertise.",
-        favBrand: [""],
-        socialMedia: [
-          { name: "Youtube", color: "#E38627", value: 50 },
-          { name: "Linkedin", color: "#E38627", value: 15 },
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Instagram", color: "#E38627", value: 35 },
-        ],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 70 },
-          { name: "Laptop", color: "#E38627", value: 30 },
-        ],
-        goal: [
-          "David's goal is to find a platform that allows him to share his startup ideas with potential investors, collaborate with other entrepreneurs, and protect his intellectual property rights.",
-        ],
-        frustration: [
-          "David faces challenges in finding a platform that caters specifically to tech startups and provides a secure environment for sharing proprietary information. He also struggles with keeping up with the latest patent laws and regulations.",
+          "Amanda struggles with inefficient dispatching, lack of real-time tracking, and miscommunication between her staff and delivery drivers. These issues result in delayed deliveries, incorrect orders, and dissatisfied customers. She needs a platform that streamlines her delivery operations and enhances customer experience.",
         ],
       },
     ],
     sketch: [],
-    wireframe: [],
+    wireframe: [
+      "https://dl.dropboxusercontent.com/scl/fi/zy2r4fydeqq9h4ezz3tys/Wireframe-B2b.png?rlkey=ocunhnteooc0ur9zf333ou26r&dl=0",
+    ],
     mockup: [
       {
-        img: "https://dl.dropboxusercontent.com/scl/fi/itoc8pjdvgrmqym41gyaa/Start-up.png?rlkey=r22jx97dsaobecglhcskym4zp&dl=0",
+        img: "https://dl.dropboxusercontent.com/scl/fi/ixb4sjac1qb9qhdwjk8ew/mock1.png?rlkey=vnf3qxpytrag9cnjz1sqp0nku&dl=0",
         title: "",
         subtitle: "",
       },
       {
-        img: "https://dl.dropboxusercontent.com/scl/fi/0orqhzvyzf763qojneygc/tab3.png?rlkey=5mvnsvo9mmcubtsmwgyxrd5rb&dl=0",
-        title: "Follow up Page",
-        subtitle:
-          "Our startup's follow-up pages have a user-friendly design that allows investors to track their investments, receive updates, and communicate with the startup team. The layout presents key information, such as financial reports and milestones, in a visually appealing format. The goal is to provide an engaging and transparent interface for investors to actively participate in the startup's progress.",
+        img: "https://dl.dropboxusercontent.com/scl/fi/hpayd0rlmayeog21ljxw7/mock2.png?rlkey=xeucn4h0bncnnjens3m59vlvy&dl=0",
+        title: "",
+        subtitle: "",
       },
       {
-        img: "https://dl.dropboxusercontent.com/scl/fi/2fk5v471mzom6cxynlk35/tab2.png?rlkey=otc2kap335mwuzsxiok0nahjy&dl=0",
-        title: "Fund Raising Startups",
-        subtitle:
-          "Our website platform offers a user-friendly interface for entrepreneurs to showcase their startup ideas effectively. Through interactive features and comprehensive project profiles, they can communicate their unique value proposition and attract potential investors. With the ability for investors to express interest and like ideas, entrepreneurs have increased opportunities for funding and turning their ideas into reality.",
+        img: "https://dl.dropboxusercontent.com/scl/fi/6iq4p3viogo3xqo1629rh/mock3.png?rlkey=6ism2dh1ojxunq00m4pilmr7o&dl=0",
+        title: "",
+        subtitle: "",
       },
       {
-        img: "https://dl.dropboxusercontent.com/scl/fi/kh2cruha2l1kthnc8a01q/tab.png?rlkey=gpbe3qw4bivffw23wg2d2f2hf&dl=0",
+        img: "https://dl.dropboxusercontent.com/scl/fi/o2f93kruvz43n9pf19596/mock4.png?rlkey=6q8y3xq93izndilm6nwukwtqr&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/j8nzgpu3pdyy6ehoust0c/mock5.png?rlkey=nuhy2ey7uprvdymiej6lzdjjk&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/8dwbg2rjautps5ft86whd/mock6.png?rlkey=zeo1katw4f2scc7sk71mlctm3&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/mfesealkh3iv1e5leeo32/mock7.png?rlkey=r17tqrewbatd86imw1rh5ljlz&dl=0",
+        title: "",
+        subtitle: "",
+      },
+      {
+        img: "https://dl.dropboxusercontent.com/scl/fi/uvy0uc3ktpj1jspwvvmo6/mock8.png?rlkey=ce9u6sxscrznocj9ta00cqgck&dl=0",
         title: "",
         subtitle: "",
       },
     ],
     sampleView: [
-      "https://dl.dropboxusercontent.com/scl/fi/q6z28npxo170i4a6msg3k/categories-list.png?rlkey=psobsdavj7knhrk6fi4rvhx7k&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/m0lnpaqjg27cg1h09fjpf/Slide-16_9-1.png?rlkey=7rp8epsspvcryq0krdeiy0o6u&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/z4h4ibazykdhaig6m69dc/more-detials.png?rlkey=gmmjttz90jvmrxgjvrh4k5wlz&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/itoc8pjdvgrmqym41gyaa/Start-up.png?rlkey=r22jx97dsaobecglhcskym4zp&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/0u9vpoeprx3x15jfqfow2/home-page.png?rlkey=bqp9vyqb96em7v5obkhitcwhe&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/mtay638f4lqrmylxuoe1v/retailer1.png?rlkey=wv8ytjq8eybvyw29ljn0jhk88&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/d8c4q0yedw9na065v7d4q/3in1-1.png?rlkey=kzbm0zd1v9dne9uf4kmxi60x2&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/q1we2q8epmwf0b3vp5tj7/retailer2.png?rlkey=2hsjhlkbbwq4teh563auwwvur&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/kwjxciqjlpyihxywpjkwx/distributer.png?rlkey=zy6blnyh897v2rlt470nzgm0r&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/qegtiuhkr9ebr4kveigkv/distributer2.png?rlkey=eo2cqu37q1lb29vz6x0z3dwdd&dl=0",
+      "https://dl.dropboxusercontent.com/scl/fi/vob0e0dk8uyiy2rrkzwuw/Frames.png?rlkey=sk7t07fi4p73wvvkkvd5j6q9b&dl=0",
     ],
-    tag: ["UI/UX", "Figma", "Photoshop", "Illustrator"],
+    tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
   },
   {
     title: "Ethiopian LMIS",
-    id: 2,
+    id: 6,
     headerimg:
       "https://dl.dropboxusercontent.com/scl/fi/87ng2kx7f1ng5qor28tw3/ELMIS.png?rlkey=t07gf180tb95h3qo5a6qukhme&dl=0",
     hashimg: "-",
@@ -453,308 +894,8 @@ export const uiFiles = [
     tag: ["UI/UX", "Figma", "Photoshop", "Illustrator"],
   },
   {
-    title: "Negat Events",
-    id: 3,
-    headerimg:
-      "https://dl.dropboxusercontent.com/scl/fi/hcmzs6e4zr6k207cp58kh/Negat.png?rlkey=xkytz23ywogcdqzfh95y4ggiw&dl=0",
-    hashimg: "-",
-    primarycolor: "#F7BE2D",
-    subtitle: "Embrace the Randomness",
-    problem:
-      "One problem users may face with the Negat Events platform is the potential for inaccurate and outdated event information. Delayed updates, incomplete or incorrect data, canceled or postponed events without proper notification, limited filtering options, and a lack of user feedback loop can all contribute to this issue. To address it, the platform should focus on timely data updates, implementing data verification mechanisms, providing real-time notifications for changes, enhancing filtering options, and integrating a user feedback system for improved accuracy and user satisfaction.",
-    solution:
-      "To address the problem of inaccurate and outdated event information in the Negat application, solutions include direct communication with event organizers for timely updates, data verification mechanisms, real-time notifications, improved filtering options, and a user feedback system for continuous improvement.",
-    font: "Outfit / Worksand",
-    colors: ["#FC5801", "#212121"],
-    userPersona: [
-      {
-        img: "female1",
-        name: "Sarah Johnson",
-        married: false,
-        age: 28,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Sarah is a 28-year-old event enthusiast based in Chicago. She works as an event planner and loves exploring new events in her city. Sarah holds a degree in Hospitality Management and is always on the lookout for unique experiences.",
-        favBrand: [""],
-        socialMedia: [
-          { name: "Youtube", color: "#E38627", value: 50 },
-          { name: "Facebook", color: "#E38627", value: 15 },
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Tiktok", color: "#E38627", value: 35 },
-          { name: "Instagram", color: "#E38627", value: 35 },
-        ],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Laptop", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Sarah's goal is to find a platform that provides accurate and up-to-date event information in her area. She wants to discover a wide range of events, filter them based on her preferences, and receive timely notifications about any changes or cancellations.",
-        ],
-        frustration: [
-          "Sarah often encounters outdated event details, which leads to wasted time and missed opportunities. She also finds it challenging to filter events based on specific criteria or receive prompt notifications when there are changes or cancellations.",
-        ],
-      },
-      {
-        img: "male1",
-        name: "Mark Temesgen",
-        married: false,
-        age: 35,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Mark is a 35-year-old music lover and concert-goer from Seattle. He works in the tech industry and enjoys attending live music events in his spare time. Mark has a degree in Computer Science and is always looking for upcoming shows.",
-        favBrand: [""],
-        socialMedia: [
-          { Reddit: "50" },
-          { name: "Facebook", color: "#E38627", value: 15 },
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Tiktok", color: "#E38627", value: 35 },
-          { name: "Instagram", color: "#E38627", value: 35 },
-        ],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Laptop", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Mark's objective is to find a platform that provides accurate and reliable information about music events in his city. He wants to discover new artists, buy tickets, and receive real-time updates about lineup changes or concert rescheduling.",
-        ],
-        frustration: [
-          "Mark often encounters outdated or incomplete event listings, leading to missed concerts or incorrect ticket purchases. He also struggles to find a platform that offers comprehensive filtering options to discover events based on music genres or venues.",
-        ],
-      },
-      {
-        img: "female2",
-        name: "Emily Collins",
-        married: false,
-        age: 42,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Emily is a 42-year-old art enthusiast based in London. She works as an art curator and enjoys attending gallery openings and exhibitions. Emily holds a degree in Art History and is passionate about discovering new artists and art events.",
-        favBrand: [""],
-        socialMedia: [
-          { name: "Facebook", color: "#E38627", value: 15 },
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Linkedin", color: "#E38627", value: 35 },
-          { name: "Instagram", color: "#E38627", value: 35 },
-        ],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Tablet", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Emily's goal is to find a platform that provides accurate and comprehensive information about art events in her city. She wants to explore various art forms, receive timely updates about exhibition openings, and filter events based on specific art genres or galleries",
-        ],
-        frustration: [
-          "Emily often encounters incomplete or outdated event details when it comes to art exhibitions and gallery openings. It is challenging for her to find a platform that offers a wide range of art events from diverse galleries and provides reliable updates.",
-        ],
-      },
-      {
-        img: "male4",
-        name: "Alex Nguyen",
-        married: false,
-        age: 30,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Alex is a 30-year-old sports enthusiast based in Melbourne. He loves attending live sporting events and supporting his favorite teams. Alex has a degree in Sports Management and enjoys the excitement of being part of a live crowd.",
-        favBrand: [""],
-        socialMedia: [
-          { name: "X", color: "#E38627", value: 10 },
-          { name: "Linkedin", color: "#E38627", value: 35 },
-          { Telegram: "35" },
-        ],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Tablet", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Alex's objective is to find a platform that provides accurate and real-time information about sports events in his city. He wants to discover upcoming matches, buy tickets, and receive notifications about any changes or cancellations.",
-        ],
-        frustration: [
-          "Alex often faces challenges with inaccurate or delayed event updates, resulting in missed opportunities to attend games or changes in match schedules. He also finds it difficult to filter events based on specific sports or teams of interest.",
-        ],
-      },
-    ],
-    sketch: [],
-    wireframe: [
-      "https://dl.dropboxusercontent.com/scl/fi/htennt8b3bzbyomyz9hdd/negatwireframe.png?rlkey=sscehnra0ly28smb7zrs77dxq&dl=0",
-    ],
-    mockup: [
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/rf6as8o37r741i4yxnzor/Mock-1.png?rlkey=68kuf85c4wgwxahw7rqwhzld2&dl=0",
-        title: "Upcoming Events Newsfeed",
-        subtitle:
-          "The upcoming events newsfeed on the Negat platform has a simple and intuitive UI design, displaying chronological event listings with concise details for easy browsing and engagement",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/zoaubm2s8eestx2xoqjws/Mock-3.png?rlkey=jtsrzrqhawlvygrbtmhgprva1&dl=0",
-        title: "Download Negat from Playstore",
-        subtitle: "💛💛💛",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/1tt60vnxqo10tqjbm21w8/Mock-2.png?rlkey=i9m0n8lm4c3s8j92effdmfpmn&dl=0",
-        title: "Visit the Website",
-        subtitle: "Join us on negatevents.com",
-      },
-    ],
-    sampleView: [
-      "https://dl.dropboxusercontent.com/scl/fi/zoaubm2s8eestx2xoqjws/Mock-3.png?rlkey=jtsrzrqhawlvygrbtmhgprva1&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/t3xncg8f1vn7b5306u8p5/Hero-page.png?rlkey=z2p49ran6c07nfpyklly5baef&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/ytdcaqa6vq6xs2hr8dwn8/Benefits-of-using-this-app.png?rlkey=qgfh7e10s4q7zqblaj6vl8j2t&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/xhso1zsdwmv2eke25zb43/Download-now-page.png?rlkey=j1pnj75aby2rx418aubcdwebx&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/cgknzt8yld8k6xmxztm97/Landing-page.png?rlkey=kpchf0j2ft8j7bb4a5ny9d68d&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/tfaf03m3nngp46uy5r355/Upcoming-events.png?rlkey=gf66z37939rwm1q71gzfglz92&dl=0",
-    ],
-    tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
-  },
-  {
-    title: "Telebirr Super app",
-    id: 4,
-    headerimg:
-      "https://dl.dropboxusercontent.com/scl/fi/3zyvez763sv97tqwf4c4s/mobtelebirrX.png?rlkey=s0m8ol0814057kk79jt6okuas&dl=0",
-    hashimg: "-",
-    primarycolor: "#008FD5",
-    subtitle: "Empowering Ethiopia's Digital Revolution",
-    problem:
-      "The current Tele Birr app lacks user-friendliness and fails to provide an appealing and engaging experience for Ethiopian users. Users face difficulties in completing tasks efficiently and quickly, resulting in frustration and a lack of engagement with the app. The existing design does not resonate with the Ethiopian audience, missing an opportunity to create a sense of familiarity and connection.",
-    solution:
-      "To address these issues, a conceptual redesign of the Tele Birr app is proposed. The new design aims to enhance user experience and engagement by incorporating elements that reflect Ethiopian culture and values. The app will be redesigned with a warm and friendly interface, featuring Ethiopian-inspired colors, patterns, and imagery. The user interface will be simplified, making it intuitive and easy to navigate, allowing users to complete tasks more quickly and directly. Additionally, personalized features and notifications will be integrated to create a more engaging and personalized experience. The overall goal is to make the Tele Birr app more appealing, user-friendly, and culturally relevant for Ethiopian users, fostering a stronger connection and encouraging increased usage and engagement.",
-    font: "Poppins",
-    colors: ["#3D8BFF", "#FFB90C", "#212121", "#04A94D", "#EA1F27", "#D6D6D6"],
-    userPersona: [
-      {
-        img: "male2",
-        name: "Amanuel Tadesse",
-        married: false,
-        age: 26,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Amanuel is a 26-year-old university student from Addis Ababa, Ethiopia. He is pursuing a degree in Computer Science and is passionate about technology and mobile apps. Amanuel is always on the lookout for user-friendly and engaging apps that simplify his daily tasks.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Laptop", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Amanuel's goal is to find a mobile payment app that is intuitive, easy to navigate, and provides a seamless user experience. He wants to send and receive money, pay utility bills, and perform other financial transactions efficiently without encountering any usability issues.",
-        ],
-        frustration: [
-          "Amanuel faces difficulties with the current Tele Birr app, such as confusing navigation, slow transaction processing, and a lack of visual appeal. These issues hinder his ability to complete transactions quickly and efficiently, leading to frustration.",
-        ],
-      },
-      {
-        img: "female3",
-        name: "Selamawit Assefa",
-        married: false,
-        age: 32,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          " Selamawit is a 32-year-old working professional based in Dire Dawa, Ethiopia. She runs her own small business and relies on mobile payment apps for day-to-day transactions. Selamawit values user-friendly interfaces and engaging experiences that simplify financial management.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Laptop", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Selamawit's objective is to find a mobile payment app that enables her to seamlessly manage her business transactions, track her finances, and easily access customer support. She wants an app that feels familiar and resonates with the Ethiopian culture.",
-        ],
-        frustration: [
-          "Selamawit finds it challenging to navigate the current Tele Birr app, resulting in time-consuming transactions and difficulty in accessing support when needed. The lack of visual appeal and cultural context in the app also makes it less engaging for her.",
-        ],
-      },
-      {
-        img: "male1",
-        name: "Habtamu Berhanu",
-        married: false,
-        age: 42,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Habtamu is a 42-year-old government employee in Addis Ababa, Ethiopia. He is not very tech-savvy but is open to using mobile apps for convenient financial transactions. Habtamu values simplicity and ease of use in apps to ensure a smooth user experience.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Laptop", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Habtamu's goal is to find a mobile payment app that is straightforward and easy to understand. He wants to be able to perform basic transactions such as sending money, paying bills, and checking his balance without encountering any complexities.",
-        ],
-        frustration: [
-          "Habtamu struggles with the current Tele Birr app due to its complex user interface and lack of clear instructions. This leads to confusion and difficulties in completing transactions. He often feels overwhelmed and unsure about navigating the app effectively.",
-        ],
-      },
-      {
-        img: "female4",
-        name: "Bethlehem Mengistu",
-        married: false,
-        age: 38,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Bethlehem is a 38-year-old stay-at-home mother in Bahir Dar, Ethiopia. She manages the household finances and primarily uses mobile payment apps for bill payments and grocery shopping. Bethlehem values a visually pleasing and engaging user experience.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 80 },
-          { name: "Laptop", color: "#E38627", value: 20 },
-        ],
-        goal: [
-          "Bethlehem's objective is to find a mobile payment app that provides a visually appealing interface, making her financial transactions enjoyable and engaging. She wants an app that reflects Ethiopian culture and creates a sense of familiarity.",
-        ],
-        frustration: [
-          "Bethlehem finds the current Tele Birr app dull and lacking in engaging design elements. She feels disconnected from the app due to the absence of Ethiopian cultural references. The app's lack of visual appeal makes her financial management tasks less enjoyable.",
-        ],
-      },
-    ],
-    sketch: [
-      "https://dl.dropboxusercontent.com/scl/fi/if7hzuiu3n858n1dzvlbz/sketch1.png?rlkey=33c6pvjp3y7drdwn8l2w8x3er&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/9ufzy34j1f0q8qbrjlsdy/sketch2.png?rlkey=0inl4jlspnxtkdlqr9fu90yaj&dl=0",
-    ],
-    wireframe: [
-      "https://dl.dropboxusercontent.com/scl/fi/fbcjr4skdeip9wqpoel4r/wireframe.png?rlkey=jysgcse4hum5qz22n30rx990f&dl=0",
-    ],
-    mockup: [
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/ufa8vq3elft17r96bu9mf/Mockup-1.png?rlkey=srs7g4qbk6dpwtztjf808ntly&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/gp133f1gjy1v2eqsu0uql/Mockup-2.png?rlkey=ovmjpx6ixag7utxs6ihdhe8n9&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/4xkdet88znrxyesv5aovk/Mockup-3.png?rlkey=54uje4wlllhpyicpsqc04fktp&dl=0",
-        title: "",
-        subtitle: "",
-      },
-    ],
-    sampleView: [
-      "https://dl.dropboxusercontent.com/scl/fi/9svzkbnpk2ptnnvzmoenz/Telebirr-Picture-2-2.png?rlkey=xwy1mc18331w7280ushcgsv0b&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/2bxbxpwnt3wi8wyiwowft/Telebirr-Picture-3.png?rlkey=9rdeqb9uetbzbwebxb1rx47j1&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/sb4le2ulngl310s5ew3zy/Telebirr-Picture-2.png?rlkey=br052htgz0xpujczxnoslj4fk&dl=0",
-    ],
-    tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
-  },
-  {
     title: "Quiz Bet",
-    id: 5,
+    id: 7,
     headerimg:
       "https://dl.dropboxusercontent.com/scl/fi/08zbqoh59l2w7qpps3i01/Header.png?rlkey=c8p5wxjdrzyfxjj6e3tzxoxm3&dl=0",
     hashimg: "-",
@@ -877,147 +1018,6 @@ export const uiFiles = [
       "https://dl.dropboxusercontent.com/scl/fi/cld6tw4ro3520tdnu1xkq/Dark-mode.png?rlkey=6ol2mm0k3z8tyl7bugtmtw68t&dl=0",
       "https://dl.dropboxusercontent.com/scl/fi/3y08sg00moz1stik8ruxm/Frame-1000006171.png?rlkey=rq2mgtn9oku0et1p0wad7ba3y&dl=0",
       "https://dl.dropboxusercontent.com/scl/fi/01cldmunt03ocfw3w829s/Frame-1000006172.png?rlkey=d9mqim6a0w12f8yr91s0tk6xi&dl=0",
-    ],
-    tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
-  },
-  {
-    title: "ACT B2B",
-    id: 6,
-    headerimg:
-      "https://dl.dropboxusercontent.com/scl/fi/n03gihl9ti2srnuy8dpmw/ACT.png?rlkey=18xefj1k4ix2kzuasedpdifu1&dl=0",
-    hashimg: "-",
-    primarycolor: "#00B3DF",
-    subtitle: "Transforming Business Logistics with Speed.",
-    problem:
-      "Businesses struggle with inefficient logistics and delivery management, leading to delays, errors, and reduced customer satisfaction. A lack of a dedicated B2B and delivery app hinders streamlined operations and effective supply chain management.",
-    solution:
-      "This B2B and delivery app provides a comprehensive solution to businesses by streamlining logistics and delivery management. With real-time tracking, automated processes, and centralized control, the app empowers businesses to optimize their supply chain, minimize delays, and improve overall efficiency. By utilizing this app, businesses can enhance customer satisfaction, reduce costs, and achieve seamless end-to-end logistics operations for their B2B needs.",
-    font: "Poppins",
-    colors: ["#51DCFF", "#F9f9f9", "#212121"],
-    userPersona: [
-      {
-        img: "female1",
-        name: "Lisa Thompson",
-        married: false,
-        age: 40,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Lisa is a 40-year-old owner of a small e-commerce business specializing in handmade jewelry. Her business has been growing steadily, but she faces challenges in managing the logistics and delivery processes efficiently.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 40 },
-          { name: "Laptop", color: "#E38627", value: 60 },
-        ],
-        goal: [
-          "Lisa's goal is to find a dedicated B2B and delivery app that allows her to streamline her operations and effectively manage her supply chain. She wants a solution that helps her track inventory, automate order processing, optimize delivery routes, and provide real-time updates to her customers.",
-        ],
-        frustration: [
-          "Lisa struggles with manual inventory management, time-consuming order processing, and coordinating deliveries with her shipping partners. These inefficiencies lead to delays, errors, and customer dissatisfaction. She needs a solution that centralizes all logistics and delivery management tasks in one platform.",
-        ],
-      },
-      {
-        img: "male3",
-        name: "Mark Rodriguez",
-        married: false,
-        age: 45,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Mark is a 45-year-old operations manager at a medium-sized manufacturing company. He oversees the production and distribution of goods to various clients and faces challenges in optimizing the logistics and delivery processes.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { title: "Laptop", color: "#E38627", value: 40 },
-          { name: "Desktop", color: "#E38627", value: 60 },
-        ],
-        goal: [
-          "Mark's goal is to find a dedicated B2B and delivery app that improves supply chain visibility and enables efficient coordination with suppliers, warehouses, and transportation providers. He wants a solution that streamlines order management, tracks shipments in real-time, and provides analytics for performance evaluation.",
-        ],
-        frustration: [
-          "Mark struggles with manual order tracking, lack of visibility into inventory levels, and coordination issues with different stakeholders involved in the supply chain. These challenges result in delays, errors, and increased costs. He seeks a platform that offers end-to-end visibility and facilitates seamless collaboration.",
-        ],
-      },
-      {
-        img: "female2",
-        name: "Amanda Lee",
-        married: false,
-        age: 35,
-        location: "Addis Ababa",
-        position: "",
-        quote: "",
-        about:
-          "Amanda is a 35-year-old owner of a local restaurant that offers online food delivery services. She faces difficulties in managing her restaurant's delivery operations efficiently and ensuring timely and accurate deliveries.",
-        favBrand: [""],
-        socialMedia: [],
-        tech: [
-          { name: "Mobile", color: "#E38627", value: 90 },
-          { name: "Tablet", color: "#E38627", value: 10 },
-        ],
-        goal: [
-          "Amanda's goal is to find a dedicated B2B and delivery app that improves her restaurant's delivery management. She wants a solution that optimizes delivery routes, enables real-time order tracking, and facilitates seamless communication between her staff and delivery drivers.",
-        ],
-        frustration: [
-          "Amanda struggles with inefficient dispatching, lack of real-time tracking, and miscommunication between her staff and delivery drivers. These issues result in delayed deliveries, incorrect orders, and dissatisfied customers. She needs a platform that streamlines her delivery operations and enhances customer experience.",
-        ],
-      },
-    ],
-    sketch: [],
-    wireframe: [
-      "https://dl.dropboxusercontent.com/scl/fi/zy2r4fydeqq9h4ezz3tys/Wireframe-B2b.png?rlkey=ocunhnteooc0ur9zf333ou26r&dl=0",
-    ],
-    mockup: [
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/ixb4sjac1qb9qhdwjk8ew/mock1.png?rlkey=vnf3qxpytrag9cnjz1sqp0nku&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/hpayd0rlmayeog21ljxw7/mock2.png?rlkey=xeucn4h0bncnnjens3m59vlvy&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/6iq4p3viogo3xqo1629rh/mock3.png?rlkey=6ism2dh1ojxunq00m4pilmr7o&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/o2f93kruvz43n9pf19596/mock4.png?rlkey=6q8y3xq93izndilm6nwukwtqr&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/j8nzgpu3pdyy6ehoust0c/mock5.png?rlkey=nuhy2ey7uprvdymiej6lzdjjk&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/8dwbg2rjautps5ft86whd/mock6.png?rlkey=zeo1katw4f2scc7sk71mlctm3&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/mfesealkh3iv1e5leeo32/mock7.png?rlkey=r17tqrewbatd86imw1rh5ljlz&dl=0",
-        title: "",
-        subtitle: "",
-      },
-      {
-        img: "https://dl.dropboxusercontent.com/scl/fi/uvy0uc3ktpj1jspwvvmo6/mock8.png?rlkey=ce9u6sxscrznocj9ta00cqgck&dl=0",
-        title: "",
-        subtitle: "",
-      },
-    ],
-    sampleView: [
-      "https://dl.dropboxusercontent.com/scl/fi/mtay638f4lqrmylxuoe1v/retailer1.png?rlkey=wv8ytjq8eybvyw29ljn0jhk88&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/d8c4q0yedw9na065v7d4q/3in1-1.png?rlkey=kzbm0zd1v9dne9uf4kmxi60x2&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/q1we2q8epmwf0b3vp5tj7/retailer2.png?rlkey=2hsjhlkbbwq4teh563auwwvur&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/kwjxciqjlpyihxywpjkwx/distributer.png?rlkey=zy6blnyh897v2rlt470nzgm0r&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/qegtiuhkr9ebr4kveigkv/distributer2.png?rlkey=eo2cqu37q1lb29vz6x0z3dwdd&dl=0",
-      "https://dl.dropboxusercontent.com/scl/fi/vob0e0dk8uyiy2rrkzwuw/Frames.png?rlkey=sk7t07fi4p73wvvkkvd5j6q9b&dl=0",
     ],
     tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
   },

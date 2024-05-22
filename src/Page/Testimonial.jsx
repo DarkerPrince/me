@@ -1,6 +1,9 @@
 import React from "react";
-import persona from "../assets/Persona/persona1.png";
 
+import persona from "../assets/Persona/persona1.png";
+import persona1 from "../assets/Persona/persona2.png";
+import persona2 from "../assets/Persona/persona3.png";
+import persona3 from "../assets/Persona/persona4.png";
 function Testimonial() {
   return (
     <div className="my-12 px-4 flex flex-col items-center justify-center">
@@ -11,11 +14,11 @@ function Testimonial() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 mt-4">
-        <section class="bg-white shadow-2xl shadow-Secondary/20 rounded-lg dark:bg-white/5 dark:shadow-none">
-          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <figure class="max-w-screen-md mx-auto">
+        <section className="bg-white shadow-2xl shadow-Secondary/20 rounded-lg dark:bg-white/5 dark:shadow-none">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+            <figure className="max-w-screen-md mx-auto">
               <svg
-                class="h-12 mx-auto mb-3 text-gray-400 "
+                className="h-12 mx-auto mb-3 text-gray-400 "
                 viewBox="0 0 24 27"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,35 +29,35 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900 dark:text-slate-200">
-                  "Landwind is just awesome. It contains tons of predesigned
-                  components and pages starting from login screen to complex
-                  dashboard. Perfect choice for your next SaaS application."
+                <p className=" text-gray-500  dark:text-slate-400 font-leuleScri">
+                  "Luel is the best! His designs are amazing, and his coding
+                  skills are top-notch. Highly recommend him for UI/UX design,
+                  front-end development, and mobile app development."
                 </p>
               </blockquote>
-              <figcaption class="flex items-center justify-center mt-6 space-x-3">
+              <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-12 h-12 rounded-full "
+                  className="w-12 h-12 rounded-full "
                   src={persona}
                   alt="profile picture"
                 />
-                <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
-                    Micheal Gough
+                <div className="flex items-center divide-x-2 divide-gray-500">
+                  <div className="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
+                    MR. Daniel Hailu
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
-                    CEO at Google
+                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
+                    CEO at AIT Tech
                   </div>
                 </div>
               </figcaption>
             </figure>
           </div>
         </section>
-        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
-          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <figure class="max-w-screen-md mx-auto">
+        <section className="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+            <figure className="max-w-screen-md mx-auto">
               <svg
-                class="h-12 mx-auto mb-3 text-gray-400 "
+                className="h-12 mx-auto mb-3 text-gray-400 "
                 viewBox="0 0 24 27"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,35 +68,36 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900  dark:text-slate-200">
-                  "Landwind is just awesome. It contains tons of predesigned
-                  components and pages starting from login screen to complex
-                  dashboard. Perfect choice for your next SaaS application."
+                <p className=" text-gray-500  dark:text-slate-400 font-leuleScri">
+                  "Luel My G is a highly skilled professional in UI/UX design,
+                  front-end development, and mobile app development. His designs
+                  are impressive, and his coding is top-notch. Highly
+                  recommended!
                 </p>
               </blockquote>
-              <figcaption class="flex items-center justify-center mt-6 space-x-3">
+              <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-12 h-12 rounded-full"
-                  src={persona}
+                  className="w-12 h-12 rounded-full"
+                  src={persona1}
                   alt="profile picture"
                 />
-                <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
-                    Micheal Gough
+                <div className="flex items-center divide-x-2 divide-gray-500">
+                  <div className="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
+                    Dr. Meaza Seyoum
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
-                    CEO at Google
+                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
+                    Client
                   </div>
                 </div>
               </figcaption>
             </figure>
           </div>
         </section>
-        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
-          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <figure class="max-w-screen-md mx-auto">
+        <section className="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+            <figure className="max-w-screen-md mx-auto">
               <svg
-                class="h-12 mx-auto mb-3 text-gray-400 "
+                className="h-12 mx-auto mb-3 text-gray-400 "
                 viewBox="0 0 24 27"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,35 +108,37 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900  dark:text-slate-200">
-                  "Landwind is just awesome. It contains tons of predesigned
-                  components and pages starting from login screen to complex
-                  dashboard. Perfect choice for your next SaaS application."
+                <p className=" text-gray-00  dark:text-slate-400 font-leuleScri">
+                  "Lula stands out for his excellent client handling and
+                  communication. He keeps clients informed and involved,
+                  resulting in a seamless working relationship. His exceptional
+                  design and development expertise shine through in every
+                  project."
                 </p>
               </blockquote>
-              <figcaption class="flex items-center justify-center mt-6 space-x-3">
+              <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-12 h-12 rounded-full"
-                  src={persona}
+                  className="w-12 h-12 rounded-full"
+                  src={persona2}
                   alt="profile picture"
                 />
-                <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
-                    Micheal Gough
+                <div className="flex items-center divide-x-2 divide-gray-500">
+                  <div className="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
+                    MR. Simon Daniel
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
-                    CEO at Google
+                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
+                    CEO at Kemer
                   </div>
                 </div>
               </figcaption>
             </figure>
           </div>
         </section>
-        <section class="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
-          <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
-            <figure class="max-w-screen-md mx-auto">
+        <section className="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
+            <figure className="max-w-screen-md mx-auto">
               <svg
-                class="h-12 mx-auto mb-3 text-gray-400 "
+                className="h-12 mx-auto mb-3 text-gray-400 "
                 viewBox="0 0 24 27"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,24 +149,25 @@ function Testimonial() {
                 ></path>
               </svg>
               <blockquote>
-                <p class=" text-gray-900  dark:text-slate-200">
-                  "Landwind is just awesome. It contains tons of predesigned
-                  components and pages starting from login screen to complex
-                  dashboard. Perfect choice for your next SaaS application."
+                <p className=" text-gray-500  dark:text-slate-400 font-leuleScri">
+                  Luel is a reliable professional who consistently delivers
+                  UI/UX projects and code on time. His promptness in addressing
+                  fixes ensures a smooth development process and client
+                  satisfaction."
                 </p>
               </blockquote>
-              <figcaption class="flex items-center justify-center mt-6 space-x-3">
+              <figcaption className="flex items-center justify-center mt-6 space-x-3">
                 <img
-                  class="w-12 h-12 rounded-full"
-                  src={persona}
+                  className="w-12 h-12 rounded-full"
+                  src={persona3}
                   alt="profile picture"
                 />
-                <div class="flex items-center divide-x-2 divide-gray-500">
-                  <div class="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
-                    Micheal Gough
+                <div className="flex items-center divide-x-2 divide-gray-500">
+                  <div className="pr-3 font-medium text-gray-900 dark:text-slate-100 ">
+                    Miss. Melat Andom
                   </div>
-                  <div class="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
-                    CEO at Google
+                  <div className="pl-3 text-sm font-light text-gray-500 dark:text-slate-200">
+                    CEO at Andom Const.
                   </div>
                 </div>
               </figcaption>

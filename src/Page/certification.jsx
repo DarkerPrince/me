@@ -1,5 +1,4 @@
 import React from "react";
-import mob from "../assets/mob.jpeg";
 import { Certificates } from "../assets/Files/files";
 
 function Certification() {
@@ -25,10 +24,6 @@ function Certification() {
             />
           );
         })}
-
-        {/* <img src={mob} alt="Certificate" className=' bg-green-200 bg-contain rounded-2xl'/>
-        <img src={mob} alt="Certificate" className=' bg-green-200 bg-contain rounded-2xl'/>
-        <img src={mob} alt="Certificate" className=' bg-green-200 bg-contain rounded-2xl'/> */}
       </div>
     </div>
   );

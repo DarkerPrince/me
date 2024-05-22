@@ -28,12 +28,12 @@ function Frontend() {
           </div>
         </div>
       </div>
-      <div className="h-48 w-full backback overflow-hidden rounded-xl flex justify-center self-center items-end ">
+      <div className="h-48 w-full backback group-hover:overflow-visible overflow-hidden rounded-xl flex justify-center self-center items-end ">
         <div className="flex w-full h-full items-start py-4 justify-center">
           <img
             src={land}
             alt=""
-            className=" w-2/3 group-hover:-translate-y-16 duration-300 ease-in-out"
+            className=" w-2/3 group-hover:-translate-y-12 duration-300 ease-in-out"
           />
           <img
             src={getin}

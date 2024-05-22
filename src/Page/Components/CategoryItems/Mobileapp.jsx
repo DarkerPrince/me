@@ -20,7 +20,7 @@ function Mobileapp() {
           </div>
         </div>
       </div>
-      <div className="h-48 w-full backback  overflow-hidden rounded-xl">
+      <div className="h-48 w-full backback group-hover:overflow-visible overflow-hidden rounded-xl">
         <div className="flex w-full h-full items-end justify-center">
           <img
             src={graphicImg1}

@@ -3,8 +3,7 @@ import React from "react";
 import { BsCardHeading } from "react-icons/bs";
 
 import dash from "../../../assets/workImg/uidash.png";
-import mob from "../../../assets/workImg/uimob.png";
-import { MdOutlineArrowOutward } from "react-icons/md";
+import mob from "../../../assets/workImg/Negat.png";
 import { Link } from "react-router-dom";
 
 function UiItems() {
@@ -32,7 +31,7 @@ function UiItems() {
             </div>
           </div>
         </div>
-        <div className="h-48 w-full backback  overflow-hidden rounded-xl flex items-end  ">
+        <div className="h-48 w-full backback overflow-hidden  group-hover:overflow-visible rounded-xl flex items-end  ">
           <div className="flex w-full items-end justify-center align-middle ">
             <img
               src={dash}
