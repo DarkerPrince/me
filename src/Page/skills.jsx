@@ -22,7 +22,7 @@ function Skills() {
           {" "}
           Designing Skills
         </p>
-        <div className="flex gap-12 flex-wrap items-center justify-center">
+        <div className="flex gap-12 flex-wrap items-center justify-center mx-4">
           <img src={figma} alt="flutterLogo" className="md:h-16 h-12" />
           <img src={xd} alt="reactLogo" className="md:h-16 h-12" />
           <img src={sketch} alt="tailwind" className="md:h-16 h-12" />
@@ -45,7 +45,7 @@ function Skills() {
           Programming Skills
         </p>
 
-        <div className="flex flex-wrap items-center justify-center gap-12">
+        <div className="flex flex-wrap items-center justify-center gap-12 mx-4">
           <img src={flutterLogo} alt="flutterLogo" className="md:h-16 h-12" />
           <img src={reactLogo} alt="reactLogo" className="md:h-16 h-12" />
           <img src={tailwindLogo} alt="tailwind" className="md:h-16 h-12" />
