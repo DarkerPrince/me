@@ -48,12 +48,6 @@ function DetailsPage() {
           {location.state.subtitle}
         </p>
       </div>
-      <img
-        src={
-          "https://www.dropbox.com/scl/fi/y38mkfnml2mu31aked96z/Suk-Header.png"
-        }
-        alt=""
-      />
       <div className="flex flex-col items-start  justify-center p-2 lg:w-3/4 md:justify-start gap-8 ">
         {/* problem and solution of template */}
         <div className="flex md:items-start md:flex-row flex-col items-center ">
@@ -61,7 +55,7 @@ function DetailsPage() {
             problem={location.state.problem}
             solution={location.state.solution}
           />
-          <MyProfileCard />
+          <MyProfileCard/>
         </div>
         <StyleGuide state={location.state} />
       </div>
@@ -73,7 +67,7 @@ function DetailsPage() {
           <div className="flex items-end my-12 w-full  md:px-6 md:w-3/4">
             <p
               style={{ color: `${location.state.primarycolor}` }}
-              className=" text-xl md:text-4xl font-bold"
+              className=" text-3xl md:text-4xl font-bold px-6"
             >
               Sample Showcase
             </p>
@@ -81,7 +75,7 @@ function DetailsPage() {
               style={{ color: `${location.state.primarycolor}` }}
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 w-3/4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:w-3/4 mb-12">
             {location.state.sampleView.map((sampleUI) => {
               return (
                 <ShowcaseItem

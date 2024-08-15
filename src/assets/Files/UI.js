@@ -1,5 +1,149 @@
 export const uiFiles = [
   {
+    title: "E-Learning Platform",
+    id: 11,
+    headerimg: "https://dl.dropbox.com/scl/fi/k6yiufgpa0beg7rof8sq8/iPad-Pro-Right-View-Mockup.png?rlkey=gwu766n4zdqvysx9ud5zgyf7n&st=5t275wlm&dl=0",
+    hashimg: "-",
+    primarycolor: "#3170b5",
+    subtitle: "Empower Your Learning Journey!",
+    problem: "Many students and professionals struggle with accessing quality education resources efficiently. Traditional learning methods are often inflexible and lack personalization, leading to disengagement and slow progress. The absence of interactive and accessible learning platforms further exacerbates the challenges faced by learners.",
+    solution: "Our eLearning Platform offers a comprehensive solution for personalized and flexible learning. Through an intuitive platform, users can access a wide range of courses, track their progress, schedule learning sessions, and interact with instructors and peers. Our goal is to empower learners by providing a user-friendly interface that supports continuous learning and development.",
+    font: "Roboto",
+    colors: [
+      "#3170b5",
+      "#FFB800",
+      "#FF5733",
+      "#ECF0F1"
+    ],
+    userPersona: [
+      {
+        img: "male2",
+        name: "Tsegaye Kassa",
+        married: true,
+        age: 32,
+        location: "Addis Ababa, Ethiopia",
+        position: "Software Developer",
+        quote: "Learn, adapt, and grow!",
+        about: "Tsegaye, a 32-year-old software developer from Addis Ababa, Ethiopia, is committed to advancing his skills through continuous learning. He values flexibility and accessibility in education and is always looking for ways to stay updated with the latest technologies. Tsegaye's goal is to enhance his professional expertise and remain competitive in the ever-evolving tech industry.",
+        favBrand: [
+          "Coursera",
+          "Udemy",
+          "LinkedIn Learning"
+        ],
+        socialMedia: [
+          {
+            name: "LinkedIn",
+            color: "#0077B5",
+            value: 80
+          },
+          {
+            name: "Twitter",
+            color: "#1DA1F2",
+            value: 50
+          }
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 70
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 90
+          }
+        ],
+        goal: [
+          "Tsegaye aims to find an eLearning platform that offers a wide range of courses, provides real-time progress tracking, and supports flexible learning schedules. He seeks a platform that enhances his skills and knowledge in software development."
+        ],
+        frustration: [
+          "Tsegaye often encounters challenges with traditional learning methods that are rigid and lack personalization. He feels that the absence of interactive and accessible learning platforms hinders his ability to learn efficiently and keep up with industry trends."
+        ]
+      },
+      {
+        img: "female3",
+        name: "Marta Alemayehu",
+        married: false,
+        age: 26,
+        location: "Bahir Dar, Ethiopia",
+        position: "Marketing Specialist",
+        quote: "Knowledge is the key to success!",
+        about: "Marta, a 26-year-old marketing specialist from Bahir Dar, Ethiopia, is passionate about learning new marketing strategies and tools. She values convenience and quality in education and is always seeking innovative ways to improve her skills. Marta's goal is to excel in her career by staying updated with the latest marketing trends and practices.",
+        favBrand: [
+          "HubSpot Academy",
+          "Google Digital Garage",
+          "Skillshare"
+        ],
+        socialMedia: [
+          {
+            name: "Instagram",
+            color: "#E4405F",
+            value: 70
+          },
+          {
+            name: "Pinterest",
+            color: "#BD081C",
+            value: 50
+          }
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 80
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 60
+          }
+        ],
+        goal: [
+          "Marta's objective is to find an eLearning platform that offers comprehensive courses in marketing, provides flexible learning options, and supports interaction with instructors and peers. She seeks a platform that enhances her professional growth and keeps her competitive in the job market."
+        ],
+        frustration: [
+          "Marta often faces challenges with traditional learning systems that lack flexibility and accessibility. She believes that these systems limit her ability to learn at her own pace and hinder her progress in acquiring new skills."
+        ]
+      }
+    ],
+    sketch: [],
+    wireframe: [],
+    mockup: [
+      {
+        img: "https://dl.dropbox.com/scl/fi/vzv5585hao0bscfwxfl5t/New-Macbook-Pro-Mockup-Front-View.png?rlkey=hsf3dp27uplkmfhq34zd2870x&st=s4bn4lsl&dl=0",
+        title: "Course Catalog",
+        subtitle: "Explore a wide range of courses."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/ocpi5uhm7fmpmeg7nl5vu/Pro-Display-XDR-Front-View-Mockup.png?rlkey=p9qbk4dvrhnd23p9ohzdbv0uj&st=dux5p8ue&dl=0",
+        title: "Progress Tracking",
+        subtitle: "Monitor your learning progress in real-time."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/4898yz7xvrlfwffk58nc3/Education-Stat.png?rlkey=nkenzzsagiqpbfm1x5ny3sdgr&st=hlw2lfma&dl=0",
+        title: "Interactive Learning",
+        subtitle: "Engage with instructors and peers through interactive sessions."
+      }
+    ],
+    sampleView: [
+    "https://dl.dropbox.com/scl/fi/iydh6hbot7bfbk18yd2we/Dash-Design.png?rlkey=c7ez245dk4jz2ok1w79xaq4sl&st=qlobvf9g&dl=0",
+      "https://dl.dropbox.com/scl/fi/s6ehakjmxwhxumc6m5114/Course-Insert-1.png?rlkey=ulh6hel05gmdjr63mqlagxusw&st=65mgk8mu&dl=0",
+      "https://dl.dropbox.com/scl/fi/00ybyikpvvd5i29v56oy0/Education-Stat-1.png?rlkey=g4fan5g5vwks6xm74adyep16m&st=gizzztae&dl=0",
+      "https://dl.dropbox.com/scl/fi/86mipfs1ksulcx9m03j2r/Education-Stat-2.png?rlkey=xlbptkwxeji9wi7n859xfi8z6&st=994b351k&dl=0",
+      "https://dl.dropbox.com/scl/fi/by6d4saxwj2ke47rvml5c/lesson.png?rlkey=foryznsnkcc6a31xryc87nczs&st=7epq389c&dl=0",
+"https://dl.dropbox.com/scl/fi/q5w70wa6ugzpwuq2nqet7/Course-Insert-2.png?rlkey=vxwsy2zgp9jjgbdiwhbt9llb9&st=qp7gfe0m&dl=0"
+
+    ],
+    tag: [
+      "UI/UX",
+      "Figma",
+      "React",
+      "Education",
+      "E-Learning"
+    ]
+  },
+  {
     title: "Start-UP Website",
     id: 1,
     headerimg:
@@ -1021,4 +1165,557 @@ export const uiFiles = [
     ],
     tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
   },
+  {
+    title: "Biir Printing Co.",
+    id: 8,
+    headerimg: "https://dl.dropbox.com/scl/fi/sk8asnupbktsqsxaloah4/Studio-Display-Mockup.png?rlkey=os0dxd49y0fa21x2xzs1hojqb&st=sa2x6y62&dl=0",
+    hashimg: "-",
+    primarycolor: "#FF5733",
+    subtitle: "Where Creativity Meets Impact!",
+    problem:
+      "Many businesses struggle to create engaging and effective advertising campaigns that resonate with their target audience. Traditional advertising platforms often lack the creativity and innovation needed to stand out in today's competitive market. As a result, companies find it challenging to connect with their customers in a meaningful way and drive the desired results from their advertising efforts.",
+    solution:
+      "Biir Printing Co. is a cutting-edge advertising platform designed to help businesses create impactful and engaging campaigns that drive results. By offering innovative tools and features, Biir Printing Co. empowers users to unleash their creativity and connect with their target audience in a more meaningful way. With a focus on driving impact and delivering measurable results, Biir Printing Co. provides businesses with the tools they need to succeed in today's dynamic advertising landscape.",
+    font: "Montserrat",
+    colors: ["#FF5733", "#2C3E50", "#F39C12", "#ECF0F1"],
+    userPersona: [
+      {
+        img: "male1",
+        name: "Abel Getachew",
+        married: true,
+        age: 35,
+        location: "Addis Ababa, Ethiopia",
+        position: "Marketing Director",
+        quote: "Creativity is key to successful advertising!",
+        about:
+          "Abel is a 35-year-old marketing director from Addis Ababa, Ethiopia. He is passionate about creating impactful advertising campaigns that drive results for his company. Abel values creativity and innovation in advertising and is always looking for new ways to connect with customers.",
+        favBrand: ["Dashen Brewery", "Ethiopian Airlines", "Awash Bank"],
+        socialMedia: [
+          {
+            name: "LinkedIn",
+            color: "#0077B5",
+            value: 70,
+          },
+          {
+            name: "Twitter",
+            color: "#1DA1F2",
+            value: 30,
+          },
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 60,
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 40,
+          },
+        ],
+        goal: [
+          "Abel's goal is to find an advertising platform that offers innovative tools and features to create engaging and impactful campaigns. He wants a platform that helps him connect with his target audience in a more meaningful way and drive measurable results for his company.",
+        ],
+        frustration: [
+          "Abel often finds traditional advertising platforms to be limiting in terms of creativity and impact. He feels that these platforms do not provide the tools and features needed to create standout campaigns that resonate with customers, leading to ineffective advertising efforts.",
+        ],
+      },
+      {
+        img: "female2",
+        name: "Tizita Alemu",
+        married: false,
+        age: 28,
+        location: "Dire Dawa, Ethiopia",
+        position: "Marketing Manager",
+        quote: "Innovation drives successful advertising!",
+        about:
+          "Tizita is a 28-year-old marketing manager from Dire Dawa, Ethiopia. She is dedicated to creating innovative advertising campaigns that capture the attention of her target audience. Tizita values creativity and strategic thinking in advertising and is always seeking new ways to make an impact.",
+        favBrand: ["Habesha Breweries", "Dashen Bank", "Ethio Telecom"],
+        socialMedia: [
+          {
+            name: "Instagram",
+            color: "#E4405F",
+            value: 60,
+          },
+          {
+            name: "Pinterest",
+            color: "#BD081C",
+            value: 40,
+          },
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 50,
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 50,
+          },
+        ],
+        goal: [
+          "Tizita's goal is to find an advertising platform that enables her to create innovative and impactful campaigns that resonate with her target audience. She wants a platform that offers creative tools and features to help her drive successful advertising campaigns for her company.",
+        ],
+        frustration: [
+          "Tizita often finds traditional advertising platforms to be lacking in terms of innovation and impact. She feels that these platforms do not provide the flexibility and creativity needed to create standout campaigns that engage customers, resulting in missed opportunities for her company.",
+        ],
+      },
+    ],
+    sketch: [],
+    wireframe: [],
+    mockup: [
+      {
+        img: "https://dl.dropbox.com/scl/fi/nczlfdul4bch53w1504k9/Biir.png?rlkey=quwkh3fkknw2naxspz67gvwc6&st=4cx5tidz&dl=0",
+        title: "Home Page",
+        subtitle: "Welcome to Biir Printing Co.!",
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/9qb3szbua5kcki84tg9vc/iPad-Pro-mockup-13-inch-top-view.png?rlkey=vi4g8ep0atdixdgdp711i350i&st=95m5dgmd&dl=0",
+        title: "Campaign Creation",
+        subtitle: "Create impactful campaigns with ease.",
+      },
+    ],
+    sampleView: [
+       "https://dl.dropbox.com/scl/fi/nczlfdul4bch53w1504k9/Biir.png?rlkey=quwkh3fkknw2naxspz67gvwc6&st=4cx5tidz&dl=0",
+       "https://dl.dropbox.com/scl/fi/9qb3szbua5kcki84tg9vc/iPad-Pro-mockup-13-inch-top-view.png?rlkey=vi4g8ep0atdixdgdp711i350i&st=95m5dgmd&dl=0"
+
+    ],
+    tag: ["Advertising", "Marketing", "Creativity", "Innovation"],
+  },
+  {
+    title: "Freight Transport Management Platform",
+    id: 9,
+    headerimg: "https://dl.dropbox.com/scl/fi/9d1l2vm88phzz8zmqfesu/Pro-Display-XDR-Front-View-Mockup.png?rlkey=n6id7z1xya4pbhbpkooe342ns&st=6xfjawg9&dl=0",
+    hashimg: "-",
+    primarycolor: "#002FC8",
+    subtitle: "Where Efficiency Meets Logistics!",
+    problem: "Many freight transport operators struggle to efficiently manage their services, trucks, trailers, and drivers' trips. Traditional management systems often lack the tools and features needed to streamline operations and maximize efficiency. As a result, operators face challenges in optimizing their transport processes and ensuring timely deliveries.",
+    solution: "Freight Transport Management Platform is a comprehensive solution designed to empower operators in managing their services, trucks, trailers, drivers' trips, and other logistical aspects. By offering innovative tools and features, the platform enables operators to streamline operations, track shipments in real-time, optimize routes, and enhance overall efficiency in freight transport operations.",
+    font: "Montserrat",
+    colors: [
+      "#FDB114",
+      "#4475F2",
+      "#888888",
+      "#F9F9F9"
+    ],
+    userPersona: [
+      {
+        img: "male1",
+        name: "Tewodros Tekle",
+        married: true,
+        age: 40,
+        location: "Addis Ababa, Ethiopia",
+        position: "Logistics Manager",
+        quote: "Efficiency is key to successful logistics!",
+        about: "Tewodros is a 40-year-old logistics manager from Addis Ababa, Ethiopia. He is dedicated to ensuring smooth and efficient freight transport operations for his company. Tewodros values optimization and precision in logistics management and is always looking for ways to enhance operational efficiency.",
+        favBrand: [
+          "Ethiopian Airlines",
+          "Djibouti Port",
+          "Ethio Telecom"
+        ],
+        socialMedia: [
+          {
+            name: "LinkedIn",
+            color: "#0077B5",
+            value: 60
+          },
+          {
+            name: "Twitter",
+            color: "#1DA1F2",
+            value: 40
+          }
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 70
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 30
+          }
+        ],
+        goal: [
+          "Tewodros's goal is to find a transport management platform that offers innovative tools to streamline operations, track shipments effectively, and optimize routes for timely deliveries. He seeks a platform that enhances efficiency and transparency in logistics management for his company."
+        ],
+        frustration: [
+          "Tewodros often faces challenges with traditional transport management systems that lack real-time tracking capabilities and efficient route optimization tools. He feels that these systems hinder operational efficiency and lead to delays in shipments, impacting the company's logistics performance."
+        ]
+      },
+      {
+        img: "female1",
+        name: "Zahra Mekonnen",
+        married: false,
+        age: 32,
+        location: "Dire Dawa, Ethiopia",
+        position: "Fleet Coordinator",
+        quote: "Innovation drives successful logistics!",
+        about: "Zahra is a 32-year-old fleet coordinator based in Dire Dawa, Ethiopia. She is passionate about optimizing fleet operations and ensuring the timely delivery of goods. Zahra values innovation and strategic planning in logistics management and is always seeking ways to improve fleet efficiency.",
+        favBrand: [
+          "Oromia International Bank",
+          "Djibouti Railway",
+          "Ethiopian Shipping Lines"
+        ],
+        socialMedia: [
+          {
+            name: "Instagram",
+            color: "#E4405F",
+            value: 50
+          },
+          {
+            name: "Pinterest",
+            color: "#BD081C",
+            value: 50
+          }
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 60
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 40
+          }
+        ],
+        goal: [
+          "Zahra's goal is to find a transport management platform that enables her to optimize fleet operations, track shipments efficiently, and improve delivery timelines. She seeks a platform that offers innovative tools to enhance fleet management and streamline logistics processes for her company."
+        ],
+        frustration: [
+          "Zahra often finds traditional transport management systems to be lacking in terms of innovation and real-time tracking capabilities. She feels that these systems do not provide the flexibility and efficiency needed to optimize fleet operations and ensure timely deliveries, leading to operational challenges."
+        ]
+      }
+    ],
+    sketch: [],
+    wireframe: [
+    ],
+    mockup: [
+      {
+        img: "https://dl.dropbox.com/scl/fi/wskflo12b0xfrv6tjmgij/Home-Dashboard.png?rlkey=nox8o5gr21p28gd3ztccmft1l&st=hnar9sia&dl=0",
+        title: "Dashboard",
+        subtitle: "Manage your services, trucks, trailers, and drivers' trips."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/8srr77gyi3k1h3ixrbp0l/Trip-Details-1.png?rlkey=dr4deyjkt5m34dkhz8x6roicc&st=q41rhr4u&dl=0",
+        title: "Tip Management",
+        subtitle: "Efficiently plan and optimize delivery routes."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/41xnidd2dq5ht4gjbuzuh/Vehicle-Detail-Page.png?rlkey=mjygj3jmry1o9m8htec4l39wf&st=bd8wx470&dl=0",
+        title: "Real-time Tracking",
+        subtitle: "Track shipments and drivers in real time."
+      }
+    ],
+    sampleView: [
+      "https://dl.dropbox.com/scl/fi/1y66r9vzcawjmy69apoig/Letter-Management-Verified.png?rlkey=nz28uh9xoom73g1msc54yn6ci&st=h5yvm2os&dl=0",
+      "https://dl.dropbox.com/scl/fi/srrgaaa9txu0iinr28y3o/Driver-Information-Table.png?rlkey=ndit22cz7frxqktp5z1r2lvlq&st=djv3lggf&dl=0",
+      "https://dl.dropbox.com/scl/fi/m6qq9v8924m38hx9nh6kz/Trip-Details.png?rlkey=0ooupjznabgcwjrrfhz696cks&st=j7i4mmf9&dl=0"
+    ],
+    tag: [
+      "UI/UX",
+      "Figma",
+      "Logistics",
+      "Transportation",
+      "Efficiency",
+      "Innovation"
+    ]
+  },
+  {
+    title: "Immigration Passport Service Company",
+    id: 10,
+    headerimg: "https://dl.dropbox.com/scl/fi/ju2dvvgrakybvopi0lwxp/MacBook-Pro-Tilted-Screen-Mockup.png?rlkey=zoacmzchq6shpmo220cm32hz4&st=ig529ohg&dl=0",
+    hashimg: "-",
+    primarycolor: "#3470FF",
+    subtitle: "Simplify Your Passport Experience!",
+    problem: "Many individuals struggle with managing their passport services efficiently. Traditional passport application processes are often time-consuming and complex, leading to delays and frustration. Lack of transparency and accessibility further compound the challenges faced by applicants.",
+    solution: "Our Immigration Passport Service Company offers a streamlined solution for managing passport services. Through an intuitive platform, users can easily apply for passports, track application status, schedule appointments, and access important information. Our goal is to simplify the passport experience and provide a user-friendly interface for all applicants.",
+    font: "Roboto",
+    colors: [
+      "#FF7A7A",
+      "#39E82C",
+      "#0F2C72"
+    ],
+    userPersona: [
+      {
+        img: "male2",
+        name: "Dawit Assefa",
+        married: true,
+        age: 28,
+        location: "Hawassa, Ethiopia",
+        position: "Travel Agent",
+        quote: "Simplify, streamline, succeed!",
+        about: "Dawit, a 28-year-old travel agent from Hawassa, Ethiopia, is dedicated to providing seamless passport services for his clients. He values efficiency and accuracy in managing passport applications and is always looking for ways to simplify the process. Dawit's goal is to enhance the passport experience for travelers and ensure timely document processing.",
+        favBrand: [
+          "Ethiopian Immigration Office",
+          "Ethiopian Airlines",
+          "Hilton Addis Ababa"
+        ],
+        socialMedia: [
+          {
+            name: "LinkedIn",
+            color: "#0077B5",
+            value: 70
+          },
+          {
+            name: "Twitter",
+            color: "#1DA1F2",
+            value: 40
+          }
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 80
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 50
+          }
+        ],
+        goal: [
+          "Dawit aims to find a passport service platform that simplifies application processes, provides real-time updates on application status, and offers easy appointment scheduling. He seeks a platform that enhances efficiency and transparency in passport services for his clients."
+        ],
+        frustration: [
+          "Dawit often encounters challenges with traditional passport application procedures that are cumbersome and time-consuming. He feels that the lack of transparency and accessibility in these processes hinders his ability to provide quick and reliable passport services to clients."
+        ]
+      },
+      {
+        img: "female3",
+        name: "Yodit Alemu",
+        married: false,
+        age: 35,
+        location: "Gondar, Ethiopia",
+        position: "Immigration Consultant",
+        quote: "Simplicity is key to efficiency!",
+        about: "Yodit, a 35-year-old immigration consultant from Gondar, Ethiopia, is passionate about providing seamless passport services to her clients. She values simplicity and clarity in managing passport applications and is always seeking innovative solutions to improve the process. Yodit's goal is to offer a hassle-free passport experience for travelers and ensure prompt document processing.",
+        favBrand: [
+          "Ethiopian Immigration Office",
+          "Ethiopian Airlines",
+          "Sheraton Addis"
+        ],
+        socialMedia: [
+          {
+            name: "Instagram",
+            color: "#E4405F",
+            value: 60
+          },
+          {
+            name: "Pinterest",
+            color: "#BD081C",
+            value: 50
+          }
+        ],
+        tech: [
+          {
+            name: "Mobile",
+            color: "#4CAF50",
+            value: 70
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 40
+          }
+        ],
+        goal: [
+          "Yodit's objective is to find a passport service platform that offers a user-friendly interface, simplifies the application process, and provides quick updates on application status. She seeks a platform that enhances efficiency and accessibility in passport services for her clients."
+        ],
+        frustration: [
+          "Yodit often faces challenges with traditional passport application systems that lack user-friendliness and transparency. She believes that these systems hinder the efficiency of passport services and result in delays in document processing, affecting her ability to provide prompt assistance to clients."
+        ]
+      }
+    ],
+    sketch: [],
+    wireframe: [
+    ],
+    mockup: [
+      {
+        img: "https://dl.dropbox.com/scl/fi/l6c5rf247c1yl7uqragi6/Pro-Display-XDR-Front-View-Mockup.png?rlkey=3lv4eg4wyi5o9wvi7tbq82fys&st=omlhdomn&dl=0",
+        title: "Landing Page",
+        subtitle: "Cultural Vibe for ethiopians to be represented with."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/xv4e2euvy1d24o9tqxf2s/Operation-1.png?rlkey=omp7mgz9i2dhb159grzbkicpg&st=uefhv63x&dl=0",
+        title: "Passport Application",
+        subtitle: "Easily apply for passports online."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/0hok88agwfmqxhbnx1su5/video-and-sign.png?rlkey=tktnhn5xn8qe6egjb6khlrnyc&st=vgb4gk0u&dl=0",
+        title: "Application Status",
+        subtitle: "Track the status of your passport application."
+      },
+      {
+        img: "https://dl.dropbox.com/scl/fi/pcsy7h0o2g29wd5efiwin/Operation.png?rlkey=fz3e185ylzqje03gf1ao9c9yl&st=hkfccz3l&dl=0",
+        title: "Appointment Scheduling",
+        subtitle: "Schedule appointments for passport services."
+      }
+    ],
+    sampleView: [
+      "https://dl.dropbox.com/scl/fi/00ngf800dtq2o8tzkq2dy/Base-Data-Management-1.png?rlkey=69t5id6inqytdj71535w9eq6g&st=qho9cnp2&dl=0",
+      "https://dl.dropbox.com/scl/fi/0hok88agwfmqxhbnx1su5/video-and-sign.png?rlkey=tktnhn5xn8qe6egjb6khlrnyc&st=29pehr1r&dl=0",
+      "https://dl.dropbox.com/scl/fi/h1l66mgdsvplv4o73emmd/Base-Data-Management.png?rlkey=6kxxn0jyxjct5xk4gkywpl4v3&st=5qkl78xd&dl=0"
+    ],
+    tag: [
+      "Passport Services",
+      "Immigration",
+      "Efficiency",
+      "Simplicity"
+    ]
+  },
+  {
+    title: "Data Analytics Dashboard",
+    id: 11,
+    headerimg: "https://dl.dropbox.com/scl/fi/b1ic54dnedz38fh5x7xog/Demand-management-table.png?rlkey=1sdrtf5oe5hhal8iy5dmnwwx5&st=ieul1nsu&dl=0",
+    hashimg: "-",
+    primarycolor: "#1B4F72",
+    subtitle: "Visualize Your Data, Unlock Insights!",
+    problem: "Organizations struggle with making data-driven decisions due to the complexity of raw data. Traditional data analysis methods are often time-consuming and require specialized skills, leading to delays in decision-making. The lack of user-friendly visualization tools further hampers the ability to derive actionable insights.",
+    solution: "Our Data Analytics Dashboard provides an intuitive platform for visualizing and analyzing data. With user-friendly features, it enables users to transform raw data into meaningful insights quickly. The dashboard supports various data sources, offers customizable visualizations, and provides real-time analytics to empower informed decision-making.",
+    font: "Roboto",
+    colors: [
+      "#1B4F72",
+      "#9A7D0A",
+      "#FF5733",
+      "#ECF0F1"
+    ],
+    userPersona: [
+      {
+        img: "male2",
+        name: "Samuel Gebre",
+        married: true,
+        age: 40,
+        location: "Addis Ababa, Ethiopia",
+        position: "Business Analyst",
+        quote: "Transform data into decisions!",
+        about: "Samuel, a 40-year-old business analyst from Addis Ababa, Ethiopia, is focused on driving data-informed decisions for his organization. He values efficiency and accuracy in data analysis and is constantly seeking tools that simplify the process. Samuel's goal is to leverage data analytics to uncover insights that propel business growth.",
+        favBrand: [
+          "Microsoft Power BI",
+          "Tableau",
+          "Google Analytics"
+        ],
+        socialMedia: [
+          {
+            name: "LinkedIn",
+            color: "#0077B5",
+            value: 90
+          },
+          {
+            name: "Twitter",
+            color: "#1DA1F2",
+            value: 60
+          }
+        ],
+        tech: [
+          {
+            name: "Desktop",
+            color: "#4CAF50",
+            value: 80
+          },
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 90
+          }
+        ],
+        goal: [
+          "Samuel aims to find a data analytics dashboard that offers comprehensive visualizations, supports multiple data sources, and provides real-time analytics. He seeks a platform that enhances his ability to make data-driven decisions quickly and accurately."
+        ],
+        frustration: [
+          "Samuel often encounters challenges with traditional data analysis tools that are complex and require extensive manual work. He feels that the lack of intuitive visualization tools limits his ability to derive actionable insights promptly."
+        ]
+      },
+      {
+        img: "female3",
+        name: "Alem Mulugeta",
+        married: false,
+        age: 34,
+        location: "Dire Dawa, Ethiopia",
+        position: "Data Scientist",
+        quote: "Data tells a story—let’s read it!",
+        about: "Alem, a 34-year-old data scientist from Dire Dawa, Ethiopia, is passionate about uncovering the stories hidden in data. She values advanced analytics tools that provide clear visualizations and actionable insights. Alem's goal is to leverage data to drive innovation and improve organizational efficiency.",
+        favBrand: [
+          "RStudio",
+          "Python (Pandas, Matplotlib)",
+          "Power BI"
+        ],
+        socialMedia: [
+          {
+            name: "Instagram",
+            color: "#E4405F",
+            value: 50
+          },
+          {
+            name: "LinkedIn",
+            color: "#0077B5",
+            value: 70
+          }
+        ],
+        tech: [
+          {
+            name: "Laptop",
+            color: "#2196F3",
+            value: 80
+          },
+          {
+            name: "Tablet",
+            color: "#FFC107",
+            value: 60
+          }
+        ],
+        goal: [
+          "Alem's objective is to find a data analytics dashboard that provides advanced analytics capabilities, supports complex data sets, and offers intuitive visualizations. She seeks a platform that enhances her ability to translate data into meaningful insights."
+        ],
+        frustration: [
+          "Alem often faces challenges with data analytics tools that are not user-friendly and lack advanced features for handling large and complex data sets. She believes that these limitations hinder her ability to efficiently analyze data and deliver insights."
+        ]
+      }
+    ],
+    sketch: [],
+    wireframe: [],
+    mockup: [
+      {
+        img: "https://www.dropbox.com/scl/fi/v9hahkbov08h83c2h9hw1/map.png?rlkey=de41fu2if79oyf64opgsm03cm&st=7y3ehtsy&dl=0",
+        title: "Dashboard Overview",
+        subtitle: "An interactive overview of your data at a glance."
+      },
+      {
+        img: "https://www.dropbox.com/scl/fi/n8folmvxijghxwtjkvgvw/line-graph.png?rlkey=vhh9rziib4py92652a6umdaxa&st=tifaapuo&dl=0",
+        title: "Data Visualization",
+        subtitle: "Transform raw data into meaningful visualizations."
+      },
+      {
+        img: "https://www.dropbox.com/scl/fi/b1ic54dnedz38fh5x7xog/Demand-management-table.png?rlkey=1sdrtf5oe5hhal8iy5dmnwwx5&st=yczs7f9m&dl=0",
+        title: "Real-Time Analytics",
+        subtitle: "Get real-time updates and insights."
+      },
+      {
+        img: "https://www.dropbox.com/scl/fi/33jlxzkb1mjt73avxywaf/Demand-management-table-1.png?rlkey=onbtrtivfdy1q5rrlxogi3ad3&st=10x5echg&dl=0",
+        title: "Customizable Reports",
+        subtitle: "Create and customize reports to suit your needs."
+      }
+    ],
+    sampleView: [
+      "https://www.dropbox.com/scl/fi/o6p65qisw1pcv8bh7fazi/KSD.png?rlkey=rw45jna5zj1et30x28atrqlhp&st=2klpur9y&dl=0",
+      "https://www.dropbox.com/scl/fi/jag85nfmcrjtrsqihe3fk/My-Career.png?rlkey=2htwj96qmey63q7z0642k70g0&st=nk42kkp6&dl=0",
+      "https://www.dropbox.com/scl/fi/5qsh70h50qr1ldoyxpu48/KSD-1.png?rlkey=jezpvasv4b8iblm79luictwwr&st=gg41uw43&dl=0"
+    ],
+    tag: [
+      "UI/UX",
+      "Figma",
+      "PowerBI",
+      "Data Analytics",
+      "Visualization",
+      "Custom Reports"
+    ]
+  }
+  
 ];

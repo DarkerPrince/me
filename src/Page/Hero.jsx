@@ -45,7 +45,8 @@ function HeroSection() {
         </div>
         <FunButton />
       </div>
-      <img src={heroImg} alt="hero" className=" xl:w-1/2" />
+      <img src={heroImg} alt="hero" className="xl:w-1/2" />
+     
     </div>
   );
 }

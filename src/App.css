@@ -20,6 +20,7 @@
   /* Add more formats if necessary */
 }
 
+html { scroll-behavior: smooth; }
 
 
 @keyframes shake {

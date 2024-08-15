@@ -6,11 +6,11 @@ function ColorPaletts({primary,paletts}) {
     background: `linear-gradient(to right bottom, ${primary}, ${paletts[0]})`,
   };
   return (
-    <div style={gradientStyle}  className={`rounded-2xl px-8 py-4`}>
+    <div style={gradientStyle}  className={`rounded-2xl px-8 py-4 bg-slate-500`}>
     <div className='flex flex-col gap-4'>
     <div className='flex flex-col items-start w-fit'>
-      <p className="text-2xl font-bold text-slate-800">Color Pallets</p>
-      <div className="w-1/2 border-slate-800 border-b-4 rounded-lg left-0"></div>
+      <p className="text-2xl font-bold text-slate-100">Color Pallets</p>
+      <div className="w-1/2 border-slate-100 border-b-4 rounded-lg left-0"></div>
       </div>
     <div className="flex flex-wrap gap-2">
       <div className="bg-white/40 shadow-sm p-2 flex flex-col rounded-md items-center gap-2">

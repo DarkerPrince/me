@@ -35,6 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Portfolio />}></Route>
           <Route path="/UIUX" element={<UIUX/>} />
+          {/* <Route path="/Resume" element={<ResumeShowPage/>} /> */}
           <Route path="/Graphic" element={<GraphicList/>} />
            {/* <Route path="/Visual-Design" element={<ResumeShowPage />} /> */}
             {/* <Route path="/Web" element={<BlogDetial/>} /> */}
