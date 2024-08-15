@@ -11,7 +11,7 @@ function Typography({ primary, paletts }) {
           <p className="text-2xl font-bold text-slate-800">Typography</p>
           <div className="w-1/2 border-slate-800 border-b-4 rounded-lg left-0"></div>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12 mb-6 bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
+        <div className="flex flex-col xl:flex-row items-center gap-4 md:gap-12 mb-6 bg-slate-100 dark:bg-slate-800 p-4 rounded-lg">
           <div className="flex flex-col items-center">
             <p className="text-9xl font-bold">Aa</p>
             <p className="text-xl">Poppins</p>

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function UiItems() {
   return (
     <Link to={"UIUX"}>
-      <div className="h-[400px] min-w-[350px] max-w-[400px] relative bg-white  dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:dark:bg-white/20 p-4 hover:shadow-xl rounded-2xl flex flex-col justify-between group">
+      <div id="work-section" className="h-[400px] min-w-[350px] max-w-[400px] relative bg-white  dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:dark:bg-white/20 p-4 hover:shadow-xl rounded-2xl flex flex-col justify-between group">
         <div>
           <p className="text-lg font-semibold">UI Designs Projects</p>
           <div className="flex flex-col items-start gap-2 mt-4">

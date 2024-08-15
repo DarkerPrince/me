@@ -16,8 +16,8 @@ function StyleGuide({state}) {
       <p className="text-2xl font-bold">Style Guidelines</p>
       <PiArrowBendRightDownBold/>
       </div>
-      <div className='w-full  h-1/2'>
-       <div className='grid grid-cols-3 gap-4'>
+      <div className='w-full   h-1/2'>
+       <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
           <ColorPaletts primary={state.primarycolor} paletts={state.colors}/>
           <Typography primary={state.primarycolor} paletts={state.colors}/>
           <Personas primary={state.primarycolor} paletts={state.colors} personaList={state.userPersona}/>
