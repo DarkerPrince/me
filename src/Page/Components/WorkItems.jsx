@@ -5,6 +5,10 @@ import { uiFiles } from "../../assets/Files/UI";
 function WorkItems({ blogItem, index }) {
   const navigate = useNavigate();
 
+  const gradientStyle = {
+    background: `linear-gradient(to right bottom, ${blogItem.primarycolor}, ${blogItem.colors[0]})`,
+  };
+
   function navigateMethod(idindex) {
     console.log("navigating on the gallery function");
     navigate(`/UIUX/${idindex}`, { state: { ...uiFiles[idindex] } });
@@ -16,11 +20,13 @@ function WorkItems({ blogItem, index }) {
       onClick={() => navigateMethod(index)}
     >
       <span className="absolute -z-10 h-4 w-4 top-1/3 left-1/2 flex items-center  rounded-full bg-gradient-to-br from-slate-300 to-slate-700 dark:bg-gradient-to-br dark:from-purple-100 dark:to-pink-100 opacity-10 transition-all duration-500 ease-in-out group-hover:scale-[50]"></span>
+      <div style={gradientStyle} className="p-1 rounded-lg">
       <img
-        className="h-56 w-full object-cover  transition-all duration-400 ease-in-out rounded-lg"
+        className={`h-56 w-full object-contain align-bottom transition-all duration-400 ease-in-out rounded-lg`}
         src={blogItem.headerimg}
         alt=""
       />
+      </div>
       <div className="mt-4">
         <div className="w-full">
           <h5 className=" truncate text-lg text-pink-400 dark:text-slate-200 font-leuleAfa font-semibold ">

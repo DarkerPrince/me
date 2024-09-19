@@ -897,7 +897,7 @@ export const uiFiles = [
     tag: ["UI/UX", "Figma", "Flutter", "React", "NextJS"],
   },
   {
-    title: "Ethiopian LMIS",
+    title: "Labor Market System",
     id: 6,
     headerimg:
       "https://dl.dropboxusercontent.com/scl/fi/87ng2kx7f1ng5qor28tw3/ELMIS.png?rlkey=t07gf180tb95h3qo5a6qukhme&dl=0",
@@ -1296,8 +1296,8 @@ export const uiFiles = [
     solution: "Freight Transport Management Platform is a comprehensive solution designed to empower operators in managing their services, trucks, trailers, drivers' trips, and other logistical aspects. By offering innovative tools and features, the platform enables operators to streamline operations, track shipments in real-time, optimize routes, and enhance overall efficiency in freight transport operations.",
     font: "Montserrat",
     colors: [
-      "#FDB114",
       "#4475F2",
+      "#FDB114",
       "#888888",
       "#F9F9F9"
     ],
@@ -1717,5 +1717,4 @@ export const uiFiles = [
       "Custom Reports"
     ]
   }
-  
 ];
