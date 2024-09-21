@@ -1,27 +1,39 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { uiFiles } from "../../assets/Files/UI";
+import { useRef } from "react";
 
-function WorkItems({ blogItem, index }) {
+function WorkItems({ blogItem, index ,setFunction }) {
   const navigate = useNavigate();
-
+  const imageRef = useRef(null);
   const gradientStyle = {
     background: `linear-gradient(to right bottom, ${blogItem.primarycolor}, ${blogItem.colors[0]})`,
   };
 
   function navigateMethod(idindex) {
     console.log("navigating on the gallery function");
-    navigate(`/UIUX/${idindex}`, { state: { ...uiFiles[idindex] } });
+    navigate(`/UIUX/${idindex}`, { state: { ...uiFiles[idindex]}});
+  }
+
+  function zoomEffect (){
+    if (imageRef.current) {
+    imageRef.current.classList.add("rescaleingImg");
+  }
   }
 
   return (
-    <div
-      className=" relative max-w-sm p-4  h-full backdrop-blur-lg bg-white/20 dark:bg-white/10 overflow-hidden group rounded-xl z-20"
-      onClick={() => navigateMethod(index)}
+    <div 
+      className=" p-4  h-full backdrop-blur-lg bg-slate-200/20 dark:bg-white/10 group rounded-xl z-20"
+      onClick={()=>{ 
+        setFunction(index);
+        zoomEffect();  
+      } }
     >
-      <span className="absolute -z-10 h-4 w-4 top-1/3 left-1/2 flex items-center  rounded-full bg-gradient-to-br from-slate-300 to-slate-700 dark:bg-gradient-to-br dark:from-purple-100 dark:to-pink-100 opacity-10 transition-all duration-500 ease-in-out group-hover:scale-[50]"></span>
+      <span className="absolute -z-10 h-4 w-4 top-1/3 left-1/2 flex items-center  rounded-full bg-gradient-to-br from-slate-300 to-slate-700 dark:bg-gradient-to-br dark:from-purple-100 dark:to-pink-100 opacity-10 transition-all duration-500 ease-in-out "></span> 
       <div style={gradientStyle} className="p-1 rounded-lg">
-      <img
+      <img ref={imageRef}
+     
+      // onClick={zoomEffect}
         className={`h-56 w-full object-contain align-bottom transition-all duration-400 ease-in-out rounded-lg`}
         src={blogItem.headerimg}
         alt=""

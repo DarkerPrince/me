@@ -3,13 +3,51 @@ import WorkItems from "../Components/WorkItems";
 import { PiPencilCircleDuotone } from "react-icons/pi";
 import { PiPenNibDuotone } from "react-icons/pi";
 import { uiFiles } from "../../assets/Files/UI";
+import DetailsPage from "./Details";
+import { useState ,useRef } from "react";
 
 function UIUX() {
+   const [previewDetails, setPreviewDetails] = useState(false);
+   const [chosenUIindex, setchosenUiIndex] = useState(0);
+   const imageRef = useRef(null);
+   function delayFunction() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, 100);
+    });
+  }
+
+  async function previewDetailsMethod (setVal){
+    zoomEffect();
+    await delayFunction();
+    setPreviewDetails(true);
+    setchosenUiIndex(setVal);
+    console.log("Clicked index is " ,setVal , chosenUIindex)
+   }
+
+   function closeDetailsMethod (){
+    setPreviewDetails(false);
+    setchosenUiIndex(-1);
+    console.log("Clicked index is " ,setVal , chosenUIindex)
+   }
+   
+   function zoomEffect (){
+    if (imageRef.current) {
+    imageRef.current.classList.add("moveouttop");
+  }
+  }
+
+
   return (
-    <div className="bg-[#fdfbf6] dark:bg-[#121212]">
-      <div className="pt-12">
+   previewDetails?<DetailsPage uiDetailInfo={uiFiles[chosenUIindex]} closeFunction={closeDetailsMethod} />:
+    <div className="bg-[#fdfbf6] dark:bg-[#121212] scroll-padding-y-0">
+      <div className="pt-12 "
+        ref={imageRef}
+      >
         <div className="relative   h-96 flex  backback rounded-3xl m-2 md:rounded-2xl md:mx-12 p-12 ">
           <p className="text-6xl md:text-5xl lg:text-9xl font-bold text-slate-100">
+            
             {" "}
             UI/UX
           </p>
@@ -23,7 +61,7 @@ function UIUX() {
           {uiFiles.map((item, index) => {
             return (
               <div key={index}>
-                <WorkItems blogItem={item} index={index} />
+                <WorkItems blogItem={item} index={index} setFunction={previewDetailsMethod} />
               </div>
             );
           })}

@@ -22,7 +22,7 @@ function PersonaItem({ persona, index }) {
   ];
   return (
     <div className=" shadow-xl bg-white hover:z-10 hover:scale-125 duration-300 ease-in-out h-full transition-all hover:shadow-2xl  dark:bg-slate-800 rounded-xl flex flex-col p-4 gap-2">
-      <p className="text-xl font-bold">"Personal Quotes"</p>
+      <p className="text-xl font-bold">"{persona.quote}"</p>
       <div className="flex gap-2">
         <div className="flex flex-col gap-2 items-center">
           <div className="flex flex-col gap-1 items-start">
