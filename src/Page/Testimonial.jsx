@@ -1,10 +1,41 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import persona from "../assets/Persona/persona1.png";
 import persona1 from "../assets/Persona/persona2.png";
 import persona2 from "../assets/Persona/persona3.png";
 import persona3 from "../assets/Persona/persona4.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/src/ScrollTrigger";
+
+
+
 function Testimonial() {
+
+var comments = useRef(null);
+
+useGSAP(()=>{
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.fromTo(".comments",{
+    x: 900, 
+    
+    rotation: 360,
+   
+  },{
+    x:0,
+    duration:3,
+    rotation:0,
+    scrollTrigger: {
+      trigger: ".comments",
+      toggleActions:"restart none none none",
+      start: 'center 0%',
+      end: 'bottom 10%',
+      markers:true,
+      scrub: true
+    }
+  });
+})
+  
   return (
     <div className="my-12 px-4 flex flex-col items-center justify-center">
       <div className="flex flex-col items-center">
@@ -13,8 +44,8 @@ function Testimonial() {
           Testimonial
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 mt-4">
-        <section className="bg-white shadow-2xl shadow-Secondary/20 rounded-lg dark:bg-white/5 dark:shadow-none">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 mt-4">
+        <section className="comments bg-white shadow-2xl shadow-Secondary/20 rounded-lg dark:bg-white/5 dark:shadow-none">
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure className="max-w-screen-md mx-auto">
               <svg
@@ -53,7 +84,7 @@ function Testimonial() {
             </figure>
           </div>
         </section>
-        <section className="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
+        <section className="comments shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure className="max-w-screen-md mx-auto">
               <svg
@@ -93,7 +124,7 @@ function Testimonial() {
             </figure>
           </div>
         </section>
-        <section className="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
+        <section className=" comments shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure className="max-w-screen-md mx-auto">
               <svg
@@ -134,7 +165,7 @@ function Testimonial() {
             </figure>
           </div>
         </section>
-        <section className="shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
+        <section className="comments shadow-Secondary/20 bg-white shadow-lg rounded-lg dark:bg-white/5 dark:shadow-none">
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-24 lg:px-6">
             <figure className="max-w-screen-md mx-auto">
               <svg

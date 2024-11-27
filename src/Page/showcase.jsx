@@ -1,5 +1,8 @@
 import React from "react";
 import ShowcaseItem from "./Components/showcaseItem";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { XAxis } from "recharts";
 
 var sampleimages = [
   "https://dl.dropboxusercontent.com/scl/fi/m0lnpaqjg27cg1h09fjpf/Slide-16_9-1.png?rlkey=7rp8epsspvcryq0krdeiy0o6u&dl=0",
@@ -31,6 +34,31 @@ var blurHashItems = ["qASPU.D%jrt7-=-;_4?bMwR.IToLx]xt-;xaxuo#V@oeNGjERkRi?b%gof
 ];
 
 function Showcase() {
+  var tl = gsap.timeline();
+  var grid = [4,3], //[rows, columns]
+  tl = gsap.timeline({repeat: -1, repeatDelay: 0.5});
+
+useGSAP(()=>{
+
+  tl.to(".box", {
+    duration: 1,
+    scale: 0.9, 
+    y: 20,
+    yoyo: true, 
+    repeat: -1, 
+    ease: "power1.inOut",
+    stagger: {
+      amount: 0.5, 
+      grid: grid, 
+      axis: "null", 
+      ease: "power3.inOut",
+      from: "center"
+    }
+  }
+);
+})
+
+
   return (
     <div className="flex flex-col items-center">
       <div className=" px-12 lg:w-1/2 flex flex-col items-center justify-center">
@@ -41,15 +69,19 @@ function Showcase() {
           Mobile & Web UI Designs: Inspiring categories for modern interfaces.
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
         {sampleimages.map((imgUrl, index) => {
           console.log({ imgUrl });
           return (
+            <div className="box">
+
             <ShowcaseItem
+              
               showImg={imgUrl}
               key={index}
               blurHash={blurHashItems[index]}
-            />
+              />
+              </div>
           );
         })}
       </div>

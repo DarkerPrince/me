@@ -1,3 +1,6 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/src/ScrollTrigger";
 import React from "react";
 // import { Kemer ,AIT,LMIS,Kibur,SSC } from '../../assets/files'
 
@@ -11,16 +14,37 @@ export const AHRI = "https://i.ibb.co/6sXHWv8/AHRI.jpg";
 export const TYK = "https://i.ibb.co/FV7xH8P/TYK.png";
 
 function Experience() {
+
+  useGSAP(()=>{
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.set(".expList",{
+    opacity:0,
+    })
+    gsap.to(".expList", {
+      opacity: 1, 
+      ease: "none",
+      duration:0.5,
+      scrollTrigger: {
+        trigger: ".expList",
+        start: "center 20%",
+        end: "center 10%",
+        // markers: true,
+        
+        toggleActions: "restart none none none"
+      }
+    })
+  });
   return (
     <div id="experience" className="backback mt-12 py-3 flex flex-col  justify-center rounded-3xl mx-auto p-4 lg:p-12  items-center sm:py-12">
       <p className="text-2xl font-bold text-white mb-12">My Work Experience</p>
       <div className=" md:w-full  sm:mx-2 sm:px-0">
-        <div className="relative text-gray-700 antialiased text-sm font-semibold">
+        <div className="relative text-gray-700 expList antialiased text-sm font-semibold">
           {/* <!-- Vertical bar running through middle --> */}
-          <div className="hidden sm:block w-[2px] bg-leulePrime/25 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+          <div className="hidden sm:block w-[2px] expList bg-leulePrime/25 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
           {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-          <div className="mt-6 sm:mt-0 sm:mb-12">
+          <div className="mt-6 sm:mt-0 expList sm:mb-12">
             <div className="flex flex-col sm:flex-row items-center">
               <div className="flex justify-start w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pr-8">
@@ -129,7 +153,7 @@ function Experience() {
          
 
           {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
-          <div className="mt-6 sm:mt-8">
+          <div className="mt-6 expList sm:mt-8">
             <div className="flex flex-col sm:flex-row items-center">
               <div className="flex justify-end w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pl-8">
@@ -198,7 +222,7 @@ function Experience() {
           
 
           {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-          <div className="mt-6 sm:mt-0 sm:mb-12">
+          <div className="mt-6 expList sm:mt-0 sm:mb-12">
             <div className="flex flex-col sm:flex-row items-center">
               <div className="flex justify-start w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pr-8">
@@ -265,7 +289,7 @@ function Experience() {
           </div>
 
           {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
-          <div className="mt-6 sm:mt-0 sm:mb-12">
+          <div className="mt-6 expList sm:mt-0 sm:mb-12">
             <div className="flex flex-col sm:flex-row items-center">
               <div className="flex justify-end w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pl-8">
@@ -320,7 +344,7 @@ function Experience() {
           </div>
 
           {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
-          <div className="mt-6 sm:mt-0 sm:mb-12">
+          <div className="mt-6 expList sm:mt-0 sm:mb-12">
             <div className="flex flex-col sm:flex-row items-center">
               <div className="flex justify-start w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pr-8">
@@ -380,6 +404,8 @@ function Experience() {
               />
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
