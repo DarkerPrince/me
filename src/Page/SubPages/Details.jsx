@@ -13,7 +13,7 @@ import { MdOutlineArrowBack } from "react-icons/md";
 const imageURL = "https://drive.google.com/uc?export=view&id=";
 
 function DetailsPage(props) {
-  console.log("The props in Details are :", props.uiDetailInfo.title );
+  console.log("The props in Details are :", props.uiDetailInfo.title);
   // const location = useLocation();
   // console.log(props.uiDetailInfo, "🏀");
 
@@ -33,15 +33,26 @@ function DetailsPage(props) {
   return (
     <div className="flex flex-col items-center bg-white dark:bg-black gap-8 ">
       <div className="flex gap-2 p-2 fixed top-4 cursor-pointer left-4 rounded-lg dark:text-slate-200  hover:bg-slate-300/10 hover:shadow-sm justify-center items-center">
-      <MdOutlineArrowBack/>
-      <p className="d" onClick={props.closeFunction}>Go Back</p>
+        <MdOutlineArrowBack />
+        <p className="d" onClick={props.closeFunction}>
+          Go Back
+        </p>
       </div>
+      
       <img
         src={`${props.uiDetailInfo.headerimg}`}
         className=" lg:w-3/4 rounded-3xl focusImg overflow-hidden mx-auto mt-4 "
         alt=""
-        
       />
+      <div className="">
+        <iframe
+        style={{ border: "0px solid rgba(0, 0, 0, 0.1)" }}
+        width="800"
+        height="450"
+        src="https://embed.figma.com/proto/mzPw5bJaJSKvGuYYYPDKma/My-PortFolio?page-id=0%3A1&node-id=10-36741&viewport=-2867%2C-11053%2C0.37&scaling=contain&content-scaling=fixed&starting-point-node-id=10%3A36741&embed-host=share"
+        allowFullScreen
+      ></iframe>
+      </div>
       <div className="w-3/4 flex flex-col items-start">
         <p
           style={{
@@ -62,7 +73,7 @@ function DetailsPage(props) {
             problem={props.uiDetailInfo.problem}
             solution={props.uiDetailInfo.solution}
           />
-          <MyProfileCard/>
+          <MyProfileCard />
         </div>
         <StyleGuide state={props.uiDetailInfo} />
       </div>
@@ -83,12 +94,12 @@ function DetailsPage(props) {
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:w-3/4 mb-12">
-            {props.uiDetailInfo.sampleView.map((sampleUI) => {
+            {props.uiDetailInfo.sampleView.map((sampleUI,index) => {
               return (
-                <ShowcaseItem
+                < ShowcaseItem
+                  key={index}
                   showImg={sampleUI}
-                  blurHash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
-                />
+                  blurHash="LEHV6nWB2yk8pyo0adR*.7kCMdnj" />
               );
             })}
           </div>
