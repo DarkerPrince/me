@@ -21,17 +21,17 @@ export default function CursorGlow({
     const updateColors = () => {
       const isDarkMode = document.documentElement.classList.contains("dark");
 
-      const lightColors = [
-        "rgba(253,27,83,0.6)",  // Primary light
-        "rgba(255,112,69,0.4)", // Secondary light
-        "rgba(255,255,255,0.3)" // White for blending
-      ];
+     const lightColors = [
+  "rgba(255, 0, 150, 0.7)",  // Vibrant neon pink
+  "rgba(0, 200, 255, 0.6)",  // Neon water blue
+  "rgba(255, 255, 255, 0.3)" // Soft white for blending
+];
 
-      const darkColors = [
-        "rgba(253,27,83,0.7)",  // Primary dark
-        "rgba(255,112,69,0.5)", // Secondary dark
-        "rgba(0,0,0,0.3)"       // Black for blending
-      ];
+const darkColors = [
+  "rgba(255, 50, 180, 0.8)",  // Brighter neon pink
+  "rgba(0, 150, 255, 0.1)",   // Brighter neon blue
+  "rgba(0, 0, 0, 0.3)"        // Dark blending
+];
 
       setColors(isDarkMode ? darkColors : lightColors);
     };
@@ -45,17 +45,17 @@ export default function CursorGlow({
   }, []);
 
   return (
-    <div
-      className="pointer-events-none fixed inset-0 z-50"
-      style={{
-        background: `radial-gradient(circle at ${pos.x}px ${pos.y}px, ${colors.join(", ")})`,
-        opacity: intensity,
-        width: "100%",
-        height: "100%",
-        filter: `blur(${size / 40}px)`,
-        mixBlendMode: mixMode,
-        transition: "background 0.2s ease-out",
-      }}
-    ></div>
+   <div
+  className="pointer-events-none fixed inset-0 z-50"
+  style={{
+    background: `radial-gradient(circle at ${pos.x}px ${pos.y}px, ${colors[0]} 0%, ${colors[1]} 20%, ${colors[2]} 40%)`,
+    opacity: intensity,
+    width: "100%",
+    height: "100%",
+    filter: `blur(${size / 10}px)`, // smaller blur for tighter glow
+    mixBlendMode: mixMode,
+    transition: "background 0.1s ease-out",
+  }}
+></div>
   );
 }
