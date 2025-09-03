@@ -1,97 +1,103 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { MdOutlineArrowBack } from "react-icons/md";
+import { PiArrowBendRightDownBold } from "react-icons/pi";
+import { useParams } from "react-router-dom";
 
 import MyProfileCard from "../Components/myProfileCard";
 import ShowcaseItem from "../Components/showcaseItem";
-
 import StyleGuide from "./Details Component/styleguide";
 import Define from "./Details Component/Define";
 import Mockup from "./Details Component/mockup";
-import { useLocation } from "react-router-dom";
-import { PiArrowBendRightDownBold } from "react-icons/pi";
-import { MdOutlineArrowBack } from "react-icons/md";
 
-const imageURL = "https://drive.google.com/uc?export=view&id=";
+function DetailsPage() {
+  const { id } = useParams();
+  // const id = 11;
+  const [uiDetailInfo, setUiDetailInfo] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-function DetailsPage(props) {
-  console.log("The props in Details are :", props.uiDetailInfo.title );
-  // const location = useLocation();
-  // console.log(props.uiDetailInfo, "🏀");
+  useEffect(() => {
+    if (!id) return;
 
-  function hexToRgb(hex) {
-    // Remove the # symbol if present
-    hex = hex.replace("#", "");
+    // Replace with your backend API endpoint
+    fetch(`https://portfolio-backend-gaxc.vercel.app/uiux/${id}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch UI detail");
+        return res.json();
+      })
+      .then((data) => setUiDetailInfo(data))
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
+  }, [id]);
 
-    // Convert hex to decimal
-    const r = parseInt(hex.substring(0, 2), 16);
-    const g = parseInt(hex.substring(2, 4), 16);
-    const b = parseInt(hex.substring(4, 6), 16);
-
-    // Return the RGB color format
-    return `rgb(${r}, ${g}, ${b} ,0.2)`;
-  }
+  if (loading) return <p className="text-center mt-12">Loading UI details...</p>;
+  if (error) return <p className="text-center mt-12 text-red-500">{error}</p>;
+  if (!uiDetailInfo) return null;
 
   return (
-    <div className="flex flex-col items-center bg-white dark:bg-black gap-8 ">
-      <div className="flex gap-2 p-2 fixed top-4 cursor-pointer left-4 rounded-lg dark:text-slate-200  hover:bg-slate-300/10 hover:shadow-sm justify-center items-center">
-      <MdOutlineArrowBack/>
-      <p className="d" onClick={props.closeFunction}>Go Back</p>
-      </div>
+    <div className="flex flex-col items-center gap-12 bg-white dark:bg-black text-slate-800 dark:text-slate-200 px-4 md:px-8 py-8">
+
+      {/* Back Button */}
+      {/* <div
+        // onClick={closeFunction}
+        className="fixed top-4 left-4 z-50 flex items-center gap-2 cursor-pointer rounded-lg 
+                   bg-white/20 dark:bg-gray-800/30 px-3 py-2 backdrop-blur-sm shadow-md 
+                   hover:shadow-lg transition-all duration-300"
+      >
+        <MdOutlineArrowBack size={20} />
+        <span className="font-semibold">Go Back</span>
+      </div> */}
+
+      {/* Header Image */}
       <img
-        src={`${props.uiDetailInfo.headerimg}`}
-        className=" lg:w-3/4 rounded-3xl focusImg overflow-hidden mx-auto mt-4 "
-        alt=""
-        
+        src={uiDetailInfo.headerimg}
+        alt={uiDetailInfo.title}
+        className="rounded-3xl w-full md:w-3/4 lg:w-2/3 shadow-lg object-cover focusImg transition-transform duration-500"
       />
-      <div className="w-3/4 flex flex-col items-start">
-        <p
-          style={{
-            color: `${props.uiDetailInfo.primarycolor}`,
-          }}
-          className="text-slate-800 dark:text-slate-200 text-4xl font-bold "
-        >
-          {props.uiDetailInfo.title}
-        </p>
-        <p className="text-slate-800 dark:text-slate-200 text-lg">
-          {props.uiDetailInfo.subtitle}
+
+      {/* Title & Subtitle */}
+      <div className="w-full md:w-3/4 lg:w-2/3 text-center md:text-left">
+        <h1 style={{ color: uiDetailInfo.primarycolor }} className="text-4xl md:text-5xl font-bold mb-2">
+          {uiDetailInfo.title}
+        </h1>
+        <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300">
+          {uiDetailInfo.subtitle}
         </p>
       </div>
-      <div className="flex flex-col items-start  justify-center p-2 lg:w-3/4 md:justify-start gap-8 ">
-        {/* problem and solution of template */}
-        <div className="flex md:items-start md:flex-row flex-col items-center ">
-          <Define
-            problem={props.uiDetailInfo.problem}
-            solution={props.uiDetailInfo.solution}
-          />
-          <MyProfileCard/>
-        </div>
-        <StyleGuide state={props.uiDetailInfo} />
+
+      {/* Problem & Solution */}
+      <div className="flex flex-col lg:flex-row w-full md:w-3/4 gap-8">
+        <Define problem={uiDetailInfo.problem} solution={uiDetailInfo.solution} />
+        <MyProfileCard />
       </div>
 
-      <Mockup mockup={props.uiDetailInfo.mockup} />
+      {/* Style Guide */}
+      <div className="w-full md:w-3/4">
+        <StyleGuide state={uiDetailInfo} />
+      </div>
 
+      {/* Mockups */}
       <div className="w-full">
-        <div className="flex flex-col items-center">
-          <div className="flex items-end my-12 w-full  md:px-6 md:w-3/4">
-            <p
-              style={{ color: `${props.uiDetailInfo.primarycolor}` }}
-              className=" text-3xl md:text-4xl font-bold px-6"
-            >
-              Sample Showcase
-            </p>
-            <PiArrowBendRightDownBold
-              style={{ color: `${props.uiDetailInfo.primarycolor}` }}
+        <Mockup mockup={uiDetailInfo.mockup} />
+      </div>
+
+      {/* Sample Showcase */}
+      <div className="w-full md:w-3/4">
+        <div className="flex items-center gap-2 mb-6">
+          <h2 style={{ color: uiDetailInfo.primarycolor }} className="text-3xl md:text-4xl font-bold">
+            Sample Showcase
+          </h2>
+          <PiArrowBendRightDownBold size={28} style={{ color: uiDetailInfo.primarycolor }} />
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {uiDetailInfo.sampleView.map((sampleUI, index) => (
+            <ShowcaseItem
+              key={index}
+              showImg={sampleUI}
+              blurHash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
             />
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:w-3/4 mb-12">
-            {props.uiDetailInfo.sampleView.map((sampleUI) => {
-              return (
-                <ShowcaseItem
-                  showImg={sampleUI}
-                  blurHash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
-                />
-              );
-            })}
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,11 +1,9 @@
-import React from "react";
+
 import logo from "../assets/mylogo.svg";
 import { BiCategoryAlt } from "react-icons/bi";
-import { CgDetailsMore } from "react-icons/cg";
+
 import { TbListDetails } from "react-icons/tb";
 import "../App.css";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 function Navigator() {
   return (
@@ -14,19 +12,19 @@ function Navigator() {
       <div className="flex gap-8 items-center">
         <a
           href="#work-section"
-          class="group text-slate-500 dark:text-slate-200 transition duration-300"
+          className="group text-slate-500 dark:text-slate-200 transition duration-300"
         >
           <BiCategoryAlt/>
-          Work
-          <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-Primary"></span>
+          Projects
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-Primary"></span>
         </a>
         <a
           href="#experience"
-          class="group text-slate-500 dark:text-slate-200 transition duration-300"
+          className="group text-slate-500 dark:text-slate-200 transition duration-300"
         >
           <TbListDetails/>
-          Experience
-          <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-Primary"></span>
+          My Journey
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-Primary"></span>
         </a>
         {/* <Link
           href="/Resume"

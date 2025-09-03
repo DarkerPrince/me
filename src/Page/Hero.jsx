@@ -1,16 +1,17 @@
-import React from "react";
 import heroImg from "../assets/hero.png";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import { TbBrandDribbbleFilled } from "react-icons/tb";
-import { FaGithub, FaTelegram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import FunButton from "./Components/ContactmeButton";
 
+
+
 function HeroSection() {
-  const handleEmailClick = (e) => {
-    e.preventDefault();
-    window.location.href = "mailto:princemagiv@gmail.com";
-  };
+  // const handleEmailClick = (e) => {
+  //   e.preventDefault();
+  //   window.location.href = "mailto:princemagiv@gmail.com";
+  // };
 
   return (
     <div className=" flex flex-col-reverse items-center justify-center  ">
@@ -22,11 +23,12 @@ function HeroSection() {
           UI/UX and Visual Designer | Front end & Mobile App Developer
         </p>
         <p className="text-center dark:text-slate-200 md:text-xl">
-          A Habesha who's absolutely crazy about coding and design. My graphics
-          and UI designs are like love notes from my heart. I create awesome web
-          pages and mobile apps that feel like pure magic, all thanks to my
-          talent for UI design.
-        </p>
+          I am a Senior UI designer and Front-End Engineer at Negat,
+          specializing in accessibility. I contribute to the creation and
+          maintenance of UI components that power Negat frontend, ensuring
+          our platform meets web accessibility standards and best practices to
+          deliver an inclusive user experience.
+          </p>
         <div className="flex gap-4 mt-4 md:mt-6 z-10 mb-4">
           <a href="https://www.behance.net/luel_sisay">
             <AiFillBehanceCircle className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
@@ -45,8 +47,7 @@ function HeroSection() {
         </div>
         <FunButton />
       </div>
-      <img src={heroImg} alt="hero" className="xl:w-1/2" />
-     
+      <img src={heroImg} alt="hero" className="xl:w-1/2 z-10" />
     </div>
   );
 }

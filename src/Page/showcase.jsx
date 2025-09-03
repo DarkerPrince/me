@@ -29,29 +29,29 @@ var blurHashItems = ["qASPU.D%jrt7-=-;_4?bMwR.IToLx]xt-;xaxuo#V@oeNGjERkRi?b%gof
 "z3RpOU00030D0403030p8t-.yOOjOkKIk*pBF^Tu=^=JrtWExZ-Ax]9txF%2M~M~bbxs_2gNw]$xa0s9t4xV?ZIVV_xbjIjIa$of?G$+nif|xXxZoKbX",
 "q9RfqRELs9tR4ot7-;xa~qxujYS4tRoeV?sl4nWCt7t6MxWBx]t7%MR+S5NGs:j]WVofIUj[R*WWn$t6ofae%Ms:ozf+ofjtaykC"
 ];
-
 function Showcase() {
   return (
-    <div className="flex flex-col items-center">
-      <div className=" px-12 lg:w-1/2 flex flex-col items-center justify-center">
-        <p className="font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+    <div className="flex flex-col items-center py-12 px-4 lg:px-12 bg-slate-50 dark:bg-slate-900">
+      {/* Header */}
+      <div className="flex flex-col items-center mb-8 lg:w-1/2">
+        <h2 className="font-extrabold text-transparent text-2xl md:text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 text-center">
           Sample Showcase
-        </p>
-        <p className="text-center text-sm text-slate-400">
+        </h2>
+        <p className="text-center text-sm text-slate-500 dark:text-slate-300 mt-2">
           Mobile & Web UI Designs: Inspiring categories for modern interfaces.
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
-        {sampleimages.map((imgUrl, index) => {
-          console.log({ imgUrl });
-          return (
-            <ShowcaseItem
-              showImg={imgUrl}
-              key={index}
-              blurHash={blurHashItems[index]}
-            />
-          );
-        })}
+
+      {/* Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl">
+        {sampleimages.map((imgUrl, index) => (
+          <ShowcaseItem
+            key={index}
+            showImg={imgUrl}
+            blurHash={blurHashItems[index]}
+            className="group relative rounded-xl overflow-hidden shadow-lg bg-white dark:bg-slate-800 transition-transform transform hover:scale-105 hover:shadow-2xl"
+          />
+        ))}
       </div>
     </div>
   );

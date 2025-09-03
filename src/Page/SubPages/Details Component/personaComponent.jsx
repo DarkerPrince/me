@@ -82,30 +82,14 @@ function PersonaItem({ persona, index }) {
                 Social Media
               </p>
               <PersonalPieChart statData={persona.socialMedia} />
-              {/* {persona.socialMedia.map((item) => {
-                console.log(item);
-                return (
-                  <div className="flex gap-2">
-                    <p className="text-sm">{item.title}</p>{" "}
-                    <p className="text-sm">{item.value}%</p>
-                  </div>
-                );
-              })} */}
+             
             </div>
             <div className="flex flex-col items-center p-2 w-1/2 bg-slate-100 overflow-visible dark:bg-slate-100/20 rounded-lg">
               <p className="text-sm font-semibold text-slate-400 dark:text-slate-100">
                 Technologies
               </p>
               <PersonalPieChart statData={persona.tech} />
-              {/* {persona.tech.map((item) => {
-                console.log(item);
-                return (
-                  <div className="flex gap-2">
-                    <p className="text-sm">{item.device}</p>
-                    <p className="text-sm">{item.usage}%</p>
-                  </div>
-                );
-              })} */}
+             
             </div>
           </div>
         </div>
