@@ -13,7 +13,7 @@ function UIUX() {
 
   useEffect(() => {
     // Replace with your backend API endpoint
-    fetch("http://localhost:8000/uiux")
+    fetch("https://portfolio-backend-gaxc.vercel.app/uiux")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch UI files");
         return res.json();
