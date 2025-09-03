@@ -7,7 +7,7 @@ import UIUX from './Page/SubPages/UIUX';
 import DetailsPage from './Page/SubPages/Details';
 import GraphicList from './Page/SubPages/Graphic';
 import { useEffect ,useState } from 'react';
-
+import CursorGlow from './Page/Components/CursorGlow';
 
 
 
@@ -30,6 +30,7 @@ function App() {
 
   return (
     <BrowserRouter>
+        <CursorGlow />
         <ScrollToTop/>
         <AnimatePresence initial={false} mode="wait">
         <Routes>

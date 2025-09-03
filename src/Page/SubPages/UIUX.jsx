@@ -45,7 +45,7 @@ function UIUX() {
     }
   };
 
-  if (loading) return <p className="text-center mt-12">Loading UI files...</p>;
+  if (loading) return <p className="text-center mt-12">...</p>;
   if (error) return <p className="text-center mt-12 text-red-500">{error}</p>;
 
   if (previewDetails) {
