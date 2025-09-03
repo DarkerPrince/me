@@ -3,8 +3,6 @@ import HeroSection from "./Page/Hero";
 import Skills from "./Page/skills";
 import Categories from "./Page/categories";
 
-import Certification from "./Page/certification";
-import Testimonial from "./Page/Testimonial";
 import Experience from "./Page/experiencev2";
 import Footer from "./Page/footer";
 import Navigator from "./Page/Navigator";
@@ -13,7 +11,7 @@ import noice from "./assets/noice.svg";
 import { useEffect, useState } from "react";
 import { MdDarkMode } from "react-icons/md";
 import { IoMdSunny } from "react-icons/io";
-import ServiceCard from "./Page/serviceCard";
+
 
 function Portfolio() {
   const [theme, setTheme] = useState(null);

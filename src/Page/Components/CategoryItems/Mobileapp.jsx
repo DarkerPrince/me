@@ -11,30 +11,8 @@ import { FaDribbble } from "react-icons/fa";
 
 function Mobileapp() {
   return (
-    <Link to={"Graphic"}>
+    <Link >
       <div className="h-[400px] min-w-[350px] border-gray-400 border-2 max-w-[400px] relative bg-white dark:bg-white/10 text-slate-700 dark:text-slate-200  hover:dark:bg-white/20 p-4 hover:shadow-xl  rounded-2xl flex flex-col justify-between group">
-        {/* <div>
-          <p className="text-lg font-semibold">Visual Design</p>
-          <div className="flex flex-col items-start gap-2 mt-4">
-            <div className=" flex items-center justify-center gap-2">
-              <PiPenNibStraightBold />
-              <p>Flyer</p>
-            </div>
-            <div className=" flex items-center justify-center gap-2">
-              <PiPenNibStraightBold />
-              <p>Social Media Posts</p>
-            </div>
-            <div className=" flex items-center justify-center gap-2">
-              <PiPenNibStraightBold />
-              <p>Banners & Rollups</p>
-            </div>
-            <div className=" flex items-center justify-center gap-2">
-              <PiPenNibStraightBold />
-
-              <p>Cards & Booklets </p>
-            </div>
-          </div>
-        </div> */}
 
         <div className="h-[400px] w-full mx-auto  rounded-xl flex justify-center self-center items-end">
           <img
@@ -55,7 +33,7 @@ function Mobileapp() {
         </div>
 
         <div
-          className="bg-indigo-50 border bottom-20 rounded-lg border-gray-300 shadow-sm p-4 pl-5 pr-12 relative z-10"
+          className="backback shadow-lg bottom-20 rounded-lg   p-4 pl-5 pr-12 relative z-10"
           style={{
             clipPath:
               // Start at top-left → straight across → cut down diagonal tab on right → rectangle

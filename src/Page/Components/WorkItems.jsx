@@ -1,64 +1,67 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { uiFiles } from "../../assets/Files/UI";
-import { useRef } from "react";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
-function WorkItems({ blogItem, index ,setFunction }) {
-  const navigate = useNavigate();
+function WorkItems({ blogItem }) {
   const imageRef = useRef(null);
+
+  // Gradient background based on blogItem colors
   const gradientStyle = {
-    background: `linear-gradient(to right bottom, ${blogItem.primarycolor}, ${blogItem.colors[0]})`,
+    background: `linear-gradient(135deg, ${blogItem.primarycolor}, ${blogItem.colors[0]})`,
   };
 
-  function navigateMethod(idindex) {
-    console.log("navigating on the gallery function");
-    navigate(`/UIUX/${idindex}`, { state: { ...uiFiles[idindex]}});
-  }
-
-  function zoomEffect (){
-    if (imageRef.current) {
-    imageRef.current.classList.add("rescaleingImg");
-  }
-  }
-
   return (
-    <div 
-      className=" p-4  h-full backdrop-blur-lg bg-slate-200/20 dark:bg-white/10 group rounded-xl z-20"
-      onClick={()=>{ 
-        setFunction(index);
-        zoomEffect();  
-      } }
-    >
-      <span className="absolute -z-10 h-4 w-4 top-1/3 left-1/2 flex items-center  rounded-full bg-gradient-to-br from-slate-300 to-slate-700 dark:bg-gradient-to-br dark:from-purple-100 dark:to-pink-100 opacity-10 transition-all duration-500 ease-in-out "></span> 
-      <div style={gradientStyle} className="p-1 rounded-lg">
-      <img ref={imageRef}
-     
-      // onClick={zoomEffect}
-        className={`h-56 w-full object-contain align-bottom transition-all duration-400 ease-in-out rounded-lg`}
-        src={blogItem.headerimg}
-        alt=""
-      />
-      </div>
-      <div className="mt-4">
-        <div className="w-full">
-          <h5 className=" truncate text-lg text-pink-400 dark:text-slate-200 font-leuleAfa font-semibold ">
+    <Link to={`/UIUX/${blogItem.id}`}>
+      <div
+        className="group relative h-full cursor-pointer rounded-2xl border border-slate-200/40 bg-white/60 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out 
+                   hover:scale-[1.02] hover:shadow-xl dark:border-white/10 dark:bg-slate-900/50"
+      >
+        {/* Gradient Background Blob */}
+        <span
+          className="absolute -z-10 h-40 w-40 -top-8 -right-8 rounded-full 
+                     bg-gradient-to-br from-slate-300 to-slate-700 opacity-10 blur-3xl 
+                     transition-all duration-700 ease-in-out group-hover:opacity-20 
+                     dark:from-pink-200/40 dark:to-purple-300/40"
+        ></span>
+
+        {/* Image Section */}
+        <div
+          style={gradientStyle}
+          className="rounded-t-2xl p-1 transition-all duration-300 ease-in-out group-hover:brightness-105"
+        >
+          <img
+            ref={imageRef}
+            className="h-56 w-full rounded-xl object-contain transition-transform duration-500 ease-in-out group-hover:scale-105"
+            src={blogItem.headerimg}
+            alt={blogItem.title}
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="space-y-2 p-4">
+          {/* Title */}
+          <h5 className="truncate text-lg font-semibold text-slate-800 dark:text-slate-100">
             {blogItem.title}
           </h5>
-        </div>
 
-        {/* <p className="mb-3 text-sm font-normal text-gray-700 ">{blogItem.content}</p> */}
-        <p className=" flex text-sm mb-4 text-slate-500">{blogItem.subtitle}</p>
-        <div className=" flex text-sm flex-wrap gap-2">
-          {blogItem.tag.map((tagItem) => {
-            return (
-              <div className="text-bg rounded-full border px-2 text-xs bg-slate-100 text-slate-500 dark:bg-slate-50/20 dark:text-slate-400">
+          {/* Subtitle */}
+          <p className="text-sm text-slate-500 dark:text-slate-400">
+            {blogItem.subtitle}
+          </p>
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
+            {blogItem.tag.map((tagItem, idx) => (
+              <span
+                key={idx}
+                className="rounded-full border border-slate-300/40 bg-slate-100 px-3 py-0.5 text-xs text-slate-600 transition-colors duration-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
+              >
                 {tagItem}
-              </div>
-            );
-          })}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

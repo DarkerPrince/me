@@ -1,9 +1,9 @@
 
 
 import VisualItem from "./Components/CategoryItems/visualItem";
-import UiItems from "./Components/CategoryItems/UiItems";
 import Frontend from "./Components/CategoryItems/Frontend";
 import Mobileapp from "./Components/CategoryItems/Mobileapp";
+import UIDesign from "./Components/CategoryItems/UIDesign";
 
 
 
@@ -15,13 +15,15 @@ function Categories() {
         Expert on Fields
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <UiItems/>
+        <UIDesign className="col-span-1 lg:col-span-2"  />
+        
+        <Frontend/>
 
         <VisualItem />
 
-        <Frontend />
+        
 
-        <Mobileapp />
+        {/* <Mobileapp /> */}
       </div>
     </div>
   );
