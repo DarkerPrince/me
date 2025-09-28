@@ -10,41 +10,41 @@ function DesignProcessItems({Primary}){
         return <div className=''>
       
       
-      <ol class="relative text-gray-500 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">                  
-          <li class="mb-10 ms-6">            
-              <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
-                  <SiSlideshare className="" style={{ color: `${Primary}` }} />  
+      <ol className="relative text-gray-800 border-s border-gray-200 dark:border-gray-700 dark:text-gray-400">                  
+          <li className="mb-10 ms-6">            
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+                  <SiSlideshare className="" />  
               </span>
-              <h3 class="font-semibold leading-tight text-slate-800">Empathize</h3>
-              <p class="text-xs text-slate-200">Understanding and relating to the users' perspective to create designs that address their needs, emotions, and aspirations effectively.</p>
+              <h3 className="font-semibold leading-tight text-slate-800 dark:text-slate-400">Empathize</h3>
+              <p className="text-xs">Understanding and relating to the users' perspective to create designs that address their needs, emotions, and aspirations effectively.</p>
           </li>
-          <li class="mb-10 ms-6">
-              <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
-              <IoNewspaper style={{ color: `${Primary}` }} className="" />
+          <li className="mb-10 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+              <IoNewspaper className="" />
               </span>
-              <h3 class="font-semibold text-slate-800 leading-tight">Define</h3>
-              <p class="text-xs text-slate-200">involves clearly stating the problem, goals, and requirements to guide the design process and create effective user interfaces.</p>
+              <h3 className="font-semibold text-slate-800 dark:text-slate-400 leading-tight">Define</h3>
+              <p className="text-xs">involves clearly stating the problem, goals, and requirements to guide the design process and create effective user interfaces.</p>
           </li>
-          <li class="mb-10 ms-6">
-              <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
-                  <FaLightbulb style={{ color: `${Primary}` }} className="" /> 
+          <li className="mb-10 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+                  <FaLightbulb className="" /> 
               </span>
-              <h3 class="font-semibold text-slate-800 leading-tight">Ideate</h3>
-              <p class="text-xs text-slate-200">This includes generating creative solutions to address design goals and requirements.</p>
+              <h3 className="font-semibold text-slate-800 dark:text-slate-400 leading-tight">Ideate</h3>
+              <p className="text-xs">This includes generating creative solutions to address design goals and requirements.</p>
           </li>
-          <li class="mb-10 ms-6">
-              <span class="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
-              <FaGears style={{ color: `${Primary}` }} className=" " />
+          <li className="mb-10 ms-6">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-100 rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+              <FaGears className=" " />
               </span>
-              <h3 class="font-semibold text-slate-800 leading-tight">Prototype</h3>
-              <p class="text-xs text-slate-200">creating interactive representations to simulate functionality, gather feedback, and refine the user experience before development.</p>
+              <h3 className="font-semibold text-slate-800 dark:text-slate-400 leading-tight">Prototype</h3>
+              <p className="text-xs">creating interactive representations to simulate functionality, gather feedback, and refine the user experience before development.</p>
           </li>
-          <li class="ms-6">
-              <span class="absolute flex items-center bg-green-200 justify-center w-8 h-8  rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
+          <li className="ms-6">
+              <span className="absolute flex items-center bg-green-200 justify-center w-8 h-8  rounded-full -start-4 ring-4 ring-white dark:ring-gray-900 dark:bg-gray-700">
               <BsShieldFillCheck className=" text-green-400" />
               </span>
-              <h3 class="font-semibold text-slate-800 leading-tight"> Test</h3>
-              <p class="text-xs text-slate-200">User Test</p>
+              <h3 className="font-semibold text-slate-800 dark:text-slate-400 leading-tight"> Test</h3>
+              <p className="text-xs">User Test</p>
           </li>
           
       </ol>

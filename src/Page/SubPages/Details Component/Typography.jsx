@@ -1,9 +1,47 @@
 import React from "react";
 
 function Typography({ primary, paletts }) {
+
   const gradientStyle = {
-    background: `linear-gradient(135deg, ${primary}, ${paletts[0]})`,
+    background: `linear-gradient(
+      to right bottom, 
+      ${addOpacity(primary, 0.10)}, 
+      ${addOpacity(paletts[0], 0.10)}
+    )`,
+    border: `1px solid ${primary}`, // solid border using primary color
+    borderRadius: "1rem",
   };
+
+  function getContrastColor(hex) {
+  // Remove # if present
+  // hex = hex.replace('#', '');
+
+   // Ensure hex is 6 digits
+  if (hex.startsWith('#') && hex.length === 7) {
+    hex = hex.slice(1);
+  } else if (hex.startsWith('#') && hex.length === 9) {
+    hex = hex.slice(1, 7); // ignore alpha for brightness
+  }
+  
+  // Convert to RGB
+  const r = parseInt(hex.substr(0,2),16);
+  const g = parseInt(hex.substr(2,2),16);
+  const b = parseInt(hex.substr(4,2),16);
+
+  // Calculate brightness (YIQ formula)
+  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+  console.log(`Color: #${hex}, Brightness: ${brightness}`);
+
+  // Return readable color
+  return brightness > 128 ? 'text-slate-900' : 'text-slate-100';
+}
+
+  function addOpacity(hex, alpha) {
+  const opacity = Math.round(alpha * 255).toString(16).padStart(2, '0');
+  return `${hex}${opacity}`;
+}
+
 
   return (
     <div
@@ -13,14 +51,13 @@ function Typography({ primary, paletts }) {
       <div className="flex flex-col gap-6">
         {/* Header */}
         <div className="flex flex-col items-start">
-          <p className="text-3xl font-extrabold text-slate-900 dark:text-slate-100">
+          <p className="text-2xl font-extrabold text-slate-900 dark:text-slate-100">
             Typography
           </p>
-          <div className="w-1/3 border-b-4 border-slate-800 dark:border-slate-100 rounded-md"></div>
         </div>
 
         {/* Typography Showcase */}
-        <div className="flex flex-col xl:flex-row items-center gap-6 mb-6 bg-slate-50 dark:bg-slate-900/40 p-6 rounded-xl shadow-inner">
+        <div className="flex flex-col xl:flex-row items-center gap-6 mb-6 p-6 rounded-xl">
           {/* Big Font Preview */}
           <div className="flex flex-col items-center">
             <p className="text-8xl md:text-9xl font-extrabold text-slate-800 dark:text-slate-100">
@@ -34,7 +71,7 @@ function Typography({ primary, paletts }) {
           {/* Alphabet & Weights */}
           <div className="flex gap-8 bg-slate-100/60 dark:bg-slate-800/50 rounded-xl items-center p-4 md:p-8">
             {/* Alphabet */}
-            <div className="flex flex-col justify-center text-slate-700 dark:text-slate-300">
+            <div className={`flex flex-col justify-center  text-slate-700 dark:text-slate-300`}>
               <p className="text-sm md:text-base font-medium">
                 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
               </p>

@@ -13,7 +13,8 @@ function UIUX() {
 
   useEffect(() => {
     // Replace with your backend API endpoint
-    fetch("https://portfolio-backend-gaxc.vercel.app/uiux")
+    // fetch("https://portfolio-backend-gaxc.vercel.app/uiux")
+    fetch("http://localhost:8000/uiux")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch UI files");
         return res.json();
@@ -58,7 +59,7 @@ function UIUX() {
   }
 
   return (
-    <div className="bg-[#fdfbf6] dark:bg-[#121212] flex flex-col items-center">
+    <div className="bg-[#fdfbf6] dark:bg-[#121212] flex flex-col items-center pb-12">
       {/* Hero Section */}
       <div
         ref={imageRef}

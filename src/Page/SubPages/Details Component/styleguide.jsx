@@ -14,7 +14,6 @@ function StyleGuide({ state }) {
       {/* Header */}
       <div className="flex items-center gap-2">
         <p className="text-3xl md:text-4xl font-bold">Style Guidelines</p>
-        <PiArrowBendRightDownBold className="text-2xl md:text-3xl text-primary" />
       </div>
 
       {/* Core Style Grid */}
