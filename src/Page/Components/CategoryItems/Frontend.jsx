@@ -9,10 +9,10 @@ import telebirr from "../../../assets/workImg/getin2.png";
 
 function Frontend() {
   return (
-    <Link to={"UIUX"}>
+    <Link>
       <div
         id="work-section"
-        className="relative h-[400px] border-gray-400 border-2 min-w-[350px] max-w-[400px] bg-white/20  dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:dark:bg-white/20 p-4 hover:shadow-xl rounded-2xl flex flex-col justify-between group"
+        className="relative h-[400px] opacity-20 border-gray-400 border-2 min-w-[350px] max-w-[400px] bg-white/20  dark:bg-white/10 text-slate-700 dark:text-slate-200 hover:dark:bg-white/20 p-4 hover:shadow-xl rounded-2xl flex flex-col justify-between group"
       >
         {/* <div className="flex w-full justify-between ">
           <p className="text-lg font-semibold">UI Designs Projects</p>
@@ -65,16 +65,16 @@ function Frontend() {
             >
               {/* Title */}
               <h2 className="text-white font-semibold text-sm mb-2 flex ">
-                Frontend Dev (Mobile and Web)
+                Prototypes Comming soon....
                 <GoArrowUpRight className="group-hover:translate-x-2 group-hover:-translate-y-1 duration-300 ease-in-out " />
               </h2>
 
               {/* Description */}
               <p className="text-gray-600 text-xs italic ">
-               User Friendly apps
+               Comming soon....
               </p>
               <p className="text-gray-600 text-xs italic">
-                React | Tailwind | Next Js  
+               Figma | React | Tailwind | Next Js  
               </p>
 
               {/* Icon Right */}

@@ -80,7 +80,7 @@ function Experience() {
               {selected.skills.map((skill, i) => (
                 <div
                   key={i}
-                  className="px-4 py-1 bg-Primary/5 rounded-full text-Primary text-sm"
+                  className="px-4 py-1 bg-Primary/5 rounded-full border-1 border-x-slate-400 shadow-md text-Primary text-sm"
                 >
                   {skill}
                 </div>
