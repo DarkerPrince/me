@@ -18,8 +18,8 @@ function GraphicList() {
 
 useEffect(() => {
     // Replace with your backend API endpoint
-    // fetch("https://portfolio-backend-gaxc.vercel.app/uiux")
-    fetch("http://localhost:8000/graphics")
+    fetch("https://portfolio-backend-gaxc.vercel.app/uiux")
+    // fetch("http://localhost:8000/graphics")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch UI files");
         return res.json();

@@ -20,8 +20,8 @@ function DetailsPage() {
     if (!id) return;
 
     // Replace with your backend API endpoint
-    // fetch(`https://portfolio-backend-gaxc.vercel.app/uiux/${id}`)
-    fetch("http://localhost:8000/uiux/" + id)
+    fetch(`https://portfolio-backend-gaxc.vercel.app/uiux/${id}`)
+    // fetch("http://localhost:8000/uiux/" + id)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch UI detail");
         return res.json();
