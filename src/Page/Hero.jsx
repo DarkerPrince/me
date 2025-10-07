@@ -5,8 +5,6 @@ import { FaGithub } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import FunButton from "./Components/ContactmeButton";
 
-
-
 function HeroSection() {
   // const handleEmailClick = (e) => {
   //   e.preventDefault();
@@ -23,12 +21,13 @@ function HeroSection() {
           UI/UX and Visual Designer | Front end & Mobile App Developer
         </p>
         <p className="text-center dark:text-slate-200 md:text-xl">
-          I am a Senior UI designer and Front-End Engineer at Negat,
-          specializing in accessibility. I contribute to the creation and
-          maintenance of UI components that power Negat frontend, ensuring
-          our platform meets web accessibility standards and best practices to
-          deliver an inclusive user experience.
-          </p>
+          I’m a Senior UI Designer and Front-End Engineer with over 5 years of
+          experience, currently working at Negat. I focus on building
+          accessible, user-friendly interfaces and developing scalable UI
+          components that power Negat’s frontend. My work ensures the platform
+          meets modern accessibility standards and delivers an inclusive
+          experience for every user.
+        </p>
         <div className="flex gap-4 mt-4 md:mt-6 z-10 mb-4">
           <a href="https://www.behance.net/luel_sisay">
             <AiFillBehanceCircle className="text-slate-500 hover:text-Primary transition-colors duration-300 text-3xl" />
