@@ -1,6 +1,6 @@
 import React from "react";
 
-function Typography({ primary, paletts }) {
+function Typography({ primary, paletts, fontType }) {
 
   const gradientStyle = {
     background: `linear-gradient(
@@ -64,7 +64,7 @@ function Typography({ primary, paletts }) {
               Aa
             </p>
             <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300">
-              Poppins
+              {fontType}
             </p>
           </div>
 

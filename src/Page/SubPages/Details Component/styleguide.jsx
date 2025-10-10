@@ -19,7 +19,7 @@ function StyleGuide({ state }) {
       {/* Core Style Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ColorPaletts primary={state.primarycolor} paletts={state.colors} />
-        <Typography primary={state.primarycolor} paletts={state.colors} />
+        <Typography primary={state.primarycolor} paletts={state.colors} fontType={state.font} />
         <Personas 
           primary={state.primarycolor} 
           paletts={state.colors} 

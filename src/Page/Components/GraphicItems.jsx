@@ -36,52 +36,49 @@ function GraphixItems({ graphix }) {
     <>
       {/* Card */}
       <div
-        onClick={() => openModal(0)}
-        className="relative w-full max-w-sm rounded-3xl overflow-hidden cursor-pointer group
-                   bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-lg transition-transform duration-300
-                   hover:scale-[1.02] hover:shadow-xl"
-      >
-        {/* Subtle Background Accent */}
-        <span className="absolute inset-0 rounded-3xl bg-gray-200/20 dark:bg-gray-700/20 backdrop-blur-sm z-0"></span>
+      onClick={() => openModal(0)}
+      className="group relative w-full max-w-sm h-[360px] rounded-3xl overflow-hidden cursor-pointer 
+                 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-lg transition-all duration-500 
+                 hover:scale-[1.03] hover:shadow-2xl"
+    >
+      {/* Image */}
+      <img
+        src={graphix.headImg}
+        alt={graphix.title}
+        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-110"
+      />
 
-        {/* Image */}
-        <div className="overflow-hidden rounded-t-3xl relative">
-          <img
-            src={graphix.headImg}
-            alt={graphix.title}
-            className="w-full h-64 object-cover rounded-t-3xl transition-transform duration-500 group-hover:scale-105"
-          />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/80 opacity-90 group-hover:opacity-100 transition-opacity duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]" />
 
-          {/* Eye Icon Overlay */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <FiEye size={32} className="text-white/90 bg-gray-800/50 rounded-full p-2" />
-          </div>
-        </div>
+      {/* Eye Icon */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <FiEye size={36} className="text-white/90 bg-black/50 rounded-full p-2" />
+      </div>
 
-        {/* Content */}
-        <div className="relative z-10 p-5 flex flex-col gap-3">
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            {graphix.title}
-          </h3>
-          {graphix.description && (
-            <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
-              {graphix.description}
-            </p>
-          )}
+      {/* Content */}
+      <div className="absolute bottom-0 p-6 text-white translate-y-[55%] group-hover:translate-y-3 transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)]">
+        <h3 className="text-xl font-semibold mb-6">{graphix.title}</h3>
 
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2 mt-1">
-            {graphix.tag.map((tag, idx) => (
-              <span
-                key={idx}
-                className="px-2 py-1 rounded-full text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+        {graphix.description && (
+          <p className="text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 line-clamp-3">
+            {graphix.description}
+          </p>
+        )}
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+          {graphix.tag.map((tag, idx) => (
+            <span
+              key={idx}
+              className="px-2 py-1 rounded-full text-xs font-medium bg-white/20 backdrop-blur-sm"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
       </div>
+    </div>
 
       {/* Modal */}
       {modalOpen && (
