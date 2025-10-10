@@ -8,7 +8,7 @@ function Experience() {
 
   useEffect(() => {
     // Replace with your backend API endpoint
-    fetch("https://portfolio-backend-gaxc.vercel.app/experience")
+    fetch("https://portfolio-backend-two-nu.vercel.app/experience")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch experiences");
         return res.json();
